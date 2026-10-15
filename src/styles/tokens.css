@@ -1,0 +1,136 @@
+/*
+  Design tokens.
+  Dark theme is the default; light theme is the original Figma palette, slightly softened.
+  The theme is set on <html data-theme="dark|light"> by an inline script before first paint.
+*/
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Surfaces — warm graphite instead of pure black to reduce contrast fatigue */
+  --c-bg: #131011;
+  --c-surface: #1b1718;
+  --c-surface-2: #241e1f;
+  --c-surface-3: #2a2324;
+
+  /* Lines */
+  --c-border: #2f2829;
+  --c-border-strong: #463b3c;
+
+  /* Text — off-white, never pure #fff on dark */
+  --c-text: #ece4e1;
+  --c-text-2: #d3c8c4;
+  --c-muted: #a2948f;
+  --c-subtle: #7a6d69;
+
+  /* Brand */
+  --c-primary: #561c18;
+  --c-primary-hover: #67231e;
+  --c-accent: #e5574a;
+  --c-accent-hover: #f06a5d;
+  --c-accent-soft: #33201e;
+  --c-link: #f08a7e;
+  --c-on-primary: #fdf6f4;
+  --c-on-primary-muted: #e2c9c3;
+  --c-check-on-primary: #ff9b8c;
+
+  /* Status */
+  --c-highlight: #33291a;
+  --c-success: #5cc584;
+  --c-warning: #e3a857;
+  --c-danger: #ff7a6e;
+
+  /* States */
+  --c-hover-bg: #221c1d;
+  --c-hover-border: #5c4f50;
+  --c-image-icon: #3d3334;
+  --c-overlay: rgb(0 0 0 / 0.6);
+  /* Hero "Найти" button: on the dark wine hero a coral button reads better than a pale slab */
+  --c-light-btn-bg: #e5574a;
+  --c-light-btn-fg: #ffffff;
+  --c-light-btn-hover: #f06a5d;
+  --c-on-accent-soft: #f08a7e;
+  --c-knob: #fdf6f4;
+
+  --shadow-pop: 0 16px 40px -16px rgb(0 0 0 / 0.6);
+  --shadow-panel: 0 24px 48px -24px rgb(0 0 0 / 0.7);
+  --focus-ring: 0 0 0 3px rgb(229 87 74 / 0.35);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --c-bg: #f8f4f1;
+  --c-surface: #ffffff;
+  --c-surface-2: #f3ebe6;
+  --c-surface-3: #efe4de;
+
+  --c-border: #e9ddd5;
+  --c-border-strong: #d6c2b6;
+
+  --c-text: #1f1715;
+  --c-text-2: #4a3d39;
+  --c-muted: #6b5a53;
+  --c-subtle: #94857f;
+
+  --c-primary: #6e1c17;
+  --c-primary-hover: #5a1612;
+  --c-accent: #d13b2d;
+  --c-accent-hover: #b83125;
+  --c-accent-soft: #f7dcd5;
+  --c-link: #b0352a;
+  --c-on-primary: #ffffff;
+  --c-on-primary-muted: #eed9d3;
+  --c-check-on-primary: #ff9b8c;
+
+  --c-highlight: #fbe9cf;
+  --c-success: #2a7a48;
+  --c-warning: #9a5b0c;
+  --c-danger: #c2362a;
+
+  --c-hover-bg: #fdf9f7;
+  --c-hover-border: #c4ab9d;
+  --c-image-icon: #e5d3c9;
+  --c-overlay: rgb(31 23 21 / 0.45);
+  --c-light-btn-bg: #ffffff;
+  --c-light-btn-fg: #6e1c17;
+  --c-light-btn-hover: #fbeee9;
+  --c-on-accent-soft: #6e1c17;
+  --c-knob: #ffffff;
+
+  --shadow-pop: 0 12px 32px -12px rgb(110 28 23 / 0.18);
+  --shadow-panel: 0 20px 40px -20px rgb(110 28 23 / 0.22);
+  --focus-ring: 0 0 0 3px rgb(209 59 45 / 0.25);
+}
+
+:root {
+  /* Radii */
+  --r-xs: 6px;
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-2xl: 20px;
+
+  /* Typography */
+  --font-sans: var(--font-plex-sans), 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: var(--font-plex-mono), 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Layout */
+  --gutter: 16px;
+  --header-h: 72px;
+  --content-max: 1200px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 140ms;
+  --t-med: 240ms;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 32px; }
+}
+
+@media (min-width: 1024px) {
+  :root { --gutter: 40px; }
+}
