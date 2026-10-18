@@ -201,22 +201,26 @@ export function parseIcecat(json: IcecatResponse): IcecatSheet | null {
   };
 }
 
+/** true when a lookup would not hit the network (already answered earlier) */
+export const icecatCached = (id: string) => `id:${id}` in cache;
+
 let requests = 0;
 /** Looks a product up by EAN, then by brand + part number. Results (including misses) are cached. */
-export async function icecatLookup(q: { ean?: string; brand?: string; mpn?: string }): Promise<IcecatSheet | null> {
-  const key = q.ean ? `ean:${q.ean}` : `mpn:${q.brand}:${q.mpn}`;
+export async function icecatLookup(q: { id?: string; ean?: string; brand?: string; mpn?: string }): Promise<IcecatSheet | null> {
+  const key = q.id ? `id:${q.id}` : q.ean ? `ean:${q.ean}` : `mpn:${q.brand}:${q.mpn}`;
   if (key in cache) return cache[key] ?? null;
-  if (!icecatEnabled() || (!q.ean && !(q.brand && q.mpn))) return null;
+  if (!icecatEnabled() || (!q.id && !q.ean && !(q.brand && q.mpn))) return null;
 
   let sheet: IcecatSheet | null = null;
   if (FIXTURES) {
-    const file = `scripts/pipeline/fixtures/icecat/${q.ean || q.mpn}.json`;
+    const file = `scripts/pipeline/fixtures/icecat/${q.id || q.ean || q.mpn}.json`;
     sheet = parseIcecat(readJson<IcecatResponse>(file, {}));
   } else {
     const url = new URL('https://live.icecat.biz/api');
     url.searchParams.set('lang', 'EN');
     url.searchParams.set('shopname', ICECAT_USER!);
-    if (q.ean) url.searchParams.set('GTIN', q.ean);
+    if (q.id) url.searchParams.set('icecat_id', q.id);
+    else if (q.ean) url.searchParams.set('GTIN', q.ean);
     else {
       url.searchParams.set('Brand', q.brand!);
       url.searchParams.set('ProductCode', q.mpn!);

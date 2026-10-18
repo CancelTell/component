@@ -42,6 +42,7 @@ const TRANSLIT: Record<string, string> = {
 export function slugify(text: string): string {
   return text
     .toLowerCase()
+    .replace(/(\d)\s+(гб|тб|gb|tb)(?![a-zа-я])/g, '$1$2') // "1 ТБ" → "1tb", like the hand-made slugs
     .replace(/[а-яё]/g, (c) => TRANSLIT[c] ?? '')
     .replace(/×/g, 'x')
     .replace(/[^a-z0-9]+/g, '-')

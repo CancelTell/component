@@ -195,7 +195,8 @@ export const REQUIRED: Record<CategoryId, Array<string | string[]>> = {
   cpu: ['socket', 'memory', 'tdp'],
   motherboard: ['socket', 'memType', 'formFactor'],
   ram: ['memType'],
-  gpu: ['tdp', 'length'],
+  // Card length depends on the partner version; the case check says when it's unknown
+  gpu: ['tdp'],
   psu: ['wattage'],
   cooling: ['sockets', ['height', 'radiator']],
   case: ['boards', 'maxGpu'],
@@ -233,4 +234,29 @@ export function gpuChip(text: string): { brand: string; name: string } | null {
   const arc = t.match(/Arc\s?([AB]\d{3})/i);
   if (arc) return { brand: 'Intel', name: `Arc ${arc[1]!.toUpperCase()}` };
   return null;
+}
+
+/**
+ * Consistent names where one series has many versions:
+ * memory → "FURY Beast DDR5-6000 CL30 2×16 ГБ", storage → "990 PRO 2 ТБ".
+ * Without this "990 PRO 1 TB" and "990 PRO 2 TB" would collapse into one model.
+ */
+export function canonicalName(category: CategoryId, name: string, specs: Specs): string {
+  const strip = (t: string) =>
+    t
+      .replace(/\b\d+\s*[x×]\s*\d+\s*(gb|гб)?/gi, ' ')
+      .replace(/\b\d+([.,]\d+)?\s*(gb|гб|tb|тб)\b/gi, ' ')
+      .replace(/\bddr\d(-\d{4})?\b|\b\d{4}\s*(mhz|мгц|mt\/s)\b|\bcl\s?\d+\b|\bm\.2\b|\bnvme\b|\bpci(e| express)\s*\d(\.0)?\b|\bsata( iii)?\b|\b2280\b/gi, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  if (category === 'ram' && specs.memType && specs.speed && specs.modules && specs.moduleSize) {
+    // Same series and speed often come with different timings: CL is part of the name
+    const cl = specs.cl ? ` CL${specs.cl}` : '';
+    return `${strip(name)} ${specs.memType}-${specs.speed}${cl} ${specs.modules}×${specs.moduleSize} ГБ`.trim();
+  }
+  if (category === 'storage' && typeof specs.capacity === 'number') {
+    const cap = specs.capacity >= 1000 ? `${String(specs.capacity / 1000).replace('.', ',')} ТБ` : `${specs.capacity} ГБ`;
+    return `${strip(name)} ${cap}`.trim();
+  }
+  return name;
 }

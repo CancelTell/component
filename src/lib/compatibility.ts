@@ -95,15 +95,22 @@ export function runChecks(build: Build): CheckResult[] {
       if (list(pcCase, 'boards').includes(form)) fits.push(`плата ${form}`);
       else problems.push(`плата ${form} не помещается`);
     }
+    let unknownLength = false;
     if (gpu) {
       const length = num(gpu, 'length');
       const max = num(pcCase, 'maxGpu');
-      if (length <= max) fits.push(`видеокарта ${length} мм`);
+      // Imported chips have no length: it depends on the partner card
+      if (!length) unknownLength = true;
+      else if (length <= max) fits.push(`видеокарта ${length} мм`);
       else problems.push(`видеокарта ${length} мм длиннее допустимых ${max} мм`);
     }
-    const text = problems.length ? problems.join(', ') : `${fits.join(' и ')} помещаются`;
+    let text = problems.length ? problems.join(', ') : fits.length ? `${fits.join(' и ')} ${fits.length > 1 ? 'помещаются' : 'помещается'}` : '';
+    if (!problems.length && unknownLength) {
+      const note = `сверьте длину вашей версии видеокарты: корпус берёт до ${num(pcCase, 'maxGpu')} мм`;
+      text = text ? `${text}; ${note}` : note;
+    }
     Object.assign(caseFit, {
-      status: problems.length ? 'fail' : 'ok',
+      status: problems.length ? 'fail' : unknownLength ? 'warn' : 'ok',
       message: text.charAt(0).toUpperCase() + text.slice(1),
     });
   } else if (pcCase) {
@@ -184,7 +191,9 @@ export function compatSummary(product: Product, catalog: Product[]): { text: str
       };
     case 'gpu':
       return {
-        text: `Рекомендуемый блок питания — от ${num(product, 'recPsu')} Вт, корпус — для карт длиной от ${num(product, 'length')} мм. Подходящие блоки:`,
+        text: num(product, 'length')
+          ? `Рекомендуемый блок питания — от ${num(product, 'recPsu')} Вт, корпус — для карт длиной от ${num(product, 'length')} мм. Подходящие блоки:`
+          : `Рекомендуемый блок питания — от ${num(product, 'recPsu')} Вт. Длина зависит от версии карты, сверьте её с корпусом. Подходящие блоки:`,
         chips: of('psu').filter((p) => num(p, 'wattage') >= num(product, 'recPsu')),
       };
     case 'psu':

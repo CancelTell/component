@@ -1,0 +1,12 @@
+{
+ "_readme": "Настройки импорта. wikipedia — страницы со списками моделей (английская Википедия). icecat.perCategory — сколько новых карточек запрашивать за запуск в каждой категории; brands — брать только эти бренды (пустой список = все); categories — ID категорий Icecat, если автоматический поиск по названию промахнулся (например {\"cooling\": [123]}).",
+ "wikipedia": {
+  "cpuPages": ["List_of_AMD_Ryzen_processors", "List_of_Intel_Core_processors", "Raptor_Lake", "Alder_Lake", "Arrow_Lake_(microprocessor)"],
+  "gpuPages": ["List_of_Nvidia_graphics_processing_units", "List_of_AMD_graphics_processing_units", "List_of_Intel_graphics_processing_units"]
+ },
+ "icecat": {
+  "perCategory": 40,
+  "brands": ["ASUS", "MSI", "Micro-Star", "Gigabyte", "ASRock", "Biostar", "NZXT", "Kingston", "Corsair", "G.Skill", "Crucial", "Micron", "Samsung", "Western Digital", "Seagate", "ADATA", "XPG", "Team", "Patriot", "Lexar", "Netac", "Transcend", "Apacer", "Goodram", "Silicon Power", "be quiet", "Seasonic", "Cooler Master", "Thermaltake", "DeepCool", "Noctua", "ARCTIC", "Lian Li", "Fractal", "Phanteks", "Zalman", "Chieftec", "AeroCool", "ID-Cooling", "Thermalright", "Montech", "Cougar", "FSP", "Super Flower", "XFX", "Antec", "SilverStone", "Jonsbo", "Ocypus", "PCCooler", "Sapphire"],
+  "categories": {}
+ }
+}

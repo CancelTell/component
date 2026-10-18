@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ICECAT-interface><Response>
+<CategoriesList>
+<Category ID="194" LowPic="" Score="1">
+ <Name ID="11" Value="Motherboards" langid="1"/>
+ <Name ID="12" Value="Материнские платы" langid="8"/>
+ <ParentCategory ID="100"><Names><Name ID="13" Value="Computer components" langid="1"/></Names></ParentCategory>
+</Category>
+<Category ID="911"><Name ID="21" Value="Memory modules" langid="1"/></Category>
+<Category ID="1203"><Name ID="31" Value="Solid state drives" langid="1"/></Category>
+<Category ID="1101"><Name ID="41" Value="Power supply units" langid="1"/></Category>
+<Category ID="1305"><Name ID="51" Value="Computer cooling systems" langid="1"/></Category>
+<Category ID="1400"><Name ID="61" Value="Computer cases" langid="1"/></Category>
+<Category ID="1500"><Name ID="71" Value="Notebook cooling pads" langid="1"/></Category>
+</CategoriesList></Response></ICECAT-interface>

@@ -1,0 +1,48 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "Kingston Technology",
+   "ProductName": "ValueRAM",
+   "Title": "Kingston Technology ValueRAM 16 GB DDR5 4800 MHz SO-DIMM",
+   "BrandPartCode": "KVR48S40BS8-16",
+   "GTIN": [],
+   "Category": {
+    "Name": {
+     "Value": "Memory modules"
+    }
+   },
+   "ReleaseDate": "01-01-2023"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Internal memory"
+       }
+      },
+      "PresentationValue": "16 GB"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Internal memory type"
+       }
+      },
+      "PresentationValue": "DDR5"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Memory form factor"
+       }
+      },
+      "PresentationValue": "262-pin SO-DIMM"
+     }
+    ]
+   }
+  ]
+ }
+}

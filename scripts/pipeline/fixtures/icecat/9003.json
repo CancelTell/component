@@ -1,0 +1,82 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "Kingston Technology",
+   "ProductName": "FURY Beast",
+   "Title": "Kingston Technology FURY Beast 32 GB 2 x 16 GB DDR5 6000 MHz",
+   "BrandPartCode": "KF560C30BBEK2-32",
+   "GTIN": [
+    "0740617334241"
+   ],
+   "Category": {
+    "Name": {
+     "Value": "Memory modules"
+    }
+   },
+   "ReleaseDate": "15-03-2024"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Internal memory"
+       }
+      },
+      "PresentationValue": "32 GB"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Memory layout (modules x size)"
+       }
+      },
+      "PresentationValue": "2 x 16 GB"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Internal memory type"
+       }
+      },
+      "PresentationValue": "DDR5"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Memory clock speed"
+       }
+      },
+      "PresentationValue": "6000 MHz"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "CAS latency"
+       }
+      },
+      "PresentationValue": "30"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Memory voltage"
+       }
+      },
+      "PresentationValue": "1.4 V"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Memory form factor"
+       }
+      },
+      "PresentationValue": "288-pin DIMM"
+     }
+    ]
+   }
+  ]
+ }
+}

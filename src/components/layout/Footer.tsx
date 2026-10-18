@@ -24,7 +24,15 @@ export function Footer() {
           </ul>
         </nav>
         <p className="footer__note">
-          Характеристики приведены по данным производителей и носят справочный характер.
+          Характеристики приведены по данным производителей, а также{' '}
+          <a href="https://en.wikipedia.org/" target="_blank" rel="noopener noreferrer">
+            Википедии
+          </a>{' '}
+          (CC BY-SA) и{' '}
+          <a href="https://icecat.biz/" target="_blank" rel="noopener noreferrer">
+            Open Icecat
+          </a>
+          , и носят справочный характер.
         </p>
       </div>
     </footer>

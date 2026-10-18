@@ -1,0 +1,82 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "Samsung",
+   "ProductName": "990 PRO",
+   "Title": "Samsung 990 PRO M.2 1 TB PCI Express 4.0 V-NAND MLC NVMe",
+   "BrandPartCode": "MZ-V9P1T0BW",
+   "GTIN": [
+    "8806094215014"
+   ],
+   "Category": {
+    "Name": {
+     "Value": "Solid state drives"
+    }
+   },
+   "ReleaseDate": "01-11-2022"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "SSD capacity"
+       }
+      },
+      "PresentationValue": "1 TB"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "SSD form factor"
+       }
+      },
+      "PresentationValue": "M.2"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Interface"
+       }
+      },
+      "PresentationValue": "PCI Express 4.0"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "NVMe"
+       }
+      },
+      "PresentationValue": "Yes"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Read speed"
+       }
+      },
+      "PresentationValue": "7450 MB/s"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Write speed"
+       }
+      },
+      "PresentationValue": "6900 MB/s"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Endurance rating (Total Bytes Written (TBW))"
+       }
+      },
+      "PresentationValue": "600 TB"
+     }
+    ]
+   }
+  ]
+ }
+}

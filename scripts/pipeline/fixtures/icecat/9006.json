@@ -1,0 +1,48 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "DeepCool",
+   "ProductName": "AK620",
+   "Title": "DeepCool AK620 Processor Air cooler 12 cm Black",
+   "BrandPartCode": "R-AK620-BKNNMT-G",
+   "GTIN": [],
+   "Category": {
+    "Name": {
+     "Value": "Computer cooling systems"
+    }
+   },
+   "ReleaseDate": "01-06-2022"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Height"
+       }
+      },
+      "PresentationValue": "160 mm"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Number of fans"
+       }
+      },
+      "PresentationValue": "2"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Fan diameter"
+       }
+      },
+      "PresentationValue": "12 cm"
+     }
+    ]
+   }
+  ]
+ }
+}
