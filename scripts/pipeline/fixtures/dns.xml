@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test feed in YML format. Not real prices. -->
+<yml_catalog date="2026-10-18 10:00">
+ <shop>
+  <name>DNS (test)</name>
+  <categories>
+   <category id="1">Комплектующие для ПК</category>
+   <category id="10" parentId="1">Процессоры</category>
+   <category id="11" parentId="1">Видеокарты</category>
+   <category id="12" parentId="1">Материнские платы</category>
+   <category id="13" parentId="1">Оперативная память</category>
+   <category id="14" parentId="1">Кулеры для процессоров</category>
+   <category id="20">Компьютерные мыши</category>
+  </categories>
+  <offers>
+   <offer id="d1" available="true">
+    <url>https://www.dns-shop.ru/product/test-7800x3d/</url><price>40990</price><categoryId>10</categoryId>
+    <name>Процессор AMD Ryzen 7 7800X3D OEM</name><vendor>AMD</vendor><vendorCode>100-000000910</vendorCode><barcode>0730143314930</barcode>
+   </offer>
+   <offer id="d2" available="true">
+    <url>https://www.dns-shop.ru/product/test-9600x/</url><price>21990</price><categoryId>10</categoryId>
+    <name>Процессор AMD Ryzen 5 9600X BOX</name><vendor>AMD</vendor><vendorCode>100-100001405WOF</vendorCode>
+    <param name="Сокет">AM5</param>
+    <param name="Количество ядер">6</param>
+    <param name="Количество потоков">12</param>
+    <param name="Базовая частота" unit="ГГц">3.9</param>
+    <param name="Максимальная частота" unit="ГГц">5.4</param>
+    <param name="Объем кэша L3" unit="МБ">32</param>
+    <param name="Тепловыделение (TDP)" unit="Вт">65</param>
+    <param name="Тип памяти">DDR5</param>
+    <param name="Цвет упаковки">чёрный</param>
+   </offer>
+   <offer id="d3" available="true">
+    <url>https://www.dns-shop.ru/product/test-palit-4060/</url><price>31490</price><categoryId>11</categoryId>
+    <name>Видеокарта Palit GeForce RTX 4060 Dual 8 ГБ</name><vendor>Palit</vendor><vendorCode>NE64060019P1-1070D</vendorCode>
+   </offer>
+   <offer id="d4" available="true">
+    <url>https://www.dns-shop.ru/product/test-5060ti/</url><price>47990</price><categoryId>11</categoryId>
+    <name>Видеокарта GIGABYTE GeForce RTX 5060 Ti WINDFORCE OC 16G</name><vendor>GIGABYTE</vendor><vendorCode>GV-N506TWF2OC-16GD</vendorCode>
+    <param name="Объем видеопамяти" unit="ГБ">16</param>
+    <param name="Тип видеопамяти">GDDR7</param>
+    <param name="Разрядность шины памяти" unit="бит">128</param>
+    <param name="Энергопотребление" unit="Вт">180</param>
+    <param name="Рекомендуемая мощность блока питания" unit="Вт">650</param>
+    <param name="Длина видеокарты" unit="мм">281</param>
+    <param name="Интерфейс подключения">PCI-E 5.0 x8</param>
+   </offer>
+   <offer id="d5" available="true">
+    <url>https://www.dns-shop.ru/product/test-b650m-a/</url><price>15990</price><categoryId>12</categoryId>
+    <name>Материнская плата MSI PRO B650M-A WIFI</name><vendor>MSI</vendor><vendorCode>PRO B650M-A WIFI</vendorCode><barcode>4711377012345</barcode>
+    <param name="Сокет">AM5</param>
+    <param name="Чипсет">AMD B650</param>
+   </offer>
+   <offer id="d6" available="false">
+    <url>https://www.dns-shop.ru/product/test-fury/</url><price>10290</price><categoryId>13</categoryId>
+    <name>Оперативная память Kingston FURY Beast 32 ГБ (2x16 ГБ) DDR5 6000 МГц</name><vendor>Kingston</vendor><vendorCode>KF560C36BBEK2-32</vendorCode>
+   </offer>
+   <offer id="d7" available="true">
+    <url>https://www.dns-shop.ru/product/test-cooler/</url><price>1990</price><categoryId>14</categoryId>
+    <name>Кулер для процессора ID-COOLING SE-224-XTS</name><vendor>ID-COOLING</vendor><vendorCode>SE-224-XTS</vendorCode>
+    <param name="Высота" unit="мм">154</param>
+   </offer>
+   <offer id="d8" available="true">
+    <url>https://www.dns-shop.ru/product/test-mouse/</url><price>990</price><categoryId>20</categoryId>
+    <name>Мышь проводная</name><vendor>Noname</vendor>
+   </offer>
+  </offers>
+ </shop>
+</yml_catalog>

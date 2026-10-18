@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test feed in YML format. Not real prices. -->
+<yml_catalog date="2026-10-18 10:00">
+ <shop>
+  <categories>
+   <category id="5">Электроника</category>
+   <category id="51" parentId="5">Процессоры</category>
+   <category id="52" parentId="5">Видеокарты</category>
+   <category id="53" parentId="5">Материнские платы</category>
+  </categories>
+  <offers>
+   <offer id="o1" available="true">
+    <url>https://www.ozon.ru/product/test-7800x3d/</url><price>39 790</price><categoryId>51</categoryId>
+    <name>AMD Процессор Ryzen 7 7800X3D, OEM</name><vendor>AMD</vendor><barcode>730143314930</barcode>
+   </offer>
+   <offer id="o2" available="true">
+    <url>https://www.ozon.ru/product/test-asus-4060/</url><price>32190</price><categoryId>52</categoryId>
+    <name>ASUS Видеокарта Dual GeForce RTX 4060 OC Edition 8GB</name><vendor>ASUS</vendor><vendorCode>DUAL-RTX4060-O8G</vendorCode>
+   </offer>
+   <offer id="o3" available="true">
+    <url>https://www.ozon.ru/product/test-b650m-a/</url><price>15490</price><categoryId>53</categoryId>
+    <name>MSI Материнская плата PRO B650M-A WIFI</name><vendor>MSI</vendor><barcode>4711377012345</barcode>
+   </offer>
+  </offers>
+ </shop>
+</yml_catalog>

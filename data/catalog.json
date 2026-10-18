@@ -1,0 +1,924 @@
+{
+ "generatedAt": "2026-10-18",
+ "products": [
+  {
+   "slug": "amd-ryzen-5-7600",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7600",
+   "year": 2023,
+   "popularity": 1,
+   "specs": {
+    "socket": "AM5",
+    "arch": "Zen 4",
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.8,
+    "boostClock": 5.1,
+    "l3": 32,
+    "tdp": 65,
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Radeon Graphics"
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-7800x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 7800X3D",
+   "year": 2023,
+   "popularity": 2,
+   "specs": {
+    "socket": "AM5",
+    "arch": "Zen 4",
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4.2,
+    "boostClock": 5,
+    "l3": 96,
+    "tdp": 120,
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Radeon Graphics"
+   }
+  },
+  {
+   "slug": "intel-core-i7-14700k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-14700K",
+   "year": 2023,
+   "popularity": 3,
+   "specs": {
+    "socket": "LGA1700",
+    "arch": "Raptor Lake Refresh",
+    "unlocked": true,
+    "cores": 20,
+    "threads": 28,
+    "baseClock": 3.4,
+    "boostClock": 5.6,
+    "l3": 33,
+    "tdp": 125,
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Intel UHD 770"
+   }
+  },
+  {
+   "slug": "intel-core-i5-14400f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14400F",
+   "year": 2024,
+   "popularity": 4,
+   "specs": {
+    "socket": "LGA1700",
+    "arch": "Raptor Lake Refresh",
+    "unlocked": false,
+    "cores": 10,
+    "threads": 16,
+    "baseClock": 2.5,
+    "boostClock": 4.7,
+    "l3": 20,
+    "tdp": 65,
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": null
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600",
+   "year": 2022,
+   "popularity": 5,
+   "specs": {
+    "socket": "AM4",
+    "arch": "Zen 3",
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.5,
+    "boostClock": 4.4,
+    "l3": 32,
+    "tdp": 65,
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "pcie": "4.0",
+    "igpu": null
+   }
+  },
+  {
+   "slug": "intel-core-i5-14600k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14600K",
+   "year": 2023,
+   "popularity": 6,
+   "specs": {
+    "socket": "LGA1700",
+    "arch": "Raptor Lake Refresh",
+    "unlocked": true,
+    "cores": 14,
+    "threads": 20,
+    "baseClock": 3.5,
+    "boostClock": 5.3,
+    "l3": 24,
+    "tdp": 125,
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Intel UHD 770"
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-7700",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 7700",
+   "year": 2023,
+   "popularity": 7,
+   "specs": {
+    "socket": "AM5",
+    "arch": "Zen 4",
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 5.3,
+    "l3": 32,
+    "tdp": 65,
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Radeon Graphics"
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-9700x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 9700X",
+   "year": 2024,
+   "popularity": 8,
+   "specs": {
+    "socket": "AM5",
+    "arch": "Zen 5",
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 5.5,
+    "l3": 32,
+    "tdp": 65,
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Radeon Graphics"
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-9950x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 9950X",
+   "year": 2024,
+   "popularity": 9,
+   "specs": {
+    "socket": "AM5",
+    "arch": "Zen 5",
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 4.3,
+    "boostClock": 5.7,
+    "l3": 64,
+    "tdp": 170,
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "pcie": "5.0",
+    "igpu": "Radeon Graphics"
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4060",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4060",
+   "year": 2023,
+   "popularity": 1,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 128,
+    "tdp": 115,
+    "recPsu": 550,
+    "pcie": "4.0 x8",
+    "length": 240
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5070",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5070",
+   "year": 2025,
+   "popularity": 2,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR7",
+    "bus": 192,
+    "tdp": 250,
+    "recPsu": 650,
+    "pcie": "5.0 x16",
+    "length": 242
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4070-super",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4070 SUPER",
+   "year": 2024,
+   "popularity": 3,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6X",
+    "bus": 192,
+    "tdp": 220,
+    "recPsu": 650,
+    "pcie": "4.0 x16",
+    "length": 244
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7800-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7800 XT",
+   "year": 2023,
+   "popularity": 4,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 263,
+    "recPsu": 700,
+    "pcie": "4.0 x16",
+    "length": 267
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7600",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7600",
+   "year": 2023,
+   "popularity": 5,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 128,
+    "tdp": 165,
+    "recPsu": 550,
+    "pcie": "4.0 x8",
+    "length": 204
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4080-super",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4080 SUPER",
+   "year": 2024,
+   "popularity": 6,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6X",
+    "bus": 256,
+    "tdp": 320,
+    "recPsu": 750,
+    "pcie": "4.0 x16",
+    "length": 304
+   }
+  },
+  {
+   "slug": "intel-arc-b580",
+   "category": "gpu",
+   "brand": "Intel",
+   "name": "Arc B580",
+   "year": 2024,
+   "popularity": 7,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6",
+    "bus": 192,
+    "tdp": 190,
+    "recPsu": 600,
+    "pcie": "4.0 x8",
+    "length": 272
+   }
+  },
+  {
+   "slug": "msi-mag-b650-tomahawk-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG B650 TOMAHAWK WIFI",
+   "year": 2022,
+   "popularity": 1,
+   "specs": {
+    "socket": "AM5",
+    "chipset": "B650",
+    "formFactor": "ATX",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2": 3,
+    "pcieGpu": "4.0",
+    "wifi": "Wi-Fi 6E"
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-b650-plus-wifi",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "TUF GAMING B650-PLUS WIFI",
+   "year": 2022,
+   "popularity": 2,
+   "specs": {
+    "socket": "AM5",
+    "chipset": "B650",
+    "formFactor": "ATX",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2": 3,
+    "pcieGpu": "4.0",
+    "wifi": "Wi-Fi 6"
+   }
+  },
+  {
+   "slug": "gigabyte-b650m-aorus-elite-ax",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "B650M AORUS ELITE AX",
+   "year": 2022,
+   "popularity": 3,
+   "specs": {
+    "socket": "AM5",
+    "chipset": "B650",
+    "formFactor": "mATX",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2": 2,
+    "pcieGpu": "4.0",
+    "wifi": "Wi-Fi 6E"
+   }
+  },
+  {
+   "slug": "msi-pro-b760m-a-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO B760M-A WIFI",
+   "year": 2023,
+   "popularity": 4,
+   "specs": {
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "formFactor": "mATX",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2": 2,
+    "pcieGpu": "4.0",
+    "wifi": "Wi-Fi 6E"
+   }
+  },
+  {
+   "slug": "msi-mag-b550-tomahawk",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG B550 TOMAHAWK",
+   "year": 2020,
+   "popularity": 5,
+   "specs": {
+    "socket": "AM4",
+    "chipset": "B550",
+    "formFactor": "ATX",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2": 2,
+    "pcieGpu": "4.0",
+    "wifi": null
+   }
+  },
+  {
+   "slug": "asus-prime-z790-p-wifi",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "PRIME Z790-P WIFI",
+   "year": 2022,
+   "popularity": 6,
+   "specs": {
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "formFactor": "ATX",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2": 3,
+    "pcieGpu": "5.0",
+    "wifi": "Wi-Fi 6"
+   }
+  },
+  {
+   "slug": "gigabyte-b760-ds3h-ddr4",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "B760 DS3H DDR4",
+   "year": 2023,
+   "popularity": 7,
+   "specs": {
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "formFactor": "ATX",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2": 2,
+    "pcieGpu": "4.0",
+    "wifi": null
+   }
+  },
+  {
+   "slug": "asus-rog-strix-x670e-e-gaming-wifi",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "ROG STRIX X670E-E GAMING WIFI",
+   "year": 2022,
+   "popularity": 8,
+   "specs": {
+    "socket": "AM5",
+    "chipset": "X670E",
+    "formFactor": "ATX",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2": 4,
+    "pcieGpu": "5.0",
+    "wifi": "Wi-Fi 6E"
+   }
+  },
+  {
+   "slug": "kingston-fury-beast-ddr5-6000-2x16",
+   "category": "ram",
+   "brand": "Kingston",
+   "name": "FURY Beast DDR5-6000 2×16 ГБ",
+   "year": 2023,
+   "popularity": 1,
+   "specs": {
+    "memType": "DDR5",
+    "modules": 2,
+    "moduleSize": 16,
+    "speed": 6000,
+    "cl": 36,
+    "voltage": 1.35
+   }
+  },
+  {
+   "slug": "gskill-trident-z5-neo-rgb-ddr5-6000-2x16",
+   "category": "ram",
+   "brand": "G.Skill",
+   "name": "Trident Z5 Neo RGB DDR5-6000 2×16 ГБ",
+   "year": 2022,
+   "popularity": 2,
+   "specs": {
+    "memType": "DDR5",
+    "modules": 2,
+    "moduleSize": 16,
+    "speed": 6000,
+    "cl": 30,
+    "voltage": 1.35
+   }
+  },
+  {
+   "slug": "kingston-fury-beast-ddr4-3200-2x16",
+   "category": "ram",
+   "brand": "Kingston",
+   "name": "FURY Beast DDR4-3200 2×16 ГБ",
+   "year": 2021,
+   "popularity": 3,
+   "specs": {
+    "memType": "DDR4",
+    "modules": 2,
+    "moduleSize": 16,
+    "speed": 3200,
+    "cl": 16,
+    "voltage": 1.35
+   }
+  },
+  {
+   "slug": "corsair-vengeance-ddr5-5600-2x16",
+   "category": "ram",
+   "brand": "Corsair",
+   "name": "Vengeance DDR5-5600 2×16 ГБ",
+   "year": 2022,
+   "popularity": 4,
+   "specs": {
+    "memType": "DDR5",
+    "modules": 2,
+    "moduleSize": 16,
+    "speed": 5600,
+    "cl": 36,
+    "voltage": 1.25
+   }
+  },
+  {
+   "slug": "corsair-vengeance-lpx-ddr4-3600-2x16",
+   "category": "ram",
+   "brand": "Corsair",
+   "name": "Vengeance LPX DDR4-3600 2×16 ГБ",
+   "year": 2019,
+   "popularity": 5,
+   "specs": {
+    "memType": "DDR4",
+    "modules": 2,
+    "moduleSize": 16,
+    "speed": 3600,
+    "cl": 18,
+    "voltage": 1.35
+   }
+  },
+  {
+   "slug": "samsung-990-pro-2tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "990 PRO 2 ТБ",
+   "year": 2022,
+   "popularity": 1,
+   "specs": {
+    "type": "NVMe",
+    "formFactor": "M.2 2280",
+    "iface": "PCIe 4.0 x4",
+    "capacity": 2000,
+    "read": 7450,
+    "write": 6900,
+    "tbw": 1200
+   }
+  },
+  {
+   "slug": "wd-black-sn850x-1tb",
+   "category": "storage",
+   "brand": "WD",
+   "name": "WD_BLACK SN850X 1 ТБ",
+   "year": 2022,
+   "popularity": 2,
+   "specs": {
+    "type": "NVMe",
+    "formFactor": "M.2 2280",
+    "iface": "PCIe 4.0 x4",
+    "capacity": 1000,
+    "read": 7300,
+    "write": 6300,
+    "tbw": 600
+   }
+  },
+  {
+   "slug": "kingston-nv2-1tb",
+   "category": "storage",
+   "brand": "Kingston",
+   "name": "NV2 1 ТБ",
+   "year": 2022,
+   "popularity": 3,
+   "specs": {
+    "type": "NVMe",
+    "formFactor": "M.2 2280",
+    "iface": "PCIe 4.0 x4",
+    "capacity": 1000,
+    "read": 3500,
+    "write": 2100,
+    "tbw": 320
+   }
+  },
+  {
+   "slug": "crucial-t700-2tb",
+   "category": "storage",
+   "brand": "Crucial",
+   "name": "T700 2 ТБ",
+   "year": 2023,
+   "popularity": 4,
+   "specs": {
+    "type": "NVMe",
+    "formFactor": "M.2 2280",
+    "iface": "PCIe 5.0 x4",
+    "capacity": 2000,
+    "read": 12400,
+    "write": 11800,
+    "tbw": 1200
+   }
+  },
+  {
+   "slug": "samsung-870-evo-1tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "870 EVO 1 ТБ",
+   "year": 2021,
+   "popularity": 5,
+   "specs": {
+    "type": "SATA",
+    "formFactor": "2,5\"",
+    "iface": "SATA III",
+    "capacity": 1000,
+    "read": 560,
+    "write": 530,
+    "tbw": 600
+   }
+  },
+  {
+   "slug": "corsair-rm750e-2023",
+   "category": "psu",
+   "brand": "Corsair",
+   "name": "RM750e (2023)",
+   "year": 2023,
+   "popularity": 1,
+   "specs": {
+    "wattage": 750,
+    "cert": "80 PLUS Gold",
+    "modular": "Полностью модульный",
+    "atx3": true,
+    "highPower": true,
+    "fan": 120
+   }
+  },
+  {
+   "slug": "deepcool-pk650d",
+   "category": "psu",
+   "brand": "DeepCool",
+   "name": "PK650D",
+   "year": 2022,
+   "popularity": 2,
+   "specs": {
+    "wattage": 650,
+    "cert": "80 PLUS Bronze",
+    "modular": "Немодульный",
+    "atx3": false,
+    "highPower": false,
+    "fan": 120
+   }
+  },
+  {
+   "slug": "be-quiet-pure-power-12-m-850w",
+   "category": "psu",
+   "brand": "be quiet!",
+   "name": "Pure Power 12 M 850W",
+   "year": 2023,
+   "popularity": 3,
+   "specs": {
+    "wattage": 850,
+    "cert": "80 PLUS Gold",
+    "modular": "Полностью модульный",
+    "atx3": true,
+    "highPower": true,
+    "fan": 120
+   }
+  },
+  {
+   "slug": "seasonic-focus-gx-1000-atx3",
+   "category": "psu",
+   "brand": "Seasonic",
+   "name": "FOCUS GX-1000 ATX 3.0",
+   "year": 2023,
+   "popularity": 4,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Gold",
+    "modular": "Полностью модульный",
+    "atx3": true,
+    "highPower": true,
+    "fan": 120
+   }
+  },
+  {
+   "slug": "msi-mag-a550bn",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MAG A550BN",
+   "year": 2020,
+   "popularity": 5,
+   "specs": {
+    "wattage": 550,
+    "cert": "80 PLUS Bronze",
+    "modular": "Немодульный",
+    "atx3": false,
+    "highPower": false,
+    "fan": 120
+   }
+  },
+  {
+   "slug": "deepcool-ak400",
+   "category": "cooling",
+   "brand": "DeepCool",
+   "name": "AK400",
+   "year": 2022,
+   "popularity": 1,
+   "specs": {
+    "type": "Башенный",
+    "sockets": [
+     "AM4",
+     "AM5",
+     "LGA1700"
+    ],
+    "height": 155,
+    "radiator": null,
+    "fans": "1 × 120 мм"
+   }
+  },
+  {
+   "slug": "thermalright-peerless-assassin-120-se",
+   "category": "cooling",
+   "brand": "Thermalright",
+   "name": "Peerless Assassin 120 SE",
+   "year": 2022,
+   "popularity": 2,
+   "specs": {
+    "type": "Башенный",
+    "sockets": [
+     "AM4",
+     "AM5",
+     "LGA1700"
+    ],
+    "height": 155,
+    "radiator": null,
+    "fans": "2 × 120 мм"
+   }
+  },
+  {
+   "slug": "arctic-liquid-freezer-iii-360",
+   "category": "cooling",
+   "brand": "ARCTIC",
+   "name": "Liquid Freezer III 360",
+   "year": 2024,
+   "popularity": 3,
+   "specs": {
+    "type": "СЖО",
+    "sockets": [
+     "AM4",
+     "AM5",
+     "LGA1700"
+    ],
+    "height": null,
+    "radiator": 360,
+    "fans": "3 × 120 мм"
+   }
+  },
+  {
+   "slug": "noctua-nh-d15",
+   "category": "cooling",
+   "brand": "Noctua",
+   "name": "NH-D15",
+   "year": 2014,
+   "popularity": 4,
+   "specs": {
+    "type": "Башенный",
+    "sockets": [
+     "AM4",
+     "AM5",
+     "LGA1700"
+    ],
+    "height": 165,
+    "radiator": null,
+    "fans": "2 × 140 мм"
+   }
+  },
+  {
+   "slug": "be-quiet-dark-rock-pro-5",
+   "category": "cooling",
+   "brand": "be quiet!",
+   "name": "Dark Rock Pro 5",
+   "year": 2023,
+   "popularity": 5,
+   "specs": {
+    "type": "Башенный",
+    "sockets": [
+     "AM4",
+     "AM5",
+     "LGA1700"
+    ],
+    "height": 168,
+    "radiator": null,
+    "fans": "135 + 120 мм"
+   }
+  },
+  {
+   "slug": "fractal-design-north",
+   "category": "case",
+   "brand": "Fractal Design",
+   "name": "North",
+   "year": 2022,
+   "popularity": 1,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxGpu": 355,
+    "maxCooler": 170,
+    "maxRadiator": 360,
+    "fansIncluded": 2
+   }
+  },
+  {
+   "slug": "lian-li-lancool-216",
+   "category": "case",
+   "brand": "Lian Li",
+   "name": "LANCOOL 216",
+   "year": 2023,
+   "popularity": 2,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "E-ATX",
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxGpu": 392,
+    "maxCooler": 180,
+    "maxRadiator": 360,
+    "fansIncluded": 3
+   }
+  },
+  {
+   "slug": "nzxt-h5-flow",
+   "category": "case",
+   "brand": "NZXT",
+   "name": "H5 Flow",
+   "year": 2022,
+   "popularity": 3,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxGpu": 365,
+    "maxCooler": 165,
+    "maxRadiator": 280,
+    "fansIncluded": 2
+   }
+  },
+  {
+   "slug": "cooler-master-masterbox-q300l",
+   "category": "case",
+   "brand": "Cooler Master",
+   "name": "MasterBox Q300L",
+   "year": 2018,
+   "popularity": 4,
+   "specs": {
+    "size": "Mini Tower",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxGpu": 360,
+    "maxCooler": 159,
+    "maxRadiator": 240,
+    "fansIncluded": 1
+   }
+  }
+ ]
+}

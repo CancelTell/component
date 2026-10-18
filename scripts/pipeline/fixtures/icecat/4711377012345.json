@@ -1,0 +1,29 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "MSI",
+   "ProductName": "PRO B650M-A WIFI",
+   "Title": "MSI PRO B650M-A WIFI motherboard AMD B650 Socket AM5 micro ATX",
+   "BrandPartCode": "PRO B650M-A WIFI",
+   "GTIN": ["4711377012345"],
+   "Category": { "Name": { "Value": "Motherboards" } },
+   "ReleaseDate": "10-01-2023"
+  },
+  "FeaturesGroups": [
+   { "Features": [
+    { "Feature": { "Name": { "Value": "Processor socket" } }, "PresentationValue": "Socket AM5" },
+    { "Feature": { "Name": { "Value": "Motherboard chipset" } }, "PresentationValue": "AMD B650" },
+    { "Feature": { "Name": { "Value": "Motherboard form factor" } }, "PresentationValue": "micro ATX" }
+   ] },
+   { "Features": [
+    { "Feature": { "Name": { "Value": "Supported memory types" } }, "PresentationValue": "DDR5-SDRAM" },
+    { "Feature": { "Name": { "Value": "Number of memory slots" } }, "PresentationValue": "4" },
+    { "Feature": { "Name": { "Value": "Maximum internal memory" } }, "PresentationValue": "192 GB" },
+    { "Feature": { "Name": { "Value": "Number of M.2 (M) slots" } }, "PresentationValue": "2" },
+    { "Feature": { "Name": { "Value": "Wi-Fi standards" } }, "PresentationValue": "Wi-Fi 6E (802.11ax)" },
+    { "Feature": { "Name": { "Value": "Audio chip" } }, "PresentationValue": "Realtek ALC897" }
+   ] }
+  ]
+ }
+}
