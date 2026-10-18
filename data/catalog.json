@@ -230,6 +230,3753 @@
    }
   },
   {
+   "slug": "intel-core-i3-12100",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-12100",
+   "year": 2022,
+   "popularity": 137,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.3,
+    "boostClock": 4.3,
+    "l3": 12,
+    "tdp": 60
+   }
+  },
+  {
+   "slug": "intel-core-i3-12100f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-12100F",
+   "year": 2022,
+   "popularity": 138,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.3,
+    "boostClock": 4.3,
+    "l3": 12,
+    "tdp": 60
+   }
+  },
+  {
+   "slug": "intel-core-i3-12100t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-12100T",
+   "year": 2022,
+   "popularity": 139,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 2.2,
+    "boostClock": 4.1,
+    "l3": 12,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i3-12300",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-12300",
+   "year": 2022,
+   "popularity": 140,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.5,
+    "boostClock": 4.4,
+    "l3": 12,
+    "tdp": 60
+   }
+  },
+  {
+   "slug": "intel-core-i3-12300t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-12300T",
+   "year": 2022,
+   "popularity": 141,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 2.3,
+    "boostClock": 4.2,
+    "l3": 12,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i3-13100",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-13100",
+   "year": 2023,
+   "popularity": 142,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.4,
+    "boostClock": 4.5,
+    "l3": 12,
+    "tdp": 60
+   }
+  },
+  {
+   "slug": "intel-core-i3-13100f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-13100F",
+   "year": 2023,
+   "popularity": 143,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.4,
+    "boostClock": 4.5,
+    "l3": 12,
+    "tdp": 58
+   }
+  },
+  {
+   "slug": "intel-core-i3-13100t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-13100T",
+   "year": 2023,
+   "popularity": 144,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 2.5,
+    "boostClock": 4.2,
+    "l3": 12,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i3-14100",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-14100",
+   "year": 2024,
+   "popularity": 145,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.5,
+    "boostClock": 4.7,
+    "l3": 12,
+    "tdp": 60
+   }
+  },
+  {
+   "slug": "intel-core-i3-14100f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-14100F",
+   "year": 2024,
+   "popularity": 146,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.5,
+    "boostClock": 4.7,
+    "l3": 12,
+    "tdp": 58
+   }
+  },
+  {
+   "slug": "intel-core-i3-14100t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i3-14100T",
+   "year": 2024,
+   "popularity": 147,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 2.7,
+    "boostClock": 4.4,
+    "l3": 12,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-12400",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12400",
+   "year": 2022,
+   "popularity": 148,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.4,
+    "l3": 18,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-12400f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12400F",
+   "year": 2022,
+   "popularity": 149,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.4,
+    "l3": 18,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-12400t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12400T",
+   "year": 2022,
+   "popularity": 150,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.8,
+    "boostClock": 4.2,
+    "l3": 18,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-12490f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12490F",
+   "year": 0,
+   "popularity": 151,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3,
+    "boostClock": 4.6,
+    "l3": 20,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-12500",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12500",
+   "year": 2022,
+   "popularity": 152,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3,
+    "boostClock": 4.6,
+    "l3": 18,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-12500t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12500T",
+   "year": 2022,
+   "popularity": 153,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2,
+    "boostClock": 4.4,
+    "l3": 18,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-12600",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12600",
+   "year": 2022,
+   "popularity": 154,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.3,
+    "boostClock": 4.8,
+    "l3": 18,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-12600k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12600K",
+   "year": 2021,
+   "popularity": 155,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.9,
+    "l3": 20,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i5-12600kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12600KF",
+   "year": 2021,
+   "popularity": 156,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.9,
+    "l3": 20,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i5-12600t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-12600T",
+   "year": 2022,
+   "popularity": 157,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.1,
+    "boostClock": 4.6,
+    "l3": 18,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-13400",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13400",
+   "year": 2023,
+   "popularity": 158,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.6,
+    "l3": 20,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-13400f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13400F",
+   "year": 2023,
+   "popularity": 159,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.6,
+    "l3": 20,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-13400t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13400T",
+   "year": 2023,
+   "popularity": 160,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.3,
+    "boostClock": 4.4,
+    "l3": 20,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-13490f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13490F",
+   "year": 2023,
+   "popularity": 161,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.8,
+    "l3": 24,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-13500",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13500",
+   "year": 2023,
+   "popularity": 162,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.8,
+    "l3": 24,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-13500t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13500T",
+   "year": 2023,
+   "popularity": 163,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.6,
+    "boostClock": 4.6,
+    "l3": 24,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-13600",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13600",
+   "year": 2023,
+   "popularity": 164,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.7,
+    "boostClock": 5,
+    "l3": 24,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-13600k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13600K",
+   "year": 2022,
+   "popularity": 165,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.5,
+    "boostClock": 5.1,
+    "l3": 24,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i5-13600kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13600KF",
+   "year": 2022,
+   "popularity": 166,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.5,
+    "boostClock": 5.1,
+    "l3": 24,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i5-13600t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-13600T",
+   "year": 2023,
+   "popularity": 167,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.8,
+    "boostClock": 4.8,
+    "l3": 24,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-14400",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14400",
+   "year": 2024,
+   "popularity": 168,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.7,
+    "l3": 20,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-14400t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14400T",
+   "year": 2024,
+   "popularity": 169,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.5,
+    "boostClock": 4.5,
+    "l3": 20,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-14490f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14490F",
+   "year": 2024,
+   "popularity": 170,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.8,
+    "boostClock": 4.9,
+    "l3": 24,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-14500",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14500",
+   "year": 2024,
+   "popularity": 171,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.6,
+    "boostClock": 5,
+    "l3": 24,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-14500t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14500T",
+   "year": 2024,
+   "popularity": 172,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.7,
+    "boostClock": 4.8,
+    "l3": 24,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i5-14600",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14600",
+   "year": 2024,
+   "popularity": 173,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.7,
+    "boostClock": 5.2,
+    "l3": 24,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i5-14600kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14600KF",
+   "year": 2023,
+   "popularity": 174,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.5,
+    "boostClock": 5.3,
+    "l3": 24,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i5-14600t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i5-14600T",
+   "year": 2024,
+   "popularity": 175,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 1.8,
+    "boostClock": 5.1,
+    "l3": 24,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i7-12700",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-12700",
+   "year": 2022,
+   "popularity": 176,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 4.8,
+    "l3": 25,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-12700f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-12700F",
+   "year": 2022,
+   "popularity": 177,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 4.8,
+    "l3": 25,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-12700k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-12700K",
+   "year": 2021,
+   "popularity": 178,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.6,
+    "boostClock": 4.9,
+    "l3": 25,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i7-12700kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-12700KF",
+   "year": 2021,
+   "popularity": 179,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.6,
+    "boostClock": 4.9,
+    "l3": 25,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i7-12700t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-12700T",
+   "year": 2022,
+   "popularity": 180,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 1.4,
+    "boostClock": 4.6,
+    "l3": 25,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i7-13700",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-13700",
+   "year": 2023,
+   "popularity": 181,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 5.1,
+    "l3": 30,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-13700f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-13700F",
+   "year": 2023,
+   "popularity": 182,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 5.1,
+    "l3": 30,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-13700k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-13700K",
+   "year": 2022,
+   "popularity": 183,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 5.3,
+    "l3": 30,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i7-13700kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-13700KF",
+   "year": 2022,
+   "popularity": 184,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 5.3,
+    "l3": 30,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i7-13700t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-13700T",
+   "year": 2023,
+   "popularity": 185,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 1.4,
+    "boostClock": 4.8,
+    "l3": 30,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i7-13790f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-13790F",
+   "year": 2023,
+   "popularity": 186,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 5.1,
+    "l3": 33,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-14700",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-14700",
+   "year": 2024,
+   "popularity": 187,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 5.3,
+    "l3": 33,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-14700f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-14700F",
+   "year": 2024,
+   "popularity": 188,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 5.3,
+    "l3": 33,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i7-14700kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-14700KF",
+   "year": 2023,
+   "popularity": 189,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 5.5,
+    "l3": 33,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i7-14700t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-14700T",
+   "year": 2024,
+   "popularity": 190,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 1.3,
+    "boostClock": 5,
+    "l3": 33,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i7-14790f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i7-14790F",
+   "year": 2024,
+   "popularity": 191,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.1,
+    "boostClock": 5.3,
+    "tdp": 65,
+    "l3": 36
+   }
+  },
+  {
+   "slug": "intel-core-i9-12900",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-12900",
+   "year": 2022,
+   "popularity": 192,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.4,
+    "boostClock": 5,
+    "l3": 30,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i9-12900f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-12900F",
+   "year": 2022,
+   "popularity": 193,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2.4,
+    "boostClock": 5,
+    "l3": 30,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i9-12900k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-12900K",
+   "year": 2021,
+   "popularity": 194,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.2,
+    "boostClock": 5.1,
+    "l3": 30,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i9-12900kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-12900KF",
+   "year": 2021,
+   "popularity": 195,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.2,
+    "boostClock": 5.1,
+    "l3": 30,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i9-12900ks",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-12900KS",
+   "year": 2022,
+   "popularity": 196,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 5.2,
+    "l3": 30,
+    "tdp": 150
+   }
+  },
+  {
+   "slug": "intel-core-i9-12900t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-12900T",
+   "year": 2022,
+   "popularity": 197,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 1.4,
+    "boostClock": 4.8,
+    "l3": 30,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i9-13900",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-13900",
+   "year": 2023,
+   "popularity": 198,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2,
+    "boostClock": 5.2,
+    "l3": 36,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i9-13900f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-13900F",
+   "year": 2023,
+   "popularity": 199,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2,
+    "boostClock": 5.2,
+    "l3": 36,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i9-13900k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-13900K",
+   "year": 2022,
+   "popularity": 200,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3,
+    "boostClock": 5.4,
+    "l3": 36,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i9-13900kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-13900KF",
+   "year": 2022,
+   "popularity": 201,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3,
+    "boostClock": 5.4,
+    "l3": 36,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i9-13900ks",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-13900KS",
+   "year": 2023,
+   "popularity": 202,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.2,
+    "boostClock": 5.4,
+    "l3": 36,
+    "tdp": 150
+   }
+  },
+  {
+   "slug": "intel-core-i9-13900t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-13900T",
+   "year": 2023,
+   "popularity": 203,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 1.1,
+    "boostClock": 5.1,
+    "l3": 36,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-i9-14900",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-14900",
+   "year": 2024,
+   "popularity": 204,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2,
+    "boostClock": 5.4,
+    "l3": 36,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i9-14900f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-14900F",
+   "year": 2024,
+   "popularity": 205,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 2,
+    "boostClock": 5.4,
+    "l3": 36,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "intel-core-i9-14900k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-14900K",
+   "year": 2023,
+   "popularity": 206,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.2,
+    "boostClock": 5.6,
+    "l3": 36,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i9-14900kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-14900KF",
+   "year": 2023,
+   "popularity": 207,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.2,
+    "boostClock": 5.6,
+    "l3": 36,
+    "tdp": 125
+   }
+  },
+  {
+   "slug": "intel-core-i9-14900ks",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-14900KS",
+   "year": 2024,
+   "popularity": 208,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.2,
+    "boostClock": 5.9,
+    "l3": 36,
+    "tdp": 150
+   }
+  },
+  {
+   "slug": "intel-core-i9-14900t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core i9-14900T",
+   "year": 2024,
+   "popularity": 209,
+   "specs": {
+    "socket": "LGA1700",
+    "memory": [
+     "DDR4",
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 1.1,
+    "boostClock": 5.1,
+    "l3": 36,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-225",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 225",
+   "year": 2025,
+   "popularity": 210,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "baseClock": 3.3,
+    "boostClock": 4.9,
+    "l3": 20,
+    "tdp": 65,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-225f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 225F",
+   "year": 2025,
+   "popularity": 211,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "baseClock": 3.3,
+    "boostClock": 4.9,
+    "l3": 20,
+    "tdp": 65,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-225t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 225T",
+   "year": 2025,
+   "popularity": 212,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "threads": 6,
+    "baseClock": 2.5,
+    "boostClock": 4.9,
+    "l3": 20,
+    "tdp": 35
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-235",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 235",
+   "year": 2025,
+   "popularity": 213,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "baseClock": 3.4,
+    "boostClock": 5,
+    "l3": 24,
+    "tdp": 65,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-235t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 235T",
+   "year": 2025,
+   "popularity": 214,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "baseClock": 2.2,
+    "boostClock": 5,
+    "l3": 24,
+    "tdp": 35,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-245",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 245",
+   "year": 2025,
+   "popularity": 215,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "baseClock": 3.5,
+    "boostClock": 5.1,
+    "l3": 24,
+    "tdp": 65,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-245k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 245K",
+   "year": 2025,
+   "popularity": 216,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "baseClock": 4.2,
+    "boostClock": 5.2,
+    "l3": 24,
+    "tdp": 125,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-245kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 245KF",
+   "year": 2025,
+   "popularity": 217,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "baseClock": 4.2,
+    "boostClock": 5.2,
+    "l3": 24,
+    "tdp": 125,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-5-245t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 245T",
+   "year": 2025,
+   "popularity": 218,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 6,
+    "baseClock": 2.2,
+    "boostClock": 5.1,
+    "l3": 24,
+    "tdp": 35,
+    "threads": 6
+   }
+  },
+  {
+   "slug": "intel-core-ultra-7-265",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265",
+   "year": 2025,
+   "popularity": 219,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "baseClock": 2.4,
+    "boostClock": 5.2,
+    "l3": 30,
+    "tdp": 65,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-7-265f",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265F",
+   "year": 2025,
+   "popularity": 220,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "baseClock": 2.4,
+    "boostClock": 5.2,
+    "l3": 30,
+    "tdp": 65,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-7-265k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265K",
+   "year": 2025,
+   "popularity": 221,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "baseClock": 3.9,
+    "boostClock": 5.5,
+    "l3": 30,
+    "tdp": 125,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-7-265kf",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265KF",
+   "year": 2025,
+   "popularity": 222,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "baseClock": 3.9,
+    "boostClock": 5.5,
+    "l3": 30,
+    "tdp": 125,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-7-265t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265T",
+   "year": 2025,
+   "popularity": 223,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "baseClock": 1.5,
+    "boostClock": 5.2,
+    "l3": 30,
+    "tdp": 35,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-9-285",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 9 285",
+   "year": 2025,
+   "popularity": 224,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "baseClock": 2.5,
+    "boostClock": 5.4,
+    "l3": 36,
+    "tdp": 65,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-9-285k",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 9 285K",
+   "year": 2025,
+   "popularity": 225,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "baseClock": 3.7,
+    "boostClock": 5.7,
+    "l3": 36,
+    "tdp": 125,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "intel-core-ultra-9-285t",
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 9 285T",
+   "year": 2025,
+   "popularity": 226,
+   "specs": {
+    "socket": "LGA1851",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": false,
+    "cores": 8,
+    "baseClock": 1.4,
+    "boostClock": 5.3,
+    "l3": 36,
+    "tdp": 35,
+    "threads": 8
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-3100",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 3100",
+   "year": 2020,
+   "popularity": 388,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.6,
+    "boostClock": 3.9,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-3200g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 3200G",
+   "year": 2019,
+   "popularity": 389,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 4,
+    "baseClock": 3.6,
+    "boostClock": 4,
+    "l3": 4,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-3300x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 3300X",
+   "year": 2020,
+   "popularity": 390,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.8,
+    "boostClock": 4.3,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-4100",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 4100",
+   "year": 2022,
+   "popularity": 391,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.8,
+    "boostClock": 4,
+    "l3": 4,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-4300g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 4300G",
+   "year": 2020,
+   "popularity": 392,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.8,
+    "boostClock": 4,
+    "l3": 4,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-5100",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 5100",
+   "year": 2023,
+   "popularity": 393,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.8,
+    "boostClock": 4.2,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-5300g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 5300G",
+   "year": 2021,
+   "popularity": 394,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 4,
+    "boostClock": 4.2,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-5305g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 5305G",
+   "year": 0,
+   "popularity": 395,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 4,
+    "boostClock": 4.2,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-3-8300g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 3 8300G",
+   "year": 2024,
+   "popularity": 396,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 4,
+    "boostClock": 4.9,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-3400g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 3400G",
+   "year": 2019,
+   "popularity": 397,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 4,
+    "threads": 8,
+    "baseClock": 3.7,
+    "boostClock": 4.2,
+    "l3": 4,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-3500",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 3500",
+   "year": 2019,
+   "popularity": 398,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 6,
+    "baseClock": 3.6,
+    "boostClock": 4.1,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-3500x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 3500X",
+   "year": 2019,
+   "popularity": 399,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 6,
+    "baseClock": 3.6,
+    "boostClock": 4.1,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-3600",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 3600",
+   "year": 2019,
+   "popularity": 400,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.6,
+    "boostClock": 4.2,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-3600x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 3600X",
+   "year": 2019,
+   "popularity": 401,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.8,
+    "boostClock": 4.4,
+    "l3": 32,
+    "tdp": 95
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-3600xt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 3600XT",
+   "year": 2020,
+   "popularity": 402,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.8,
+    "boostClock": 4.5,
+    "l3": 32,
+    "tdp": 95
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-4500",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 4500",
+   "year": 2022,
+   "popularity": 403,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.6,
+    "boostClock": 4.1,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-4600g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 4600G",
+   "year": 2020,
+   "popularity": 404,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.2,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5500",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5500",
+   "year": 2022,
+   "popularity": 405,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.6,
+    "boostClock": 4.2,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5500f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5500F",
+   "year": 2026,
+   "popularity": 406,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3,
+    "boostClock": 4.4,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5500gt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5500GT",
+   "year": 2024,
+   "popularity": 407,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.6,
+    "boostClock": 4.4,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5500x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5500X3D",
+   "year": 2025,
+   "popularity": 408,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3,
+    "boostClock": 4,
+    "l3": 96,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600F",
+   "year": 2025,
+   "popularity": 409,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3,
+    "boostClock": 4,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600G",
+   "year": 2021,
+   "popularity": 410,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.9,
+    "boostClock": 4.4,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600gt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600GT",
+   "year": 2024,
+   "popularity": 411,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.6,
+    "boostClock": 4.6,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600X",
+   "year": 2020,
+   "popularity": 412,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.6,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600X3D",
+   "year": 2023,
+   "popularity": 413,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.3,
+    "boostClock": 4.4,
+    "l3": 96,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5600xt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5600XT",
+   "year": 2024,
+   "popularity": 414,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.7,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-5605g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 5605G",
+   "year": 0,
+   "popularity": 415,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.9,
+    "boostClock": 4.4,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7400",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7400",
+   "year": 2025,
+   "popularity": 416,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.3,
+    "boostClock": 4.3,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7400f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7400F",
+   "year": 2025,
+   "popularity": 417,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.7,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7500",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7500",
+   "year": 2026,
+   "popularity": 418,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 5,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7500f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7500F",
+   "year": 2023,
+   "popularity": 419,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 5,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7500x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7500X3D",
+   "year": 2025,
+   "popularity": 420,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 4,
+    "boostClock": 4.5,
+    "l3": 96,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7600x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7600X",
+   "year": 2022,
+   "popularity": 421,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 4.7,
+    "boostClock": 5.3,
+    "l3": 32,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-7600x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 7600X3D",
+   "year": 2024,
+   "popularity": 422,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 4.1,
+    "boostClock": 4.7,
+    "l3": 96,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-8400f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 8400F",
+   "year": 2024,
+   "popularity": 423,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 4.2,
+    "boostClock": 4.7,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-8500g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 8500G",
+   "year": 2024,
+   "popularity": 424,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 4.1,
+    "boostClock": 5,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-8600g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 8600G",
+   "year": 2024,
+   "popularity": 425,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 4.3,
+    "boostClock": 5,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-9500f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 9500F",
+   "year": 2025,
+   "popularity": 426,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.8,
+    "boostClock": 5,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-9600",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 9600",
+   "year": 2025,
+   "popularity": 427,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.8,
+    "boostClock": 5.2,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-5-9600x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 5 9600X",
+   "year": 2024,
+   "popularity": 428,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.9,
+    "boostClock": 5.4,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-3700x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 3700X",
+   "year": 2019,
+   "popularity": 429,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.6,
+    "boostClock": 4.4,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-3800x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 3800X",
+   "year": 2019,
+   "popularity": 430,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.9,
+    "boostClock": 4.5,
+    "l3": 32,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-3800xt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 3800XT",
+   "year": 2020,
+   "popularity": 431,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.9,
+    "boostClock": 4.7,
+    "l3": 32,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-4700g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 4700G",
+   "year": 2020,
+   "popularity": 432,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.6,
+    "boostClock": 4.4,
+    "l3": 8,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5700",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5700",
+   "year": 2022,
+   "popularity": 433,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.7,
+    "boostClock": 4.6,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5700g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5700G",
+   "year": 2021,
+   "popularity": 434,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 4.6,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5700x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5700X",
+   "year": 2022,
+   "popularity": 435,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 4.6,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5700x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5700X3D",
+   "year": 2024,
+   "popularity": 436,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3,
+    "boostClock": 4.1,
+    "l3": 96,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5705g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5705G",
+   "year": 0,
+   "popularity": 437,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 4.6,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5800",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5800",
+   "year": 2021,
+   "popularity": 438,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 4.6,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5800x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5800X",
+   "year": 2020,
+   "popularity": 439,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 4.7,
+    "l3": 32,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5800x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5800X3D",
+   "year": 2022,
+   "popularity": 440,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 4.5,
+    "l3": 96,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-5800xt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 5800XT",
+   "year": 2024,
+   "popularity": 441,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 4.8,
+    "l3": 32,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-7700x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 7700X",
+   "year": 2022,
+   "popularity": 442,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4.5,
+    "boostClock": 5.4,
+    "l3": 32,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-7700x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 7700X3D",
+   "year": 2026,
+   "popularity": 443,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4,
+    "boostClock": 4.5,
+    "l3": 96,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-8700f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 8700F",
+   "year": 2024,
+   "popularity": 444,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4.1,
+    "boostClock": 5,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-8700g",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 8700G",
+   "year": 2024,
+   "popularity": 445,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4.2,
+    "boostClock": 5.1,
+    "l3": 16,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-9700f",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 9700F",
+   "year": 2025,
+   "popularity": 446,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.8,
+    "boostClock": 5.5,
+    "l3": 32,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-9800x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 9800X3D",
+   "year": 2024,
+   "popularity": 447,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4.7,
+    "boostClock": 5.2,
+    "l3": 96,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-7-9850x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 7 9850X3D",
+   "year": 2026,
+   "popularity": 448,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 4.7,
+    "boostClock": 5.6,
+    "l3": 96,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-3900",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 3900",
+   "year": 2019,
+   "popularity": 449,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 3.1,
+    "boostClock": 4.3,
+    "l3": 64,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-3900x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 3900X",
+   "year": 2019,
+   "popularity": 450,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 3.8,
+    "boostClock": 4.6,
+    "l3": 64,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-3900xt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 3900XT",
+   "year": 2020,
+   "popularity": 451,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 3.8,
+    "boostClock": 4.7,
+    "l3": 64,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-3950x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 3950X",
+   "year": 2019,
+   "popularity": 452,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 3.5,
+    "boostClock": 4.7,
+    "l3": 64,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-5900",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 5900",
+   "year": 2021,
+   "popularity": 453,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 3,
+    "boostClock": 4.7,
+    "l3": 64,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-5900x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 5900X",
+   "year": 2020,
+   "popularity": 454,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 3.7,
+    "boostClock": 4.8,
+    "l3": 64,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-5900xt",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 5900XT",
+   "year": 2024,
+   "popularity": 455,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 3.3,
+    "boostClock": 4.8,
+    "l3": 64,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-5950x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 5950X",
+   "year": 2020,
+   "popularity": 456,
+   "specs": {
+    "socket": "AM4",
+    "memory": [
+     "DDR4"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 3.4,
+    "boostClock": 4.9,
+    "l3": 64,
+    "tdp": 105
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-7900",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 7900",
+   "year": 2023,
+   "popularity": 457,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 3.7,
+    "boostClock": 5.4,
+    "l3": 64,
+    "tdp": 65
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-7900x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 7900X",
+   "year": 2022,
+   "popularity": 458,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 4.7,
+    "boostClock": 5.6,
+    "l3": 64,
+    "tdp": 170
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-7900x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 7900X3D",
+   "year": 2023,
+   "popularity": 459,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 4.4,
+    "boostClock": 5.6,
+    "l3": 128,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-7950x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 7950X",
+   "year": 2022,
+   "popularity": 460,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 4.5,
+    "boostClock": 5.7,
+    "l3": 64,
+    "tdp": 170
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-7950x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 7950X3D",
+   "year": 2023,
+   "popularity": 461,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 4.2,
+    "boostClock": 5.7,
+    "l3": 128,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-9900x",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 9900X",
+   "year": 2024,
+   "popularity": 462,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 4.4,
+    "boostClock": 5.6,
+    "l3": 64,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-9900x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 9900X3D",
+   "year": 2025,
+   "popularity": 463,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 12,
+    "threads": 24,
+    "baseClock": 4.4,
+    "boostClock": 5.5,
+    "l3": 128,
+    "tdp": 120
+   }
+  },
+  {
+   "slug": "amd-ryzen-9-9950x3d",
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "Ryzen 9 9950X3D",
+   "year": 2025,
+   "popularity": 464,
+   "specs": {
+    "socket": "AM5",
+    "memory": [
+     "DDR5"
+    ],
+    "channels": 2,
+    "unlocked": true,
+    "cores": 16,
+    "threads": 32,
+    "baseClock": 4.3,
+    "boostClock": 5.7,
+    "l3": 128,
+    "tdp": 170
+   }
+  },
+  {
    "slug": "nvidia-geforce-rtx-4060",
    "category": "gpu",
    "brand": "NVIDIA",
@@ -346,6 +4093,818 @@
     "recPsu": 600,
     "pcie": "4.0 x8",
     "length": 272
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2060",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2060",
+   "year": 2019,
+   "popularity": 240,
+   "specs": {
+    "vram": 6,
+    "memType": "GDDR6",
+    "bus": 192,
+    "tdp": 160,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2060-super",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2060 SUPER",
+   "year": 2019,
+   "popularity": 241,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 175,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2070",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2070",
+   "year": 2018,
+   "popularity": 242,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 175,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2070-super",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2070 SUPER",
+   "year": 2019,
+   "popularity": 243,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 215,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2080",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2080",
+   "year": 2018,
+   "popularity": 244,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 215,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2080-super",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2080 SUPER",
+   "year": 2019,
+   "popularity": 245,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 250,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-2080-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 2080 Ti",
+   "year": 2018,
+   "popularity": 246,
+   "specs": {
+    "vram": 11,
+    "memType": "GDDR6",
+    "bus": 352,
+    "tdp": 250,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3050",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3050",
+   "year": 2024,
+   "popularity": 247,
+   "specs": {
+    "vram": 6,
+    "memType": "GDDR6",
+    "bus": 96,
+    "tdp": 70,
+    "recPsu": 450
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3060",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3060",
+   "year": 2022,
+   "popularity": 248,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 128,
+    "tdp": 170,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3060-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3060 Ti",
+   "year": 2020,
+   "popularity": 249,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 200,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3070",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3070",
+   "year": 2020,
+   "popularity": 250,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 256,
+    "tdp": 220,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3070-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3070 Ti",
+   "year": 2021,
+   "popularity": 251,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6X",
+    "bus": 256,
+    "tdp": 290,
+    "recPsu": 650
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3080",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3080",
+   "year": 2020,
+   "popularity": 252,
+   "specs": {
+    "vram": 10,
+    "memType": "GDDR6X",
+    "bus": 320,
+    "tdp": 320,
+    "recPsu": 700
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3080-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3080 Ti",
+   "year": 2021,
+   "popularity": 253,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6X",
+    "bus": 384,
+    "tdp": 350,
+    "recPsu": 750
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3090",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3090",
+   "year": 2020,
+   "popularity": 254,
+   "specs": {
+    "vram": 24,
+    "memType": "GDDR6X",
+    "bus": 384,
+    "tdp": 350,
+    "recPsu": 750
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-3090-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 3090 Ti",
+   "year": 2022,
+   "popularity": 255,
+   "specs": {
+    "vram": 24,
+    "memType": "GDDR6X",
+    "bus": 384,
+    "tdp": 450,
+    "recPsu": 850
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4060-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4060 Ti",
+   "year": 2023,
+   "popularity": 256,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 128,
+    "tdp": 160,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4070",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4070",
+   "year": 2024,
+   "popularity": 257,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6",
+    "bus": 192,
+    "tdp": 200,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4070-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4070 Ti",
+   "year": 2023,
+   "popularity": 258,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6X",
+    "bus": 192,
+    "tdp": 285,
+    "recPsu": 650
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4070-ti-super",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4070 Ti SUPER",
+   "year": 2024,
+   "popularity": 259,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6X",
+    "bus": 256,
+    "tdp": 285,
+    "recPsu": 650
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4080",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4080",
+   "year": 2022,
+   "popularity": 260,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6X",
+    "bus": 256,
+    "tdp": 320,
+    "recPsu": 700
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-4090",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 4090",
+   "year": 2023,
+   "popularity": 261,
+   "specs": {
+    "vram": 24,
+    "memType": "GDDR6X",
+    "bus": 384,
+    "tdp": 425,
+    "recPsu": 850
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5050",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5050",
+   "year": 2025,
+   "popularity": 262,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "bus": 128,
+    "tdp": 130,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5060",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5060",
+   "year": 2025,
+   "popularity": 263,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR7",
+    "bus": 128,
+    "tdp": 145,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5060-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5060 Ti",
+   "year": 2025,
+   "popularity": 264,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR7",
+    "bus": 128,
+    "tdp": 180,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5070-ti",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5070 Ti",
+   "year": 2025,
+   "popularity": 265,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR7",
+    "bus": 256,
+    "tdp": 300,
+    "recPsu": 700
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5080",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5080",
+   "year": 2025,
+   "popularity": 266,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR7",
+    "bus": 256,
+    "tdp": 360,
+    "recPsu": 750
+   }
+  },
+  {
+   "slug": "nvidia-geforce-rtx-5090",
+   "category": "gpu",
+   "brand": "NVIDIA",
+   "name": "GeForce RTX 5090",
+   "year": 2025,
+   "popularity": 267,
+   "specs": {
+    "vram": 32,
+    "memType": "GDDR7",
+    "bus": 512,
+    "tdp": 575,
+    "recPsu": 1000
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6300",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6300",
+   "year": 2022,
+   "popularity": 345,
+   "specs": {
+    "vram": 2,
+    "memType": "GDDR6",
+    "tdp": 32,
+    "recPsu": 450
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6400",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6400",
+   "year": 2022,
+   "popularity": 346,
+   "specs": {
+    "vram": 4,
+    "memType": "GDDR6",
+    "tdp": 53,
+    "recPsu": 450
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6500-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6500 XT",
+   "year": 2022,
+   "popularity": 347,
+   "specs": {
+    "vram": 4,
+    "memType": "GDDR6",
+    "tdp": 107,
+    "recPsu": 450
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6600",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6600",
+   "year": 2021,
+   "popularity": 348,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 132,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6600-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6600 XT",
+   "year": 2021,
+   "popularity": 349,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 160,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6650-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6650 XT",
+   "year": 2022,
+   "popularity": 350,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 180,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6700",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6700",
+   "year": 2021,
+   "popularity": 351,
+   "specs": {
+    "vram": 10,
+    "memType": "GDDR6",
+    "tdp": 175,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6700-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6700 XT",
+   "year": 2021,
+   "popularity": 352,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6",
+    "tdp": 230,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6750-gre",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6750 GRE",
+   "year": 2023,
+   "popularity": 353,
+   "specs": {
+    "vram": 10,
+    "memType": "GDDR6",
+    "tdp": 170,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6750-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6750 XT",
+   "year": 2022,
+   "popularity": 354,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6",
+    "tdp": 250,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6800",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6800",
+   "year": 2020,
+   "popularity": 355,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 250,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6800-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6800 XT",
+   "year": 2020,
+   "popularity": 356,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 300,
+    "recPsu": 700
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6900-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6900 XT",
+   "year": 2020,
+   "popularity": 357,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 300,
+    "recPsu": 700
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-6950-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 6950 XT",
+   "year": 2022,
+   "popularity": 358,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 335,
+    "recPsu": 750
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7400",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7400",
+   "year": 2025,
+   "popularity": 359,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 55,
+    "recPsu": 450
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7600-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7600 XT",
+   "year": 2024,
+   "popularity": 360,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 190,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7650-gre",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7650 GRE",
+   "year": 2025,
+   "popularity": 361,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 170,
+    "recPsu": 550
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7700",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7700",
+   "year": 2025,
+   "popularity": 362,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 263,
+    "recPsu": 650
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7700-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7700 XT",
+   "year": 2023,
+   "popularity": 363,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6",
+    "tdp": 245,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7900-gre",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7900 GRE",
+   "year": 2023,
+   "popularity": 364,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 260,
+    "recPsu": 650
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7900-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7900 XT",
+   "year": 2022,
+   "popularity": 365,
+   "specs": {
+    "vram": 20,
+    "memType": "GDDR6",
+    "tdp": 315,
+    "recPsu": 700
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-7900-xtx",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 7900 XTX",
+   "year": 2022,
+   "popularity": 366,
+   "specs": {
+    "vram": 24,
+    "memType": "GDDR6",
+    "tdp": 355,
+    "recPsu": 750
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-9050",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 9050",
+   "year": 2026,
+   "popularity": 367,
+   "specs": {
+    "vram": 4,
+    "memType": "GDDR6",
+    "tdp": 92,
+    "recPsu": 450
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-9060",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 9060",
+   "year": 2025,
+   "popularity": 368,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 132,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-9060-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 9060 XT",
+   "year": 2025,
+   "popularity": 369,
+   "specs": {
+    "vram": 8,
+    "memType": "GDDR6",
+    "tdp": 150,
+    "recPsu": 500
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-9070",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 9070",
+   "year": 2025,
+   "popularity": 370,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 220,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-9070-gre",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 9070 GRE",
+   "year": 2025,
+   "popularity": 371,
+   "specs": {
+    "vram": 12,
+    "memType": "GDDR6",
+    "tdp": 220,
+    "recPsu": 600
+   }
+  },
+  {
+   "slug": "amd-radeon-rx-9070-xt",
+   "category": "gpu",
+   "brand": "AMD",
+   "name": "Radeon RX 9070 XT",
+   "year": 2025,
+   "popularity": 372,
+   "specs": {
+    "vram": 16,
+    "memType": "GDDR6",
+    "tdp": 304,
+    "recPsu": 700
    }
   },
   {
@@ -501,6 +5060,970 @@
    }
   },
   {
+   "slug": "gigabyte-a520m-s2hp-motherboard",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "A520M S2HP Motherboard",
+   "year": 0,
+   "popularity": 117,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "chipset": "A520",
+    "formFactor": "mATX",
+    "m2": 1
+   },
+   "ids": {
+    "ean": [
+     "4719331882457"
+    ],
+    "mpn": [
+     "A520MS2HP"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-b450m-d3hp-wifi6e-motherboard",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "B450M D3HP WIFI6E Motherboard",
+   "year": 0,
+   "popularity": 123,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "wifi": "2",
+    "chipset": "B450",
+    "formFactor": "mATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4719331884789"
+    ],
+    "mpn": [
+     "B450MD3HPWF6E"
+    ]
+   }
+  },
+  {
+   "slug": "msi-b550-gaming",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "B550 GAMING",
+   "year": 0,
+   "popularity": 124,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "chipset": "B550",
+    "formFactor": "ATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4711377459846"
+    ],
+    "mpn": [
+     "B550GAMING"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-b550m-gaming-x-motherboard",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "B550M GAMING X Motherboard",
+   "year": 0,
+   "popularity": 125,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "wifi": "2",
+    "chipset": "B550",
+    "formFactor": "mATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4719331882853"
+    ],
+    "mpn": [
+     "B550MGAMINGX"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-b550m-x-aorus-elite-motherboard",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "B550M X AORUS ELITE Motherboard",
+   "year": 0,
+   "popularity": 126,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "chipset": "B550",
+    "formFactor": "mATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4719331883416"
+    ],
+    "mpn": [
+     "B550MXAELITE"
+    ]
+   }
+  },
+  {
+   "slug": "asus-b760m-max-gaming-wifi",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "B760M MAX GAMING WIFI",
+   "year": 0,
+   "popularity": 127,
+   "specs": {
+    "socket": "LGA1700",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "wifi": "1",
+    "chipset": "B760",
+    "formFactor": "mATX",
+    "m2": 3
+   },
+   "ids": {
+    "mpn": [
+     "90MB1MF0MVAAY0"
+    ]
+   }
+  },
+  {
+   "slug": "msi-b840m-gaming-wifi6e",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "B840M GAMING WIFI6E",
+   "year": 0,
+   "popularity": 128,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 128,
+    "wifi": "Yes",
+    "chipset": "B840",
+    "formFactor": "mATX",
+    "m2": 2
+   },
+   "ids": {
+    "mpn": [
+     "B840MGAMINGWIFI6E"
+    ]
+   }
+  },
+  {
+   "slug": "asus-b850-max-gaming-wifi",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "B850 MAX GAMING WIFI",
+   "year": 0,
+   "popularity": 129,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711636465519"
+    ],
+    "mpn": [
+     "90MB1PR0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "msi-b850mpower",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "B850MPOWER",
+   "year": 0,
+   "popularity": 130,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 128,
+    "wifi": "Yes",
+    "chipset": "B850",
+    "formFactor": "mATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "0824142444689",
+     "0824142444689"
+    ],
+    "mpn": [
+     "B850MPOWER"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-b850-gaming-plus-max-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG B850 GAMING PLUS MAX WIFI",
+   "year": 0,
+   "popularity": 295,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711377410465"
+    ],
+    "mpn": [
+     "MAGB850GAMINGPLUSMAXWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-b850-tomahawk-max-wifi-ii",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG B850 TOMAHAWK MAX WIFI II",
+   "year": 0,
+   "popularity": 296,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4711377424011",
+     "0824142453995",
+     "0824142453995"
+    ],
+    "mpn": [
+     "MAGB850TOMAHAWKMAXWIFIII"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-x870e-gaming-max-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG X870E GAMING MAX WIFI",
+   "year": 0,
+   "popularity": 300,
+   "specs": {
+    "socket": "AM5",
+    "maxMem": 256,
+    "memType": "DDR5",
+    "memSlots": 4,
+    "wifi": "Yes",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711377407199"
+    ],
+    "mpn": [
+     "MAGX870EGAMINGMAXWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-x870e-gaming-plus-max-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG X870E GAMING PLUS MAX WIFI",
+   "year": 0,
+   "popularity": 301,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "0824142448571",
+     "0824142448571",
+     "4711377406727"
+    ],
+    "mpn": [
+     "MAGX870EGAMINGPLUSMAXWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-x870e-tomahawk-max-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MAG X870E TOMAHAWK MAX WIFI",
+   "year": 0,
+   "popularity": 302,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4711377409063"
+    ],
+    "mpn": [
+     "MAGX870ETOMAHAWKMAXWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-meg-x870e-ace-max",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "MEG X870E ACE MAX",
+   "year": 0,
+   "popularity": 305,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 5
+   },
+   "ids": {
+    "ean": [
+     "4711377414968"
+    ],
+    "mpn": [
+     "MEGX870EACEMAX"
+    ]
+   }
+  },
+  {
+   "slug": "asus-prime-a620a-plus-wifi",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "PRIME A620A-PLUS WIFI",
+   "year": 0,
+   "popularity": 322,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "A620A",
+    "formFactor": "ATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4711636479219",
+     "0199291479210",
+     "0199291479210"
+    ],
+    "mpn": [
+     "90MB1PF0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-prime-h610m-f-d4-r2-0",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "PRIME H610M-F D4 R2.0",
+   "year": 0,
+   "popularity": 324,
+   "specs": {
+    "socket": "LGA1700",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 64,
+    "chipset": "H610",
+    "formFactor": "mATX",
+    "m2": 1
+   },
+   "ids": {
+    "mpn": [
+     "90MB1H70M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-a620am-g-evo-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "Pro A620AM-G EVO WIFI",
+   "year": 0,
+   "popularity": 328,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 128,
+    "wifi": "Yes",
+    "chipset": "A620A",
+    "formFactor": "mATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4711377417501"
+    ],
+    "mpn": [
+     "PROA620AMGEVOWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-b550m-b",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO B550M-B",
+   "year": 0,
+   "popularity": 329,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "chipset": "B550",
+    "formFactor": "mATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4711377428927"
+    ],
+    "mpn": [
+     "PROB550MB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-b550m-p",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO B550M-P",
+   "year": 0,
+   "popularity": 330,
+   "specs": {
+    "socket": "AM4",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "chipset": "B550",
+    "formFactor": "ATX",
+    "m2": 2
+   },
+   "ids": {
+    "ean": [
+     "4711377453547"
+    ],
+    "mpn": [
+     "PROB550MP"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-b850-s-evo-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO B850-S EVO WIFI",
+   "year": 0,
+   "popularity": 331,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711377422765"
+    ],
+    "mpn": [
+     "PROB850SEVOWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-b850-v-evo-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO B850-V EVO WIFI",
+   "year": 0,
+   "popularity": 332,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "0824142455326",
+     "0824142455326"
+    ],
+    "mpn": [
+     "PROB850VEVOWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-x870e-s-evo-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO X870E-S EVO WIFI",
+   "year": 0,
+   "popularity": 333,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711377412230"
+    ],
+    "mpn": [
+     "PROX870ESEVOWIFI"
+    ]
+   }
+  },
+  {
+   "slug": "msi-pro-z790-a-wifi-ii",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "PRO Z790-A WIFI II",
+   "year": 0,
+   "popularity": 334,
+   "specs": {
+    "socket": "LGA1700",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "wifi": "Yes",
+    "chipset": "Z790",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "0824142446843",
+     "0824142446843"
+    ],
+    "mpn": [
+     "PROZ790AWIFIII"
+    ]
+   }
+  },
+  {
+   "slug": "asus-proart-b850-creator-wifi-neo",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "PROART B850-CREATOR WIFI NEO",
+   "year": 0,
+   "popularity": 335,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711636504447"
+    ],
+    "mpn": [
+     "90MB1P60M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-crosshair-x870e-dark-hero",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "ROG CROSSHAIR X870E DARK HERO",
+   "year": 0,
+   "popularity": 375,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "1",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 5
+   },
+   "ids": {
+    "ean": [
+     "4711636398671",
+     "0199291398672",
+     "0199291398672"
+    ],
+    "mpn": [
+     "90MB1NT0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-crosshair-x870e-edition-20",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "ROG CROSSHAIR X870E EDITION 20",
+   "year": 0,
+   "popularity": 376,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 5
+   },
+   "ids": {
+    "ean": [
+     "4711636650984",
+     "0199291650985",
+     "0199291650985"
+    ],
+    "mpn": [
+     "90MB1PD0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-crosshair-x870e-glacial",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "ROG CROSSHAIR X870E GLACIAL",
+   "year": 0,
+   "popularity": 377,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "1",
+    "chipset": "X870E",
+    "formFactor": "E-ATX",
+    "m2": 7
+   },
+   "ids": {
+    "ean": [
+     "4711636392044"
+    ],
+    "mpn": [
+     "90MB1NQ0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-strix-b850-a-gaming-wifi7-neo",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "ROG STRIX B850-A GAMING WIFI7 NEO",
+   "year": 0,
+   "popularity": 379,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4711636446518"
+    ],
+    "mpn": [
+     "90MB1P10M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-strix-x870e-a-gaming-wifi7-neo",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "ROG STRIX X870E-A GAMING WIFI7 NEO",
+   "year": 0,
+   "popularity": 381,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "1",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4711636491617",
+     "0199291491618",
+     "0199291491618"
+    ],
+    "mpn": [
+     "90MB1P30M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-b850-pro-wifi7-w-neo",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "TUF GAMING B850-PRO WIFI7 W NEO",
+   "year": 0,
+   "popularity": 479,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "B850",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711636435994"
+    ],
+    "mpn": [
+     "90MB1NW0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-x870-pro-wifi7-w-neo",
+   "category": "motherboard",
+   "brand": "ASUS",
+   "name": "TUF GAMING X870-PRO WIFI7 W NEO",
+   "year": 0,
+   "popularity": 481,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "X870",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4711636425247"
+    ],
+    "mpn": [
+     "90MB1NY0M0EAY0"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-x870e-eagle-wifi7-motherboard-supports-amd-ryzen-9000-cpus",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "X870E EAGLE WIFI7 Motherboard - Supports AMD Ryzen 9000 CPUs",
+   "year": 0,
+   "popularity": 493,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4719331880200"
+    ],
+    "mpn": [
+     "X870EEAGLEWF7"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-x870e-eagle-x3d-wifi7-motherboard",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "X870E EAGLE X3D WIFI7 Motherboard",
+   "year": 0,
+   "popularity": 494,
+   "specs": {
+    "socket": "AM5",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "X870E",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "4719331879532"
+    ],
+    "mpn": [
+     "X870EEAGLEXWF7"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-z890-aorus-elite-duo-x-motherboard",
+   "category": "motherboard",
+   "brand": "GIGABYTE",
+   "name": "Z890 AORUS ELITE DUO X Motherboard",
+   "year": 0,
+   "popularity": 495,
+   "specs": {
+    "socket": "LGA1851",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 256,
+    "wifi": "2",
+    "chipset": "Z890",
+    "formFactor": "ATX",
+    "m2": 5
+   },
+   "ids": {
+    "ean": [
+     "4719331880408"
+    ],
+    "mpn": [
+     "Z890AELTDUOX"
+    ]
+   }
+  },
+  {
+   "slug": "msi-z890-gaming-plus-wifi6e",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "Z890 GAMING PLUS WIFI6E",
+   "year": 0,
+   "popularity": 496,
+   "specs": {
+    "socket": "LGA1851",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "Z890",
+    "formFactor": "ATX",
+    "m2": 4
+   },
+   "ids": {
+    "ean": [
+     "0824142456538",
+     "0824142456538",
+     "4711377431118"
+    ],
+    "mpn": [
+     "Z890GAMINGPLUSWIFI6E"
+    ]
+   }
+  },
+  {
+   "slug": "msi-z890-gaming-wifi",
+   "category": "motherboard",
+   "brand": "MSI",
+   "name": "Z890 GAMING WIFI",
+   "year": 0,
+   "popularity": 497,
+   "specs": {
+    "socket": "LGA1851",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "wifi": "Yes",
+    "chipset": "Z890",
+    "formFactor": "ATX",
+    "m2": 3
+   },
+   "ids": {
+    "ean": [
+     "4711377291545"
+    ],
+    "mpn": [
+     "Z890GAMINGWIFI"
+    ]
+   }
+  },
+  {
    "slug": "kingston-fury-beast-ddr5-6000-2x16",
    "category": "ram",
    "brand": "Kingston",
@@ -584,6 +6107,618 @@
     "speed": 3600,
     "cl": 18,
     "voltage": 1.35
+   }
+  },
+  {
+   "slug": "kingston-16gb-6000mt-s-ddr5-cl36-dimm-fury-beast-expo",
+   "category": "ram",
+   "brand": "Kingston",
+   "name": "16GB 6000MT/s DDR5 CL36 DIMM FURY Beast EXPO",
+   "year": 0,
+   "popularity": 103,
+   "specs": {
+    "cl": 36,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "0740617345858",
+     "0740617345858"
+    ],
+    "mpn": [
+     "KF560C36BBE216"
+    ]
+   }
+  },
+  {
+   "slug": "kingston-16gb-6000mt-s-ddr5-cl36-dimm-fury-beast-rgb-expo",
+   "category": "ram",
+   "brand": "Kingston",
+   "name": "16GB 6000MT/s DDR5 CL36 DIMM FURY Beast RGB EXPO",
+   "year": 0,
+   "popularity": 104,
+   "specs": {
+    "cl": 36,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "0740617345919",
+     "0740617345919"
+    ],
+    "mpn": [
+     "KF560C36BBE2A16"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-ax4u32008g16a-cwhd45g",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "AX4U32008G16A-CWHD45G",
+   "year": 0,
+   "popularity": 119,
+   "specs": {
+    "cl": 16,
+    "modules": 1,
+    "moduleSize": 8,
+    "memType": "DDR4",
+    "voltage": 1.35
+   },
+   "ids": {
+    "mpn": [
+     "AX4U32008G16ACWHD45G"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-ax5u6000c3616g-slabrbk",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "AX5U6000C3616G-SLABRBK",
+   "year": 0,
+   "popularity": 120,
+   "specs": {
+    "cl": 38,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711658152312"
+    ],
+    "mpn": [
+     "AX5U6000C3616GSLABRBK"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-ax5u6000c3616g-slabrwh",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "AX5U6000C3616G-SLABRWH",
+   "year": 0,
+   "popularity": 121,
+   "specs": {
+    "cl": 38,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711658152299"
+    ],
+    "mpn": [
+     "AX5U6000C3616GSLABRWH"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-ax5u6800c3416g-dclanrsg",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "AX5U6800C3416G-DCLANRSG",
+   "year": 0,
+   "popularity": 122,
+   "specs": {
+    "cl": 34,
+    "modules": 2,
+    "moduleSize": 8,
+    "memType": "DDR5",
+    "voltage": 1.45
+   },
+   "ids": {
+    "ean": [
+     "4711085949011"
+    ],
+    "mpn": [
+     "AX5U6800C3416GDCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-caster-ddr5-6000-cl30-2x32gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "CASTER DDR5-6000 CL30 2×32 ГБ",
+   "year": 0,
+   "popularity": 131,
+   "specs": {
+    "cl": 30,
+    "modules": 2,
+    "moduleSize": 32,
+    "memType": "DDR5",
+    "speed": 6000,
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711085941060"
+    ],
+    "mpn": [
+     "AX5U6000C3016GDCCAGY"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-caster-ddr5-6000-cl40-2x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "CASTER DDR5-6000 CL40 2×16 ГБ",
+   "year": 0,
+   "popularity": 132,
+   "specs": {
+    "cl": 40,
+    "modules": 2,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6000
+   },
+   "ids": {
+    "ean": [
+     "4711085937124"
+    ],
+    "mpn": [
+     "AX5U6000C4016GDCCAGY"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-caster-ddr5-6400-cl39-1x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "Caster DDR5-6400 CL39 1×16 ГБ",
+   "year": 0,
+   "popularity": 133,
+   "specs": {
+    "cl": 39,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6400,
+    "voltage": 1.4
+   },
+   "ids": {
+    "ean": [
+     "4711085940735"
+    ],
+    "mpn": [
+     "AX5U6400C3216GDCCARGY"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-caster-rgb-ddr5-6000-cl30-2x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "CASTER RGB DDR5-6000 CL30 2×16 ГБ",
+   "year": 0,
+   "popularity": 134,
+   "specs": {
+    "cl": 30,
+    "modules": 2,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6000,
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711085941046"
+    ],
+    "mpn": [
+     "AX5U6000C3016GDCCARGY"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-caster-rgb-ddr5-6400-cl32-1x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "CASTER RGB DDR5-6400 CL32 1×16 ГБ",
+   "year": 0,
+   "popularity": 135,
+   "specs": {
+    "cl": 32,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6400,
+    "voltage": 1.4
+   },
+   "ids": {
+    "ean": [
+     "4711085940728"
+    ],
+    "mpn": [
+     "AX5U6400C3216GCCARGY"
+    ]
+   }
+  },
+  {
+   "slug": "goodram-gr5600d564l46-32g-ddr5-5600-cl46-1x32gb",
+   "category": "ram",
+   "brand": "Goodram",
+   "name": "GR5600D564L46/32G DDR5-5600 CL46 1×32 ГБ",
+   "year": 0,
+   "popularity": 268,
+   "specs": {
+    "cl": 46,
+    "modules": 1,
+    "moduleSize": 32,
+    "memType": "DDR5",
+    "speed": 5600,
+    "voltage": 1.1
+   },
+   "ids": {
+    "ean": [
+     "5908267901458"
+    ],
+    "mpn": [
+     "GR5600D564L4632G"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-blade",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER BLADE",
+   "year": 0,
+   "popularity": 270,
+   "specs": {
+    "cl": 36,
+    "modules": 2,
+    "moduleSize": 8,
+    "memType": "DDR5",
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711658152282"
+    ],
+    "mpn": [
+     "AX5U6000C3616GDTLABBK"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-blade-ddr5-5600-cl46-1x8gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER BLADE DDR5-5600 CL46 1×8 ГБ",
+   "year": 0,
+   "popularity": 271,
+   "specs": {
+    "cl": 46,
+    "modules": 1,
+    "moduleSize": 8,
+    "memType": "DDR5",
+    "speed": 5600,
+    "voltage": 1.1
+   },
+   "ids": {
+    "ean": [
+     "4711085949837"
+    ],
+    "mpn": [
+     "AX5U5600C468GSLABWH"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-blade-ddr5-5600-cl46-2x8gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER BLADE DDR5-5600 CL46 2×8 ГБ",
+   "year": 0,
+   "popularity": 272,
+   "specs": {
+    "cl": 46,
+    "modules": 2,
+    "moduleSize": 8,
+    "memType": "DDR5",
+    "speed": 5600,
+    "voltage": 1.1
+   },
+   "ids": {
+    "ean": [
+     "4711085949844"
+    ],
+    "mpn": [
+     "AX5U5600C468GDTLABWH"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-blade-rgb-ddr5-5600-cl46-1x8gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER BLADE RGB DDR5-5600 CL46 1×8 ГБ",
+   "year": 0,
+   "popularity": 273,
+   "specs": {
+    "cl": 46,
+    "modules": 1,
+    "moduleSize": 8,
+    "memType": "DDR5",
+    "speed": 5600,
+    "voltage": 1.1
+   },
+   "ids": {
+    "ean": [
+     "4711085949929"
+    ],
+    "mpn": [
+     "AX5U5600C468GSLABRWH"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-blade-rgb-ddr5-5600-cl46-2x8gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER BLADE RGB DDR5-5600 CL46 2×8 ГБ",
+   "year": 0,
+   "popularity": 274,
+   "specs": {
+    "cl": 46,
+    "modules": 2,
+    "moduleSize": 8,
+    "memType": "DDR5",
+    "speed": 5600,
+    "voltage": 1.1
+   },
+   "ids": {
+    "ean": [
+     "4711085949950"
+    ],
+    "mpn": [
+     "AX5U5600C468GDTLABRBK"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-blade-rgb-ddr5-6000-cl36-2x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER BLADE RGB DDR5-6000 CL36 2×16 ГБ",
+   "year": 0,
+   "popularity": 275,
+   "specs": {
+    "cl": 36,
+    "modules": 2,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6000,
+    "voltage": 1.1
+   },
+   "ids": {
+    "ean": [
+     "4711658152329"
+    ],
+    "mpn": [
+     "AX5U6000C3616GDTLABRBK"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-ddr5-6800-cl45-2x48gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "Lancer DDR5-6800 CL45 2×48 ГБ",
+   "year": 0,
+   "popularity": 276,
+   "specs": {
+    "cl": 45,
+    "modules": 2,
+    "moduleSize": 48,
+    "memType": "DDR5",
+    "speed": 6800,
+    "voltage": 1.4
+   },
+   "ids": {
+    "ean": [
+     "4711085947970"
+    ],
+    "mpn": [
+     "AX5U6800C3424GDCLARWH"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-neon-ddr5-6400-cl32-2x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER NEON DDR5-6400 CL32 2×16 ГБ",
+   "year": 0,
+   "popularity": 277,
+   "specs": {
+    "cl": 32,
+    "modules": 2,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6400,
+    "voltage": 1.4
+   },
+   "ids": {
+    "ean": [
+     "4711085948991"
+    ],
+    "mpn": [
+     "AX5U6400C3216GDCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-neon-ddr5-7200-2x48gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "Lancer Neon DDR5-7200 2×48 ГБ",
+   "year": 0,
+   "popularity": 278,
+   "specs": {
+    "modules": 2,
+    "moduleSize": 48,
+    "memType": "DDR5",
+    "speed": 7200,
+    "voltage": 1.4
+   },
+   "ids": {
+    "ean": [
+     "4711085949035"
+    ],
+    "mpn": [
+     "AX5U7200C3424GDCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-neon-ddr5-8000-2x48gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER NEON DDR5-8000 2×48 ГБ",
+   "year": 0,
+   "popularity": 279,
+   "specs": {
+    "modules": 2,
+    "moduleSize": 48,
+    "memType": "DDR5",
+    "speed": 8000,
+    "voltage": 1.45
+   },
+   "ids": {
+    "ean": [
+     "4711085949059"
+    ],
+    "mpn": [
+     "AX5U8000C4024GDCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-neon-rgb-ddr5-6400-cl32-1x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER NEON RGB DDR5-6400 CL32 1×16 ГБ",
+   "year": 0,
+   "popularity": 280,
+   "specs": {
+    "cl": 32,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6400,
+    "voltage": 1.4
+   },
+   "ids": {
+    "ean": [
+     "4711085948984"
+    ],
+    "mpn": [
+     "AX5U6400C3216GCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-rgb-ddr5-6000-cl30-1x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER RGB DDR5-6000 CL30 1×16 ГБ",
+   "year": 0,
+   "popularity": 281,
+   "specs": {
+    "cl": 30,
+    "modules": 1,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6000,
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711085948960"
+    ],
+    "mpn": [
+     "AX5U6000C3016GCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lancer-rgb-ddr5-6000-cl30-2x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "LANCER RGB DDR5-6000 CL30 2×16 ГБ",
+   "year": 0,
+   "popularity": 282,
+   "specs": {
+    "cl": 30,
+    "modules": 2,
+    "moduleSize": 16,
+    "memType": "DDR5",
+    "speed": 6000,
+    "voltage": 1.35
+   },
+   "ids": {
+    "ean": [
+     "4711085948977"
+    ],
+    "mpn": [
+     "AX5U6000C3016GDCLANRSG"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-spectrix-d50-rgb-ddr4-3600-cl18-4x16gb",
+   "category": "ram",
+   "brand": "XPG",
+   "name": "SPECTRIX D50 RGB DDR4-3600 CL18 4×16 ГБ",
+   "year": 0,
+   "popularity": 477,
+   "specs": {
+    "cl": 18,
+    "modules": 4,
+    "moduleSize": 16,
+    "memType": "DDR4",
+    "speed": 3600
+   },
+   "ids": {
+    "ean": [
+     "4711085938503"
+    ],
+    "mpn": [
+     "AX4U360016G18IQCTG50"
+    ]
    }
   },
   {
@@ -672,6 +6807,949 @@
    }
   },
   {
+   "slug": "kingston-1000g-nv3-ssd-1tb",
+   "category": "storage",
+   "brand": "Kingston",
+   "name": "1000G NV3 SSD 1 ТБ",
+   "year": 2024,
+   "popularity": 102,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 6000,
+    "write": 4000,
+    "tbw": 320
+   },
+   "ids": {
+    "ean": [
+     "0740617344790",
+     "0740617344790"
+    ],
+    "mpn": [
+     "SNV3S1000G"
+    ]
+   }
+  },
+  {
+   "slug": "kingston-2000g-nv3-ssd-2tb",
+   "category": "storage",
+   "brand": "Kingston",
+   "name": "2000G NV3 SSD 2 ТБ",
+   "year": 2024,
+   "popularity": 105,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 6000,
+    "write": 5000,
+    "tbw": 640
+   },
+   "ids": {
+    "ean": [
+     "0740617344783",
+     "0740617344783"
+    ],
+    "mpn": [
+     "SNV3S2000G"
+    ]
+   }
+  },
+  {
+   "slug": "kingston-500g-nv3-ssd-500gb",
+   "category": "storage",
+   "brand": "Kingston",
+   "name": "500G NV3 SSD 500 ГБ",
+   "year": 2024,
+   "popularity": 106,
+   "specs": {
+    "capacity": 500,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 3000,
+    "tbw": 160
+   },
+   "ids": {
+    "ean": [
+     "0740617344806",
+     "0740617344806"
+    ],
+    "mpn": [
+     "SNV3S500G"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-9100-pro-8tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "9100 PRO 8 ТБ",
+   "year": 2025,
+   "popularity": 107,
+   "specs": {
+    "capacity": 8000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14800,
+    "write": 13400
+   },
+   "ids": {
+    "ean": [
+     "8806095811642"
+    ],
+    "mpn": [
+     "MZVAP8T0CW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-9100-pro-pcie-5-0-ssd-1tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "9100 PRO PCIe® 5.0 ™ SSD - 1 ТБ",
+   "year": 2025,
+   "popularity": 108,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14700,
+    "write": 13300
+   },
+   "ids": {
+    "ean": [
+     "8806095811628",
+     "0887276904870",
+     "0887276904870"
+    ],
+    "mpn": [
+     "MZVAP1T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-9100-pro-pcie-5-0-ssd-2tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "9100 PRO PCIe® 5.0 ™ SSD - 2 ТБ",
+   "year": 2025,
+   "popularity": 109,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14700,
+    "write": 13400
+   },
+   "ids": {
+    "ean": [
+     "8806095811710",
+     "7806027811710"
+    ],
+    "mpn": [
+     "MZVAP2T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-9100-pro-pcie-5-0-ssd-4tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "9100 PRO PCIe® 5.0 ™ SSD - 4 ТБ",
+   "year": 2025,
+   "popularity": 110,
+   "specs": {
+    "capacity": 4000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14800,
+    "write": 13400
+   },
+   "ids": {
+    "ean": [
+     "8806095811703",
+     "0887276904979",
+     "0887276904979"
+    ],
+    "mpn": [
+     "MZVAP4T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-990-evo-1tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "990 EVO 1 ТБ",
+   "year": 2024,
+   "popularity": 111,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 4200,
+    "tbw": 600
+   },
+   "ids": {
+    "ean": [
+     "8806095300276",
+     "0887276798035",
+     "0887276798035"
+    ],
+    "mpn": [
+     "MZV9E1T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-990-evo-2tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "990 EVO 2 ТБ",
+   "year": 2024,
+   "popularity": 112,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 4200,
+    "tbw": 1200
+   },
+   "ids": {
+    "ean": [
+     "8806095300269",
+     "0887276798028",
+     "0887276798028"
+    ],
+    "mpn": [
+     "MZV9E2T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-agammixs70b-8000g-cs-8tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "AGAMMIXS70B-8000G-CS 8 ТБ",
+   "year": 0,
+   "popularity": 118,
+   "specs": {
+    "capacity": 8000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7300,
+    "write": 6300
+   },
+   "ids": {
+    "ean": [
+     "4711085945525"
+    ],
+    "mpn": [
+     "AGAMMIXS70B8000GCS"
+    ]
+   }
+  },
+  {
+   "slug": "seagate-game-drive-ps5-1tb",
+   "category": "storage",
+   "brand": "Seagate",
+   "name": "Game Drive PS5 1 ТБ",
+   "year": 0,
+   "popularity": 232,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7300,
+    "write": 6000,
+    "tbw": 1.275
+   },
+   "ids": {
+    "ean": [
+     "8719706430128",
+     "0763649173305",
+     "0763649173305"
+    ],
+    "mpn": [
+     "ZP1000GP3A2001"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s50-core-1tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S50 CORE 1 ТБ",
+   "year": 0,
+   "popularity": 233,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 3500,
+    "write": 2200,
+    "tbw": 600
+   },
+   "ids": {
+    "ean": [
+     "4711085947680",
+     "0842243033366",
+     "0842243033366"
+    ],
+    "mpn": [
+     "SGAMMIXS50C1000GCS"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s50-core-2tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S50 CORE 2 ТБ",
+   "year": 0,
+   "popularity": 234,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 3500,
+    "write": 2800,
+    "tbw": 1200
+   },
+   "ids": {
+    "ean": [
+     "4711085947697",
+     "0842243033373",
+     "0842243033373"
+    ],
+    "mpn": [
+     "SGAMMIXS50C2000GCS"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s50-core-500gb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S50 CORE 500 ГБ",
+   "year": 0,
+   "popularity": 235,
+   "specs": {
+    "capacity": 500,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 3500,
+    "write": 2200,
+    "tbw": 300
+   },
+   "ids": {
+    "ean": [
+     "4711085947673",
+     "0842243033359",
+     "0842243033359"
+    ],
+    "mpn": [
+     "SGAMMIXS50C500GCS"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s55-2tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S55 2 ТБ",
+   "year": 0,
+   "popularity": 236,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 3700
+   },
+   "ids": {
+    "ean": [
+     "4711085947482"
+    ],
+    "mpn": [
+     "SGAMMIXS552TC"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s60-1tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S60 1 ТБ",
+   "year": 0,
+   "popularity": 237,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 3200,
+    "tbw": 250
+   },
+   "ids": {
+    "ean": [
+     "4711085946157"
+    ],
+    "mpn": [
+     "AGAMMIXS601TCS"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s60-2tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S60 2 ТБ",
+   "year": 0,
+   "popularity": 238,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 4200,
+    "tbw": 450
+   },
+   "ids": {
+    "ean": [
+     "4711085946164"
+    ],
+    "mpn": [
+     "AGAMMIXS602TCS"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-gammix-s60-512gb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "GAMMIX S60 512 ГБ",
+   "year": 0,
+   "popularity": 239,
+   "specs": {
+    "capacity": 512,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 4700,
+    "write": 1700,
+    "tbw": 110
+   },
+   "ids": {
+    "ean": [
+     "4711085946140"
+    ],
+    "mpn": [
+     "AGAMMIXS60512GCS"
+    ]
+   }
+  },
+  {
+   "slug": "msi-m470-pro-1tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "M470 PRO 1 ТБ",
+   "year": 0,
+   "popularity": 287,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 6000,
+    "write": 5000,
+    "tbw": 640
+   },
+   "ids": {
+    "ean": [
+     "4711377279963"
+    ],
+    "mpn": [
+     "SPATIUMM470PROPCIE40NVMEM21TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-m480-pro-play-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "M480 PRO PLAY 2 ТБ",
+   "year": 0,
+   "popularity": 288,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7400,
+    "write": 7000,
+    "tbw": 1400
+   },
+   "ids": {
+    "mpn": [
+     "SPATIUMM480PROPCIE40NVMEM22TBPLAY"
+    ]
+   }
+  },
+  {
+   "slug": "msi-m560-1tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "M560 1 ТБ",
+   "year": 0,
+   "popularity": 289,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 10200,
+    "write": 8400
+   },
+   "ids": {
+    "ean": [
+     "4711377275347"
+    ],
+    "mpn": [
+     "SPATIUMM560PCIE50NVMEM21TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-m560-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "M560 2 ТБ",
+   "year": 0,
+   "popularity": 290,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 10300,
+    "write": 8700,
+    "tbw": 1200
+   },
+   "ids": {
+    "ean": [
+     "4711377275354"
+    ],
+    "mpn": [
+     "SPATIUMM560PCIE50NVMEM22TB"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-mz-v9s1t0-1tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "MZ-V9S1T0 1 ТБ",
+   "year": 2024,
+   "popularity": 317,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7150,
+    "write": 6300
+   },
+   "ids": {
+    "ean": [
+     "0887276843704",
+     "0887276843704",
+     "8806095575674"
+    ],
+    "mpn": [
+     "MZV9S1T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-mz-v9s2t0-2tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "MZ-V9S2T0 2 ТБ",
+   "year": 2024,
+   "popularity": 318,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7250,
+    "write": 6300
+   },
+   "ids": {
+    "ean": [
+     "0887276843681",
+     "0887276843681",
+     "8806095575650"
+    ],
+    "mpn": [
+     "MZV9S2T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-mz-v9s4t0-4tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "MZ-V9S4T0 4 ТБ",
+   "year": 2024,
+   "popularity": 319,
+   "specs": {
+    "capacity": 4000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7250,
+    "write": 6300
+   },
+   "ids": {
+    "ean": [
+     "0887276843698",
+     "0887276843698",
+     "8806095575667"
+    ],
+    "mpn": [
+     "MZV9S4T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "samsung-mz-vap8t0-8tb",
+   "category": "storage",
+   "brand": "Samsung",
+   "name": "MZ-VAP8T0 8 ТБ",
+   "year": 2025,
+   "popularity": 320,
+   "specs": {
+    "capacity": 8000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14800,
+    "write": 13400
+   },
+   "ids": {
+    "ean": [
+     "8806095811680",
+     "0887276904962",
+     "0887276904962"
+    ],
+    "mpn": [
+     "MZVAP8T0BW"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-sgammixs55-1t-c-1tb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "SGAMMIXS55-1T-C 1 ТБ",
+   "year": 0,
+   "popularity": 466,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 3700
+   },
+   "ids": {
+    "ean": [
+     "4711085942357"
+    ],
+    "mpn": [
+     "SGAMMIXS551TC"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-sgammixs55-512g-c-512gb",
+   "category": "storage",
+   "brand": "XPG",
+   "name": "SGAMMIXS55-512G-C 512 ГБ",
+   "year": 0,
+   "popularity": 467,
+   "specs": {
+    "capacity": 512,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 5000,
+    "write": 3000
+   },
+   "ids": {
+    "ean": [
+     "4711085942340"
+    ],
+    "mpn": [
+     "SGAMMIXS55512GC"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m450-v1-500gb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M450 V1 500 ГБ",
+   "year": 0,
+   "popularity": 468,
+   "specs": {
+    "capacity": 500,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 3000,
+    "write": 2000,
+    "tbw": 150
+   },
+   "ids": {
+    "ean": [
+     "4711377341547",
+     "0824142422076",
+     "0824142422076"
+    ],
+    "mpn": [
+     "SPATIUMM450PCIE40NVMEM2500GBV1"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m452-1tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M452 1 ТБ",
+   "year": 0,
+   "popularity": 469,
+   "specs": {
+    "capacity": 1000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 3600,
+    "write": 3100,
+    "tbw": 300
+   },
+   "ids": {
+    "ean": [
+     "4711377062442"
+    ],
+    "mpn": [
+     "SPATIUMM452PCIE40NVMEM21TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m452-500gb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M452 500 ГБ",
+   "year": 0,
+   "popularity": 470,
+   "specs": {
+    "capacity": 500,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 3600,
+    "write": 3100,
+    "tbw": 150
+   },
+   "ids": {
+    "ean": [
+     "4711377062435"
+    ],
+    "mpn": [
+     "SPATIUMM452PCIE40NVMEM2500GB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m470-pro-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M470 PRO 2 ТБ",
+   "year": 0,
+   "popularity": 471,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 6000,
+    "write": 5000,
+    "tbw": 640
+   },
+   "ids": {
+    "ean": [
+     "4711377279970"
+    ],
+    "mpn": [
+     "SPATIUMM470PROPCIE40NVMEM22TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m482-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M482 2 ТБ",
+   "year": 0,
+   "popularity": 472,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 4.0",
+    "read": 7300,
+    "write": 6400,
+    "tbw": 1200
+   },
+   "ids": {
+    "ean": [
+     "4711377159128",
+     "0824142343845",
+     "0824142343845"
+    ],
+    "mpn": [
+     "SPATIUMM482PCIE40NVMEM22TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m570-pro-frozr-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M570 PRO FROZR 2 ТБ",
+   "year": 0,
+   "popularity": 473,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 12400,
+    "write": 11800,
+    "tbw": 1400
+   },
+   "ids": {
+    "ean": [
+     "4711377141352"
+    ],
+    "mpn": [
+     "SPATIUMM570PROPCIE50NVMEM22TBFROZR"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m571-dlp-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M571 DLP 2 ТБ",
+   "year": 0,
+   "popularity": 474,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14500,
+    "write": 11000,
+    "tbw": 1400
+   },
+   "ids": {
+    "ean": [
+     "4711377420556"
+    ],
+    "mpn": [
+     "SPATIUMM571DLPPCIE50NVMEM22TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m580-frozr-2tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M580 FROZR 2 ТБ",
+   "year": 0,
+   "popularity": 475,
+   "specs": {
+    "capacity": 2000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14600,
+    "write": 12700,
+    "tbw": 1400
+   },
+   "ids": {
+    "ean": [
+     "4711377193405"
+    ],
+    "mpn": [
+     "SPATIUMM580PCIE50NVMEM2FROZR2TB"
+    ]
+   }
+  },
+  {
+   "slug": "msi-spatium-m580-frozr-4tb",
+   "category": "storage",
+   "brand": "MSI",
+   "name": "SPATIUM M580 FROZR 4 ТБ",
+   "year": 0,
+   "popularity": 476,
+   "specs": {
+    "capacity": 4000,
+    "formFactor": "M.2 2280",
+    "type": "NVMe",
+    "iface": "PCI Express 5.0",
+    "read": 14100,
+    "write": 12600,
+    "tbw": 3000
+   },
+   "ids": {
+    "ean": [
+     "4711377193412",
+     "0824142355831",
+     "0824142355831"
+    ],
+    "mpn": [
+     "SPATIUMM580PCIE50NVMEM2FROZR4TB"
+    ]
+   }
+  },
+  {
    "slug": "corsair-rm750e-2023",
    "category": "psu",
    "brand": "Corsair",
@@ -749,6 +7827,788 @@
     "atx3": false,
     "highPower": false,
     "fan": 120
+   }
+  },
+  {
+   "slug": "asus-pro-ws-1600p",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "-PRO-WS-1600P",
+   "year": 0,
+   "popularity": 100,
+   "specs": {
+    "wattage": 1600,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711387973080",
+     "0197105973084",
+     "0197105973084"
+    ],
+    "mpn": [
+     "90YE00Z2B0AA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-pro-ws-2200p",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "-PRO-WS-2200P",
+   "year": 0,
+   "popularity": 101,
+   "specs": {
+    "wattage": 2200,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711387972939",
+     "0197105972933",
+     "0197105972933"
+    ],
+    "mpn": [
+     "90YE00Z1B0AA00"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-dark-power-14-1000-w-80-plus-titanium",
+   "category": "psu",
+   "brand": "be quiet!",
+   "name": "Dark Power 14 1000 W - 80 Plus Titanium",
+   "year": 0,
+   "popularity": 227,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4260052192023"
+    ],
+    "mpn": [
+     "BP020EU"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-dark-power-14-1200-w-80-plus-titanium",
+   "category": "psu",
+   "brand": "be quiet!",
+   "name": "Dark Power 14 1200 W - 80 Plus Titanium",
+   "year": 0,
+   "popularity": 228,
+   "specs": {
+    "wattage": 1200,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4260052192030"
+    ],
+    "mpn": [
+     "BP021EU"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-dark-power-14-850-w-80-plus-titanium",
+   "category": "psu",
+   "brand": "be quiet!",
+   "name": "Dark Power 14 850 W - 80 Plus Titanium",
+   "year": 0,
+   "popularity": 229,
+   "specs": {
+    "wattage": 850,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4260052192016"
+    ],
+    "mpn": [
+     "BP019EU"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-kyber-750w-power-supply",
+   "category": "psu",
+   "brand": "XPG",
+   "name": "KYBER 750W Power Supply",
+   "year": 0,
+   "popularity": 269,
+   "specs": {
+    "wattage": 750,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "mpn": [
+     "75261242"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-a1000gls-pcie5",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MAG A1000GLS PCIE5",
+   "year": 0,
+   "popularity": 291,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Gold",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4711377297776",
+     "4711377297738"
+    ],
+    "mpn": [
+     "MAGA1000GLSPCIE5"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-a1000pls-pcie5",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MAG A1000PLS PCIE5",
+   "year": 0,
+   "popularity": 292,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Platinum",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "0824142446195",
+     "0824142446195",
+     "4711377397940"
+    ],
+    "mpn": [
+     "MAGA1000PLSPCIE5"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-a650gn-ii",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MAG A650GN II",
+   "year": 0,
+   "popularity": 293,
+   "specs": {
+    "wattage": 650,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "mpn": [
+     "MAGA650GNII"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-a750bn-pcie5-ii",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MAG A750BN PCIE5 II",
+   "year": 0,
+   "popularity": 294,
+   "specs": {
+    "wattage": 750,
+    "cert": "80 PLUS Bronze",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4711377364256",
+     "4711377364263"
+    ],
+    "mpn": [
+     "MAGA750BNPCIE5II"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-mega-ti-1350w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "MEGA TI 1350W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 306,
+   "specs": {
+    "wattage": 1350,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4711498480378"
+    ],
+    "mpn": [
+     "PPA13F0201"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-mega-ti-1650w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "MEGA TI 1650W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 307,
+   "specs": {
+    "wattage": 1650,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4711498480385"
+    ],
+    "mpn": [
+     "PPA16F0202"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-ai1300ts-pcie5",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MPG Ai1300TS PCIE5",
+   "year": 0,
+   "popularity": 310,
+   "specs": {
+    "wattage": 1300,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4711377406130",
+     "0824142448533",
+     "0824142448533"
+    ],
+    "mpn": [
+     "MPGAI1300TSPCIE5"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-ai1600ts-pcie5",
+   "category": "psu",
+   "brand": "MSI",
+   "name": "MPG Ai1600TS PCIE5",
+   "year": 0,
+   "popularity": 311,
+   "specs": {
+    "wattage": 1600,
+    "cert": "80 PLUS Titanium",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "0824142448519",
+     "0824142448519"
+    ],
+    "mpn": [
+     "MPGAI1600TSPCIE5"
+    ]
+   }
+  },
+  {
+   "slug": "gigabyte-p650g-pcie-5-1-power-supply-pcie-5-1",
+   "category": "psu",
+   "brand": "GIGABYTE",
+   "name": "P650G PCIE 5.1 Power Supply - PCIe 5.1",
+   "year": 0,
+   "popularity": 321,
+   "specs": {
+    "wattage": 650,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4719331556785"
+    ],
+    "mpn": [
+     "GPP650GPG5EU"
+    ]
+   }
+  },
+  {
+   "slug": "asus-prime-650b",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "PRIME-650B-",
+   "year": 0,
+   "popularity": 325,
+   "specs": {
+    "wattage": 650,
+    "cert": "80 PLUS Bronze",
+    "fan": 13.5
+   },
+   "ids": {
+    "ean": [
+     "4711387635285",
+     "0197105635289",
+     "0197105635289"
+    ],
+    "mpn": [
+     "90YE00Y1B0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-prime-750g",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "PRIME-750G",
+   "year": 0,
+   "popularity": 326,
+   "specs": {
+    "wattage": 750,
+    "cert": "80 PLUS Gold"
+   },
+   "ids": {
+    "ean": [
+     "4711636288422",
+     "0199291288423",
+     "0199291288423"
+    ],
+    "mpn": [
+     "90YE00U3B0AA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-prime-850g",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "PRIME-850G",
+   "year": 0,
+   "popularity": 327,
+   "specs": {
+    "wattage": 850,
+    "cert": "80 PLUS Gold"
+   },
+   "ids": {
+    "ean": [
+     "4711636288262",
+     "0199291288263",
+     "0199291288263"
+    ],
+    "mpn": [
+     "90YE00U2B0AA00"
+    ]
+   }
+  },
+  {
+   "slug": "gamer-storm-ps750g",
+   "category": "psu",
+   "brand": "Gamer Storm",
+   "name": "PS750G",
+   "year": 0,
+   "popularity": 338,
+   "specs": {
+    "wattage": 750,
+    "fan": 9.2
+   },
+   "ids": {
+    "ean": [
+     "6933412755036"
+    ],
+    "mpn": [
+     "RPS750GFE0BJGEU"
+    ]
+   }
+  },
+  {
+   "slug": "gamer-storm-ps750g-wh",
+   "category": "psu",
+   "brand": "Gamer Storm",
+   "name": "PS750G WH",
+   "year": 0,
+   "popularity": 339,
+   "specs": {
+    "wattage": 750,
+    "fan": 9.2
+   },
+   "ids": {
+    "ean": [
+     "6933412755111"
+    ],
+    "mpn": [
+     "RPS750GFE0WJGEU"
+    ]
+   }
+  },
+  {
+   "slug": "gamer-storm-ps850g-wh",
+   "category": "psu",
+   "brand": "Gamer Storm",
+   "name": "PS850G WH",
+   "year": 0,
+   "popularity": 340,
+   "specs": {
+    "wattage": 850,
+    "fan": 9.2
+   },
+   "ids": {
+    "ean": [
+     "6933412755272"
+    ],
+    "mpn": [
+     "RPS850GFE0WJGEU"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-pure-power-13-m-1200w",
+   "category": "psu",
+   "brand": "be quiet!",
+   "name": "Pure Power 13 M | 1200W",
+   "year": 0,
+   "popularity": 343,
+   "specs": {
+    "wattage": 1200,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4260052193655"
+    ],
+    "mpn": [
+     "BP029EU"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-thor-3000w-titanium-iii-edition-20",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "ROG Thor 3000W Titanium III Edition 20",
+   "year": 0,
+   "popularity": 382,
+   "specs": {
+    "wattage": 3000,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711636587181",
+     "0199291587267",
+     "0199291587267"
+    ],
+    "mpn": [
+     "90YE00VAB0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-strix-1000p-gaming-e",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "ROG-STRIX-1000P-GAMING- -E",
+   "year": 0,
+   "popularity": 383,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "mpn": [
+     "90YE00W9BTAA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-thor-1000p3-gaming-e",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "ROG-THOR-1000P3-GAMING-E",
+   "year": 0,
+   "popularity": 384,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711636457866"
+    ],
+    "mpn": [
+     "90YE00V8B0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-thor-1200p3-gaming",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "ROG-THOR-1200P3- -GAMING",
+   "year": 0,
+   "popularity": 385,
+   "specs": {
+    "wattage": 1200,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711636125420"
+    ],
+    "mpn": [
+     "90YE00V5B0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-thor-1200p3-gaming-e",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "ROG-THOR-1200P3- -GAMING-E",
+   "year": 0,
+   "popularity": 386,
+   "specs": {
+    "wattage": 1200,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711636458016"
+    ],
+    "mpn": [
+     "90YE00V9B0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-thor-1200p3-miku",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "ROG-THOR-1200P3-MIKU",
+   "year": 0,
+   "popularity": 387,
+   "specs": {
+    "wattage": 1200,
+    "cert": "80 PLUS Platinum"
+   },
+   "ids": {
+    "ean": [
+     "4711636125581",
+     "0199291125650",
+     "0199291125650"
+    ],
+    "mpn": [
+     "90YE00V6B0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "zalman-teramaxii-se-power-supply-unit-850-w-18-10-pin-atx-atx",
+   "category": "psu",
+   "brand": "Zalman",
+   "name": "TeramaxII SE power supply unit 850 W 18+10 pin ATX ATX",
+   "year": 0,
+   "popularity": 478,
+   "specs": {
+    "wattage": 850,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "8800263650446"
+    ],
+    "mpn": [
+     "ZM850TMX2SE"
+    ]
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-1200g-evo",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "TUF-GAMING-1200G-EVO",
+   "year": 0,
+   "popularity": 482,
+   "specs": {
+    "wattage": 1200,
+    "cert": "80 PLUS Gold"
+   },
+   "ids": {
+    "ean": [
+     "4711636490207",
+     "0199291490208",
+     "0199291490208",
+     "0199291490277",
+     "0199291490277"
+    ],
+    "mpn": [
+     "90YE00SDB0NA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-750g-evo",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "TUF-GAMING-750G-EVO",
+   "year": 0,
+   "popularity": 483,
+   "specs": {
+    "wattage": 750,
+    "cert": "80 PLUS Gold"
+   },
+   "ids": {
+    "ean": [
+     "4711636287944",
+     "0199291287945",
+     "0199291287945"
+    ],
+    "mpn": [
+     "90YE00SBB0AA00"
+    ]
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-850g-evo",
+   "category": "psu",
+   "brand": "ASUS",
+   "name": "TUF-GAMING-850G-EVO",
+   "year": 0,
+   "popularity": 484,
+   "specs": {
+    "wattage": 850,
+    "cert": "80 PLUS Gold"
+   },
+   "ids": {
+    "ean": [
+     "4711636287784",
+     "0199291287785",
+     "0199291287785"
+    ],
+    "mpn": [
+     "90YE00SAB0AA00"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-vic-bd-550w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "VIC BD 550W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 488,
+   "specs": {
+    "wattage": 550,
+    "cert": "80 PLUS Bronze",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4711498482693"
+    ],
+    "mpn": [
+     "POA5500102"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-vic-bd-650w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "VIC BD 650W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 489,
+   "specs": {
+    "wattage": 650,
+    "cert": "80 PLUS Bronze",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4711498482679"
+    ],
+    "mpn": [
+     "POA6500202"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-vic-gd-750w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "VIC GD 750W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 490,
+   "specs": {
+    "wattage": 750,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4711498482105"
+    ],
+    "mpn": [
+     "POA7500101"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-vic-gd-850w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "VIC GD 850W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 491,
+   "specs": {
+    "wattage": 850,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4711498482112"
+    ],
+    "mpn": [
+     "POA8500101"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-vita-gm-1000w-power-supply-unit-atx-atx3-1",
+   "category": "psu",
+   "brand": "FSP",
+   "name": "VITA GM 1000W Power supply unit ATX ATX3.1",
+   "year": 0,
+   "popularity": 492,
+   "specs": {
+    "wattage": 1000,
+    "cert": "80 PLUS Gold",
+    "fan": 12
+   },
+   "ids": {
+    "ean": [
+     "4713224529818",
+     "4713224529788"
+    ],
+    "mpn": [
+     "PPA10A4013"
+    ]
    }
   },
   {
@@ -847,6 +8707,244 @@
    }
   },
   {
+   "slug": "zalman-cnps14x-duo",
+   "category": "cooling",
+   "brand": "Zalman",
+   "name": "CNPS14X DUO",
+   "year": 0,
+   "popularity": 136,
+   "specs": {
+    "sockets": [
+     "LGA1851",
+     "LGA1150",
+     "LGA1151",
+     "LGA1155",
+     "LGA1156",
+     "LGA1200",
+     "LGA1700",
+     "AM4",
+     "AM5"
+    ],
+    "height": 159,
+    "radiator": null
+   },
+   "ids": {
+    "ean": [
+     "8809213766589"
+    ],
+    "mpn": [
+     "8809213766589"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-dark-rock-6",
+   "category": "cooling",
+   "brand": "be quiet!",
+   "name": "Dark Rock 6",
+   "year": 0,
+   "popularity": 230,
+   "specs": {
+    "sockets": [
+     "LGA1150",
+     "LGA1151",
+     "LGA1155",
+     "LGA1200",
+     "LGA1700",
+     "LGA1851",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "1 × вентилятор",
+    "height": 162,
+    "radiator": null
+   },
+   "ids": {
+    "ean": [
+     "4260052193143"
+    ],
+    "mpn": [
+     "BK046"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-dark-rock-pro-6",
+   "category": "cooling",
+   "brand": "be quiet!",
+   "name": "Dark Rock Pro 6",
+   "year": 0,
+   "popularity": 231,
+   "specs": {
+    "sockets": [
+     "LGA1150",
+     "LGA1151",
+     "LGA1155",
+     "LGA1200",
+     "LGA1700",
+     "LGA1851",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "2 × вентилятор",
+    "height": 169,
+    "radiator": null
+   },
+   "ids": {
+    "ean": [
+     "4260052193938"
+    ],
+    "mpn": [
+     "BK048"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-corefrozr-aa13",
+   "category": "cooling",
+   "brand": "MSI",
+   "name": "MAG COREFROZR AA13",
+   "year": 0,
+   "popularity": 297,
+   "specs": {
+    "sockets": [
+     "LGA1851",
+     "LGA1700",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "1 × вентилятор",
+    "height": 152,
+    "radiator": null
+   },
+   "ids": {
+    "ean": [
+     "4711377345743"
+    ],
+    "mpn": [
+     "MAGCOREFROZRAA13"
+    ]
+   }
+  },
+  {
+   "slug": "msi-meg-coreliquid-e15-360",
+   "category": "cooling",
+   "brand": "MSI",
+   "name": "MEG CORELIQUID E15 360",
+   "year": 0,
+   "popularity": 303,
+   "specs": {
+    "type": "СЖО",
+    "sockets": [
+     "LGA1700",
+     "LGA1851",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "3 × вентилятор",
+    "height": 65
+   },
+   "ids": {
+    "ean": [
+     "0824142454084",
+     "0824142454084",
+     "4711377424424"
+    ],
+    "mpn": [
+     "MEGCORELIQUIDE15360"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-pure-loop-3",
+   "category": "cooling",
+   "brand": "be quiet!",
+   "name": "PURE LOOP 3",
+   "year": 0,
+   "popularity": 341,
+   "specs": {
+    "type": "СЖО",
+    "sockets": [
+     "LGA1851",
+     "LGA1150",
+     "LGA1151",
+     "LGA1155",
+     "LGA1200",
+     "LGA1700",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "2 × вентилятор",
+    "height": 52
+   },
+   "ids": {
+    "ean": [
+     "4260052193167"
+    ],
+    "mpn": [
+     "BW027EU"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-pure-loop-3-lx",
+   "category": "cooling",
+   "brand": "be quiet!",
+   "name": "PURE LOOP 3 LX",
+   "year": 0,
+   "popularity": 342,
+   "specs": {
+    "type": "СЖО",
+    "sockets": [
+     "LGA1851",
+     "LGA1150",
+     "LGA1151",
+     "LGA1155",
+     "LGA1200",
+     "LGA1700",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "2 × вентилятор",
+    "height": 52
+   },
+   "ids": {
+    "ean": [
+     "4260052193198"
+    ],
+    "mpn": [
+     "BW030EU"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-pure-rock-slim-3",
+   "category": "cooling",
+   "brand": "be quiet!",
+   "name": "Pure Rock Slim 3",
+   "year": 0,
+   "popularity": 344,
+   "specs": {
+    "sockets": [
+     "LGA1851",
+     "LGA1700",
+     "AM4",
+     "AM5"
+    ],
+    "fans": "1 × вентилятор",
+    "height": 127,
+    "radiator": null
+   },
+   "ids": {
+    "ean": [
+     "4260052193150"
+    ],
+    "mpn": [
+     "BK047"
+    ]
+   }
+  },
+  {
    "slug": "fractal-design-north",
    "category": "case",
    "brand": "Fractal Design",
@@ -924,6 +9022,804 @@
     "maxCooler": 159,
     "maxRadiator": 240,
     "fansIncluded": 1
+   }
+  },
+  {
+   "slug": "asus-a23-hatsune-miku-edition",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "A23 Hatsune Miku Edition",
+   "year": 0,
+   "popularity": 113,
+   "specs": {
+    "size": "PC",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 380,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711636195287"
+    ],
+    "mpn": [
+     "90DC00K3B09010"
+    ]
+   }
+  },
+  {
+   "slug": "asus-a31",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "A31",
+   "year": 0,
+   "popularity": 114,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 380,
+    "maxRadiator": 120
+   },
+   "ids": {
+    "mpn": [
+     "90DC00R0B08000"
+    ]
+   }
+  },
+  {
+   "slug": "asus-a31-case",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "A31 Case",
+   "year": 0,
+   "popularity": 115,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 380,
+    "maxRadiator": 120
+   },
+   "ids": {
+    "mpn": [
+     "90DC00R3B08000"
+    ]
+   }
+  },
+  {
+   "slug": "asus-a32-tg-no-fan",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "A32 TG NO FAN",
+   "year": 0,
+   "popularity": 116,
+   "specs": {
+    "size": "PC",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 420,
+    "maxRadiator": 120
+   },
+   "ids": {
+    "mpn": [
+     "90DC00S0B0C000"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lander-300-mid-tower-chassis",
+   "category": "case",
+   "brand": "XPG",
+   "name": "LANDER 300 MID-TOWER CHASSIS -",
+   "year": 0,
+   "popularity": 283,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 180,
+    "maxGpu": 390,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "0842243036190",
+     "0842243036190",
+     "4711658152602"
+    ],
+    "mpn": [
+     "75261672"
+    ]
+   }
+  },
+  {
+   "slug": "xpg-lander-500-mid-tower-chassis",
+   "category": "case",
+   "brand": "XPG",
+   "name": "LANDER 500 MID-TOWER CHASSIS",
+   "year": 0,
+   "popularity": 284,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 160,
+    "maxGpu": 340,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711658152619",
+     "0842243036206",
+     "0842243036206"
+    ],
+    "mpn": [
+     "75261670"
+    ]
+   }
+  },
+  {
+   "slug": "be-quiet-light-base-500-lx",
+   "category": "case",
+   "brand": "be quiet!",
+   "name": "Light Base 500 LX",
+   "year": 0,
+   "popularity": 285,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 185,
+    "maxGpu": 400,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4260052193884"
+    ],
+    "mpn": [
+     "BGW85"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-m220-ba-case-midi-tower-matx",
+   "category": "case",
+   "brand": "FSP",
+   "name": "M220-BA Case Midi Tower mATX",
+   "year": 0,
+   "popularity": 286,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 340,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711498482280",
+     "0845685016201",
+     "0845685016201"
+    ],
+    "mpn": [
+     "POC0000313"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-pano-130r-pz",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MAG PANO 130R PZ",
+   "year": 0,
+   "popularity": 298,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 400,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711377373302"
+    ],
+    "mpn": [
+     "MAGPANO130RPZWHITE"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mag-pano-m110r",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MAG PANO M110R",
+   "year": 0,
+   "popularity": 299,
+   "specs": {
+    "size": "Mini Tower",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 410,
+    "maxRadiator": 140
+   },
+   "ids": {
+    "ean": [
+     "4711377405010"
+    ],
+    "mpn": [
+     "MAGPANOM110RWHITE"
+    ]
+   }
+  },
+  {
+   "slug": "msi-meg-maestro-900r",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MEG Maestro 900R",
+   "year": 0,
+   "popularity": 304,
+   "specs": {
+    "size": "Full Tower",
+    "boards": [
+     "E-ATX",
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 170,
+    "maxGpu": 440,
+    "maxRadiator": 420
+   },
+   "ids": {
+    "ean": [
+     "0824142455319",
+     "0824142455319",
+     "4711377427630"
+    ],
+    "mpn": [
+     "MEGMAESTRO900R"
+    ]
+   }
+  },
+  {
+   "slug": "cougar-midi-tower-case",
+   "category": "case",
+   "brand": "COUGAR",
+   "name": "Midi Tower Case",
+   "year": 0,
+   "popularity": 308,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 170,
+    "maxGpu": 340,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4710483779992"
+    ],
+    "mpn": [
+     "385VA400000"
+    ]
+   }
+  },
+  {
+   "slug": "cougar-mini-tower-case",
+   "category": "case",
+   "brand": "COUGAR",
+   "name": "Mini Tower Case",
+   "year": 0,
+   "popularity": 309,
+   "specs": {
+    "size": "Mini Tower",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 170,
+    "maxGpu": 400,
+    "maxRadiator": 280
+   },
+   "ids": {
+    "ean": [
+     "4711649770303"
+    ],
+    "mpn": [
+     "382QA600002"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-gungnir-212r-pz-pink",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MPG GUNGNIR 212R PZ PINK",
+   "year": 0,
+   "popularity": 312,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "E-ATX",
+     "mATX"
+    ],
+    "maxCooler": 175,
+    "maxGpu": 360,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "mpn": [
+     "MPGGUNGNIR212RPZPINK"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-vixta-300r-airflow-pz",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MPG VIXTA 300R AIRFLOW PZ",
+   "year": 0,
+   "popularity": 313,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 390,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4711377446693"
+    ],
+    "mpn": [
+     "MPGVIXTA300RAIRFLOWPZ"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-vixta-300r-airflow-pz-w",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MPG VIXTA 300R AIRFLOW PZ / W",
+   "year": 0,
+   "popularity": 314,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 390,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4711377446709"
+    ],
+    "mpn": [
+     "MPGVIXTA300RAIRFLOWPZW"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-vixta-300r-pz",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MPG VIXTA 300R PZ",
+   "year": 0,
+   "popularity": 315,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 420,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4711377446655"
+    ],
+    "mpn": [
+     "MPGVIXTA300RPZ"
+    ]
+   }
+  },
+  {
+   "slug": "msi-mpg-vixta-300r-pz-w",
+   "category": "case",
+   "brand": "MSI",
+   "name": "MPG VIXTA 300R PZ / W",
+   "year": 0,
+   "popularity": 316,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 165,
+    "maxGpu": 420,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4711377446662"
+    ],
+    "mpn": [
+     "MPGVIXTA300RPZW"
+    ]
+   }
+  },
+  {
+   "slug": "asus-prime-ap202-argb",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "Prime AP202 ARGB",
+   "year": 0,
+   "popularity": 323,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 175,
+    "maxGpu": 420,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "mpn": [
+     "90DC00P0B18000"
+    ]
+   }
+  },
+  {
+   "slug": "asus-proart-pa401-wood-edition-beige-tempered-glass-panel",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "ProArt PA401 Wood Edition Beige - Tempered Glass Panel",
+   "year": 0,
+   "popularity": 336,
+   "specs": {
+    "size": "PC",
+    "boards": [
+     "ATX"
+    ],
+    "maxCooler": 160,
+    "maxGpu": 315,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4711636075770"
+    ],
+    "mpn": [
+     "90DC00M7B39010"
+    ]
+   }
+  },
+  {
+   "slug": "asus-proart-pa401-wood-mesh-pwm-beige",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "Proart PA401 Wood Mesh PWM Beige",
+   "year": 0,
+   "popularity": 337,
+   "specs": {
+    "size": "Tower",
+    "boards": [
+     "ATX"
+    ],
+    "maxCooler": 160,
+    "maxGpu": 315,
+    "maxRadiator": 240
+   },
+   "ids": {
+    "ean": [
+     "4711387838747",
+     "0197105838741",
+     "0197105838741"
+    ],
+    "mpn": [
+     "90DC00M7B39000"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-cronox-gr801-curve-tg-argb",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "ROG CRONOX GR801 CURVE TG ARGB",
+   "year": 0,
+   "popularity": 373,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "E-ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 180,
+    "maxGpu": 400,
+    "maxRadiator": 120
+   },
+   "ids": {
+    "ean": [
+     "4711636579032"
+    ],
+    "mpn": [
+     "90DC00T3B09030"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-cronox-gr801-curve-tg-screen",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "ROG CRONOX GR801 CURVE TG SCREEN",
+   "year": 0,
+   "popularity": 374,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "E-ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 180,
+    "maxGpu": 400,
+    "maxRadiator": 120
+   },
+   "ids": {
+    "mpn": [
+     "90DC00T0B08000"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-gr20-edition-20",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "ROG GR20 Edition 20",
+   "year": 0,
+   "popularity": 378,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "E-ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxGpu": 368
+   },
+   "ids": {
+    "ean": [
+     "4711636631327",
+     "0199291631335",
+     "0199291631335"
+    ],
+    "mpn": [
+     "90DC0100B09000"
+    ]
+   }
+  },
+  {
+   "slug": "asus-rog-strix-helios-ii-gx601s",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "ROG STRIX HELIOS II GX601S",
+   "year": 0,
+   "popularity": 380,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "E-ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 190,
+    "maxGpu": 450,
+    "maxRadiator": 420
+   },
+   "ids": {
+    "ean": [
+     "4711636061155",
+     "0199291061156",
+     "0199291061156"
+    ],
+    "mpn": [
+     "90DC00W0B30000"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-s120-b-case-mini-tower-mitx",
+   "category": "case",
+   "brand": "FSP",
+   "name": "S120-B Case Mini Tower mITX",
+   "year": 0,
+   "popularity": 465,
+   "specs": {
+    "size": "Small Form Factor (SFF)",
+    "boards": [
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 160,
+    "maxGpu": 255
+   },
+   "ids": {
+    "ean": [
+     "4711498482020",
+     "0845685016072",
+     "0845685016072"
+    ],
+    "mpn": [
+     "POC0000297"
+    ]
+   }
+  },
+  {
+   "slug": "asus-tuf-gaming-gt502-horizon",
+   "category": "case",
+   "brand": "ASUS",
+   "name": "TUF Gaming GT502 Horizon",
+   "year": 0,
+   "popularity": 480,
+   "specs": {
+    "size": "Mid Tower",
+    "boards": [
+     "ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 163,
+    "maxGpu": 400,
+    "maxRadiator": 120
+   },
+   "ids": {
+    "ean": [
+     "0197105652743",
+     "0197105652743"
+    ],
+    "mpn": [
+     "90DC0093B08020"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-u530-bs-case-full-tower-mitx",
+   "category": "case",
+   "brand": "FSP",
+   "name": "U530-BS Case Full Tower mITX",
+   "year": 0,
+   "popularity": 485,
+   "specs": {
+    "size": "Ultra Tower",
+    "boards": [
+     "ATX",
+     "E-ATX",
+     "mATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 175,
+    "maxGpu": 375,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711498481986"
+    ],
+    "mpn": [
+     "POC0000303"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-u580-ba-case-full-tower-mitx",
+   "category": "case",
+   "brand": "FSP",
+   "name": "U580-BA Case Full Tower mITX",
+   "year": 0,
+   "popularity": 486,
+   "specs": {
+    "size": "Full Tower",
+    "boards": [
+     "ATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 160,
+    "maxGpu": 415,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711498482051"
+    ],
+    "mpn": [
+     "POC0000304"
+    ]
+   }
+  },
+  {
+   "slug": "fsp-u660-b-case-full-tower-mitx",
+   "category": "case",
+   "brand": "FSP",
+   "name": "U660-B Case Full Tower mITX",
+   "year": 0,
+   "popularity": 487,
+   "specs": {
+    "size": "Full Tower",
+    "boards": [
+     "ATX",
+     "Mini-ITX"
+    ],
+    "maxCooler": 180,
+    "maxGpu": 420,
+    "maxRadiator": 360
+   },
+   "ids": {
+    "ean": [
+     "4711498482594"
+    ],
+    "mpn": [
+     "POC0000310"
+    ]
    }
   }
  ]
