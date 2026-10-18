@@ -47,5 +47,5 @@ jobs:
           git add data/
           if git diff --cached --quiet; then echo "Без изменений"; exit 0; fi
           git commit -m "data: каталог $(date -u +%F)"
-          git pull --rebase
+          git pull --rebase --autostash
           git push

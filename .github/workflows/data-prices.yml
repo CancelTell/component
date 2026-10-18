@@ -39,5 +39,5 @@ jobs:
           git add data/
           if git diff --cached --quiet; then echo "Без изменений"; exit 0; fi
           git commit -m "data: цены $(date -u +%F' '%H:%M)"
-          git pull --rebase
+          git pull --rebase --autostash
           git push
