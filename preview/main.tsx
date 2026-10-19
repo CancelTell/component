@@ -8,14 +8,14 @@ import { NotFoundError } from './shims/next-navigation';
 import '@/app/globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { AmbientBackground } from '@/components/layout/AmbientBackground';
+import { navCategories } from '@/data';
 import HomePage from '@/app/page';
 import CatalogIndexPage from '@/app/catalog/page';
 import CategoryPage from '@/app/catalog/[category]/page';
 import ModelPage from '@/app/catalog/[category]/[slug]/page';
 import ComparePage from '@/app/compare/page';
-import CompatibilityPage from '@/app/compatibility/page';
-import CartPage from '@/app/cart/page';
+import BuildPage from '@/app/build/page';
+import BuildsPage from '@/app/builds/page';
 import GuidePage from '@/app/guide/page';
 import SearchPage from '@/app/search/page';
 import AboutPage from '@/app/about/page';
@@ -31,8 +31,8 @@ async function resolve(url: URL): Promise<ReactNode> {
     if (parts[0] === 'catalog' && parts.length === 3)
       return await ModelPage({ params: Promise.resolve({ category: parts[1]!, slug: parts[2]! }) });
     if (parts[0] === 'compare') return <ComparePage />;
-    if (parts[0] === 'compatibility') return <CompatibilityPage />;
-    if (parts[0] === 'cart') return <CartPage />;
+    if (parts[0] === 'build' || parts[0] === 'compatibility') return <BuildPage />;
+    if (parts[0] === 'builds' || parts[0] === 'cart') return <BuildsPage />;
     if (parts[0] === 'guide') return <GuidePage />;
     if (parts[0] === 'search') return await SearchPage({ searchParams: Promise.resolve(sp) });
     if (parts[0] === 'about') return <AboutPage />;
@@ -55,9 +55,8 @@ function App() {
   }, [key.split(':')[0]]);
   return (
     <>
-      <AmbientBackground />
       <a href="#main" className="skip-link">Перейти к содержимому</a>
-      <Header />
+      <Header nav={navCategories()} />
       <main id="main" className="main">
         <Suspense>{page}</Suspense>
       </main>

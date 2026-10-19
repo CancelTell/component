@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ICECAT-interface><Response>
 <CategoriesList>
-<Category ID="194" LowPic="" Score="1">
+<Category ID="164" LowPic="" Score="1">
  <Name ID="11" Value="Motherboards" langid="1"/>
  <Name ID="12" Value="Материнские платы" langid="8"/>
  <ParentCategory ID="100"><Names><Name ID="13" Value="Computer components" langid="1"/></Names></ParentCategory>

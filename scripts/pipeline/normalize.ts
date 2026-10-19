@@ -83,6 +83,15 @@ const boardsList = (v: string) => {
   const found = v.split(/[,;/]|\s+и\s+/).map(formFactorOf).filter((x): x is string => !!x);
   return [...new Set(found)];
 };
+/** "360 mm" → 360; radiator length "394 x 120 x 27 mm" → 360 (nominal size by fan count) */
+function radiatorSize(v: string): number | null {
+  const nums = (v.match(/\d+(?:[.,]\d+)?/g) ?? []).map((x) => Number(x.replace(',', '.')));
+  if (!nums.length) return null;
+  const max = Math.max(...nums) * (/cm|см/i.test(v) ? 10 : 1);
+  if ([120, 140, 240, 280, 360, 420].includes(max)) return max;
+  if (max < 100) return null;
+  return max < 165 ? 120 : max < 200 ? 140 : max < 300 ? 240 : max < 340 ? 280 : max < 430 ? 360 : 420;
+}
 const pcieGen = (v: string) => v.match(/(\d)\.0/)?.[0] ?? null;
 const chipsetOf = (v: string) => v.toUpperCase().match(/[ABHXZW]\d{3}[A-Z]?E?/)?.[0] ?? null;
 
@@ -134,11 +143,12 @@ const RULES: Record<CategoryId, Rule[]> = {
     ['speed', /memory clock speed|тактовая частота|частота/i, num],
     ['cl', /cas latency|латентность|cl$/i, num],
     ['voltage', /voltage|напряжение/i, num],
+    ['height', /^height$|высота модуля|^высота/i, mm],
   ],
   storage: [
-    ['type', /nvme|interface|интерфейс/i, (v) => (/nvme|pci/i.test(v) ? 'NVMe' : /sata/i.test(v) ? 'SATA' : null)],
+    ['type', /nvme|interface|интерфейс/i, (v) => (/nvme|pci/i.test(v) ? 'NVMe' : /sata|serial ata/i.test(v) ? 'SATA' : null)],
     ['formFactor', /form factor|форм-фактор/i, (v) => (/2280/.test(v) ? 'M.2 2280' : /m\.2/i.test(v) ? 'M.2 2280' : /2[.,]5/.test(v) ? '2,5"' : v.trim())],
-    ['iface', /^interface|интерфейс/i, (v) => (v.match(/(\d\.0)\s*x\s*(\d)/) ? `PCIe ${v.match(/(\d\.0)/)![1]} x4` : /sata/i.test(v) ? 'SATA III' : v.trim())],
+    ['iface', /^interface|интерфейс/i, (v) => (/pci/i.test(v) && v.match(/(\d\.0)/) ? `PCIe ${v.match(/(\d\.0)/)![1]} x4` : /sata|serial ata/i.test(v) ? 'SATA III' : v.trim())],
     ['capacity', /ssd capacity|capacity|объ[её]м накопителя|^объ[её]м/i, gb],
     ['read', /read speed|скорость (последовательного )?чтения/i, num],
     ['write', /write speed|скорость (последовательной )?записи/i, num],
@@ -150,11 +160,13 @@ const RULES: Record<CategoryId, Rule[]> = {
     ['modular', /modular|модульн/i, (v) => (/full|полност|yes|да/i.test(v) ? 'Полностью модульный' : /semi|частич/i.test(v) ? 'Частично модульный' : 'Немодульный')],
     ['atx3', /atx 3|atx3/i, yes],
     ['fan', /fan diameter|диаметр вентилятора/i, num],
+    ['highPower', /12vhpwr|12v-?2x6|16-pin|pcie 5\.0 .*connector/i, yes],
   ],
   cooling: [
     ['sockets', /socket|сокет/i, sockets],
     ['height', /^height|высота/i, mm],
-    ['radiator', /radiator (size|length)|размер радиатора|длина радиатора/i, mm],
+    ['radiator', /radiator (size|length|dimensions)|размер радиатора|длина радиатора/i, radiatorSize],
+    ['maxTdp', /thermal design power|^tdp|рассеиваемая мощность|максимальная рассеиваемая/i, num],
     ['type', /type|тип$/i, (v) => (/liquid|жидк|сжо|aio/i.test(v) ? 'СЖО' : /tower|башн/i.test(v) ? 'Башенный' : null)],
     ['fans', /number of fans|количество вентиляторов/i, (v) => `${num(v) ?? 1} × вентилятор`],
   ],
@@ -185,6 +197,12 @@ export function extractSpecs(category: CategoryId, params: Param[], unknown?: Ma
     if (!used && unknown) unknown.set(`${category}: ${p.name}`, (unknown.get(`${category}: ${p.name}`) ?? 0) + 1);
   }
   // Derived values
+  if (category === 'motherboard' && !specs.m2) {
+    // Icecat lists slots as "1st M.2 …", "2nd M.2 …": the highest ordinal is the slot count
+    const ord = params.map((p) => Number(p.name.match(/^(\d+)(st|nd|rd|th)\s+M\.2/i)?.[1] ?? 0));
+    const max = Math.max(0, ...ord);
+    if (max) specs.m2 = max;
+  }
   if (category === 'gpu' && specs.tdp && !specs.recPsu) specs.recPsu = Math.ceil(((Number(specs.tdp) + 250) * 1.2) / 50) * 50;
   if (category === 'cooling' && !specs.radiator && specs.type !== 'СЖО') specs.radiator = null;
   return specs;

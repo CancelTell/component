@@ -1,13 +1,14 @@
-/* ---------- Hero ----------
-   No banner: a plain heading with facts and search on the page itself,
-   and the ready-made builds card next to it as the visual. */
+/* ---------- Home ---------- */
+.home { display: grid; gap: 40px; padding-bottom: 48px; }
+@media (min-width: 768px) { .home { gap: 48px; } }
+
 .hero {
   position: relative;
   z-index: 3;
   margin-top: 24px;
   display: grid;
   gap: 24px;
-  animation: rise 400ms var(--ease);
+  animation: rise 500ms var(--ease);
 }
 .hero__main { display: grid; gap: 16px; align-content: center; min-width: 0; }
 .hero__title {
@@ -52,44 +53,64 @@
   .hero__title { font-size: 56px; line-height: 60px; }
 }
 
-/* ---------- Sections ---------- */
-.section {
-  margin-top: 28px;
-}
-.section__head {
+
+.home__block { display: grid; gap: 14px; }
+.section__head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.section__more { display: inline-flex; align-items: center; gap: 2px; color: var(--c-link); font-size: var(--fs-sm); font-weight: 500; }
+.section__more svg { transition: translate 250ms var(--ease); }
+.section__more:hover svg { translate: 3px 0; }
+
+/* ---------- Ready builds ---------- */
+.presets { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.preset {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-xl);
+  background: var(--c-surface);
+  color: var(--c-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  animation: folder-in 650ms var(--ease) calc(var(--i, 0) * 70ms) backwards;
+  transition: border-color var(--t-med) var(--ease), translate 450ms var(--ease), box-shadow 450ms var(--ease);
 }
-.section__more {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  color: var(--c-link);
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+.preset:hover, .preset:focus-visible {
+  outline: none;
+  translate: 0 -4px;
+  border-color: color-mix(in srgb, var(--g1, var(--c-accent)) 55%, var(--c-border));
+  box-shadow: 0 26px 46px -28px color-mix(in srgb, var(--g2, #000) 85%, transparent);
 }
-.section__more-icon {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--r-md);
-  background: var(--c-accent-soft);
-  color: var(--c-on-accent-soft);
-  transition: translate var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
+.preset__media {
+  position: relative;
+  height: 96px;
+  overflow: hidden;
+  background:
+    radial-gradient(90% 90% at 85% 0%, color-mix(in srgb, var(--g1) 70%, white) 0%, transparent 60%),
+    linear-gradient(150deg, var(--g1), var(--g2));
 }
-.section__more:hover .section__more-icon { translate: 3px 0; }
-.section__more:hover { color: var(--c-accent-hover); }
+.preset__media .art { position: absolute; inset: 8px 30%; width: auto; height: auto; transition: translate 500ms var(--ease), scale 500ms var(--ease); }
+.preset:hover .preset__media .art { translate: 0 -3px; scale: 1.08; }
+.preset:hover .art__l { animation: art-draw 900ms var(--ease) var(--t, 0ms) backwards; }
+.preset:hover .art__spin { animation: art-spin 2.2s linear infinite; }
+.preset__count { position: absolute; right: 8px; bottom: 8px; padding: 2px 8px; border-radius: 999px; background: rgb(0 0 0 / 0.35); color: #fff; font-family: var(--font-mono); font-size: 11px; line-height: 16px; }
+.preset__body { display: grid; gap: 6px; padding: 12px 14px 14px; flex: 1; align-content: start; }
+.preset__name { font-size: var(--fs-md); font-weight: 600; }
+.preset__note { color: var(--c-muted); font-size: var(--fs-sm); line-height: 19px; }
+.preset__parts { display: grid; gap: 3px; margin-top: 2px; font-family: var(--font-mono); font-size: 12px; color: var(--c-text-2); }
+.preset__part-label { display: inline-block; width: 34px; color: var(--c-subtle); }
+.preset__go { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; color: var(--c-link); font-size: var(--fs-sm); font-weight: 500; }
+.preset__go svg { transition: translate 250ms var(--ease); }
+.preset:hover .preset__go svg { translate: 4px 0; }
+.preset--blank { justify-content: center; align-items: flex-start; gap: 6px; padding: 16px; min-height: 220px; border-style: dashed; }
+.preset--blank:hover { border-color: var(--c-accent); }
+.preset__icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--r-md); background: var(--c-accent-soft); color: var(--c-on-accent-soft); transition: rotate 400ms var(--ease); }
+.preset--blank:hover .preset__icon { rotate: 90deg; }
 
-@media (min-width: 768px) {
-  .section { margin-top: 40px; }
-}
-
-.home-bottom { padding-bottom: 40px; }
-@media (min-width: 768px) {
-  .home-bottom { padding-bottom: 56px; }
-}
+.home-checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 6px 24px; padding: 0; list-style: none; color: var(--c-text-2); font-size: var(--fs-sm); }
+.home-checks li { padding-left: 14px; position: relative; animation: rise 500ms var(--ease) calc(var(--i, 0) * 60ms) backwards; }
+.home-checks li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--c-success); }
+.home-checks b { color: var(--c-text); font-weight: 600; }

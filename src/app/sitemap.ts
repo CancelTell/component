@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: url('/'), changeFrequency: 'weekly', priority: 1 },
     { url: url('/catalog'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/compatibility'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: url('/build'), changeFrequency: 'monthly', priority: 0.9 },
     { url: url('/guide'), changeFrequency: 'monthly', priority: 0.5 },
     { url: url('/about'), changeFrequency: 'yearly', priority: 0.3 },
     ...categories.map((c) => ({ url: url(`/catalog/${c.id}`), changeFrequency: 'weekly' as const, priority: 0.8 })),

@@ -25,25 +25,28 @@ await build({
     'next/navigation': resolve(here, 'shims/next-navigation.ts'),
     'next/font/google': resolve(here, 'shims/next-font.ts'),
     'lucide-react': resolve(here, 'shims/lucide-react.tsx'),
+    '@/lib/catalog-fetch': resolve(here, 'shims/catalog-fetch.ts'),
   },
   define: {
     'process.env.NODE_ENV': '"production"',
     'process.env.NEXT_PUBLIC_SITE_URL': '"https://preview.local"',
+    'process.env.NEXT_PUBLIC_HAS_PRICES': '"0"',
+    'process.env.NEXT_PUBLIC_CATALOG_DATE': '"2026-10-18"',
   },
   loader: { '.svg': 'text' },
   logLevel: 'warning',
 });
 
 const html = readFileSync(resolve(here, 'index.html'), 'utf8')
-  .replace('<!--CSS-->', `<style>${readFileSync(resolve(out, 'app.css'), 'utf8')}</style>`)
-  .replace('<!--JS-->', `<script>${readFileSync(resolve(out, 'app.js'), 'utf8').replace(/<\/script/g, '<\\/script')}</script>`);
+  .replace('<!--CSS-->', () => `<style>${readFileSync(resolve(out, 'app.css'), 'utf8')}</style>`)
+  .replace('<!--JS-->', () => `<script>${readFileSync(resolve(out, 'app.js'), 'utf8').replace(/<\/script/g, '<\\/script')}</script>`);
 writeFileSync(resolve(out, 'index.html'), html);
 
 // Body-only variant for hosts that wrap the page in their own document skeleton
 const css = readFileSync(resolve(out, 'app.css'), 'utf8');
 const js = readFileSync(resolve(out, 'app.js'), 'utf8').replace(/<\/script/g, '<\\/script');
 const fragment = `<title>COMPONENT</title>
-<meta name="theme-color" content="#131011">
+<meta name="theme-color" content="#111214">
 <script>(function(){var t=\'dark\';try{if(localStorage.getItem(\'component:theme\')===\'light\')t=\'light\'}catch(e){}document.documentElement.dataset.theme=t})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

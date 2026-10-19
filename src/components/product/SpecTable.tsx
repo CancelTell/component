@@ -1,4 +1,4 @@
-import { categoryById } from '@/data';
+import { categoryById } from '@/data/categories';
 import type { Product } from '@/data/types';
 import { formatSpec } from '@/lib/format';
 

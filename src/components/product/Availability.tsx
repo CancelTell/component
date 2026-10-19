@@ -1,6 +1,6 @@
 import { ExternalLink, Store } from 'lucide-react';
-import { OFFERS_ARE_DEMO, getOffers } from '@/data/offers';
-import { rub } from '@/lib/pricing';
+import { getOffers } from '@/data/offers';
+import { rub } from '@/lib/money';
 
 
 /** "Где купить": store offers for a model, or an honest empty state while there is no data */
@@ -18,11 +18,10 @@ export function Availability({ slug, compact = false }: { slug: string; compact?
         <div>
           <h2 id={`avail-${slug}`} className="avail__title">
             Наличие в магазинах
-            {OFFERS_ARE_DEMO && offers.length > 0 && <span className="demo-badge">демо</span>}
           </h2>
           <p className="avail__sub">
             {offers.length === 0
-              ? 'Цены и наличие появятся, когда подключим магазины'
+              ? 'Этой модели пока нет в фидах подключённых магазинов'
               : inStock.length > 0
                 ? `В наличии в ${inStock.length} из ${offers.length}${minPrice !== null ? `, от ${rub(minPrice)}` : ''}`
                 : 'Сейчас нет в наличии'}

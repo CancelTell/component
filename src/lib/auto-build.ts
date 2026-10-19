@@ -1,7 +1,6 @@
-import { getProductsByCategory } from '@/data';
-import { bestOffer } from '@/data/offers';
 import type { Product } from '@/data/types';
-import { buildSlots, estimatePower, runChecks, type Build, type BuildSlugs, type SlotId } from './compatibility';
+import { bestOffer, getCategoryProducts } from './catalog-client';
+import { buildSlots, estimatePower, runChecks, slotCategory, type Build, type BuildSlugs, type SlotId } from './compatibility';
 
 const price = (p: Product) => bestOffer(p.slug)?.price ?? null;
 const num = (p: Product, key: string) => (typeof p.specs[key] === 'number' ? (p.specs[key] as number) : 0);
@@ -10,9 +9,10 @@ const has = (p: Product, key: string, value: string) => {
   return Array.isArray(v) ? v.includes(value) : v === value;
 };
 
-/** In-stock products of a category, cheapest first */
+/** In-stock products of a category, cheapest first. The categories must be loaded (useCatalog). */
 function pool(slot: SlotId): Array<{ p: Product; price: number }> {
-  return getProductsByCategory(slot)
+  if (slot === 'storage2') return [];
+  return getCategoryProducts(slotCategory(slot))
     .flatMap((p) => {
       const pr = price(p);
       return pr === null ? [] : [{ p, price: pr }];
@@ -21,7 +21,7 @@ function pool(slot: SlotId): Array<{ p: Product; price: number }> {
 }
 
 const ok = (build: Build, slot: SlotId) =>
-  runChecks(build).every((c) => !c.slots.includes(slot) || c.status === 'ok' || c.status === 'pending');
+  runChecks(build).every((c) => !c.slots.includes(slot) || c.status === 'ok' || c.status === 'pending' || c.status === 'unknown');
 
 export interface AutoBuild {
   slots: BuildSlugs;

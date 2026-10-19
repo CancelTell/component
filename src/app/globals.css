@@ -3,12 +3,10 @@
 @import '../styles/ui.css';
 @import '../styles/layout.css';
 @import '../styles/home.css';
+@import '../styles/builder.css';
 @import '../styles/catalog.css';
+@import '../styles/art.css';
 @import '../styles/product.css';
 @import '../styles/compare.css';
-@import '../styles/compat.css';
-@import '../styles/art.css';
-@import '../styles/ambient.css';
-@import '../styles/features.css';
-@import '../styles/cart.css';
+
 @import '../styles/guide.css';

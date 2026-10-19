@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
 import { ArrowRight, Search } from 'lucide-react';
-import { categoryById } from '@/data';
-import { productHref, productSummary } from '@/lib/catalog';
-import { searchProducts } from '@/lib/search';
+import { categoryById } from '@/data/categories';
+import { productHref } from '@/lib/catalog';
+import { fetchSearchIndex, type SearchEntry } from '@/lib/catalog-fetch';
+import { searchEntries } from '@/lib/search';
 import { modelsLabel } from '@/lib/format';
 import { CategoryIcon } from '@/components/ui/CategoryIcon';
 
@@ -36,9 +37,14 @@ export function SearchField({ defaultValue = '', autoFocus, placeholder = 'Мо�
   const [query, setQuery] = useState(defaultValue);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
+  // The index (a few dozen KB) is loaded on first focus, not with the page
+  const [index, setIndex] = useState<SearchEntry[] | null>(null);
+  const loadIndex = () => {
+    if (!index) void fetchSearchIndex().then(setIndex);
+  };
 
   const trimmed = query.trim();
-  const all = useMemo(() => (trimmed ? searchProducts(trimmed) : []), [trimmed]);
+  const all = useMemo(() => (trimmed && index ? searchEntries(index, trimmed) : []), [trimmed, index]);
   const results = all.slice(0, MAX_SUGGESTIONS);
   const showPanel = open && trimmed.length > 0;
   const allHref = `/search?q=${encodeURIComponent(trimmed)}`;
@@ -95,7 +101,11 @@ export function SearchField({ defaultValue = '', autoFocus, placeholder = 'Мо�
             setOpen(true);
             setActive(-1);
           }}
-          onFocus={() => setOpen(true)}
+          onFocus={() => {
+            loadIndex();
+            setOpen(true);
+          }}
+          onPointerEnter={loadIndex}
           onKeyDown={onKeyDown}
         />
       </label>
@@ -122,7 +132,7 @@ export function SearchField({ defaultValue = '', autoFocus, placeholder = 'Мо�
                       </span>
                       <span className="ac__text">
                         <span className="ac__name">{highlight(`${p.brand} ${p.name}`, trimmed)}</span>
-                        <span className="ac__sub">{productSummary(p)}</span>
+                        <span className="ac__sub">{p.summary}</span>
                       </span>
                       <span className="ac__cat">{config.singular}</span>
                     </Link>
@@ -130,6 +140,10 @@ export function SearchField({ defaultValue = '', autoFocus, placeholder = 'Мо�
                 );
               })}
             </ul>
+          ) : !index ? (
+            <p id={listId} className="ac__empty">
+              Загружаем…
+            </p>
           ) : (
             <p id={listId} className="ac__empty">
               По запросу «{trimmed}» ничего не нашлось. Попробуйте бренд или сокет, например AM5.

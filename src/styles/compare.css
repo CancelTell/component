@@ -270,3 +270,4 @@
   color: var(--c-border-strong);
 }
 .empty-card__text { color: var(--c-muted); max-width: 480px; }
+.cmp-model, .cmp__bar > span, .cmp__best, .cmp__cell { animation: none !important; }

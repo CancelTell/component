@@ -1,32 +1,16 @@
-import type { CategoryConfig, CategoryId, FilterOption, Product, SpecValue } from './types';
+import type { CategoryConfig, CategoryId, FacetDef, Product, SpecValue } from './types';
 
 const n = (p: Product, key: string): number => {
   const v = p.specs[key];
   return typeof v === 'number' ? v : NaN;
 };
 const s = (p: Product, key: string): string => String(p.specs[key] ?? '');
-const list = (p: Product, key: string): string[] => {
-  const v = p.specs[key];
-  return Array.isArray(v) ? v : v == null ? [] : [String(v)];
-};
 
-const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-
-const eq = (key: string, value: string, label = value, id = slugify(value)): FilterOption => ({
-  id,
-  label,
-  test: (p) => list(p, key).includes(value),
-});
-const brand = (value: string): FilterOption => ({
-  id: slugify(value),
-  label: value,
-  test: (p) => p.brand === value,
-});
-const range = (id: string, label: string, key: string, min = -Infinity, max = Infinity): FilterOption => ({
-  id,
-  label,
-  test: (p) => n(p, key) >= min && n(p, key) <= max,
-});
+const enumF = (key: string, label: string, get?: FacetDef['get']): FacetDef => ({ key, label, type: 'enum', get });
+const rangeF = (key: string, label: string, unit?: string, get?: FacetDef['get']): FacetDef => ({ key, label, type: 'range', unit, get });
+const brandF = enumF('brand', 'Бренд', (p) => p.brand);
+const flag = (key: string, yes = 'Есть', no = 'Нет') => (p: Product) => (p.specs[key] === null || p.specs[key] === undefined ? null : p.specs[key] ? yes : no);
+const yearF = rangeF('year', 'Год выхода', undefined, (p) => p.year || null);
 
 // null/undefined = unknown (imported models): show a dash instead of guessing
 const yesNo = (yes: string, no: string) => (v: SpecValue) => (v === null || v === undefined ? '—' : v ? yes : no);
@@ -77,23 +61,19 @@ export const categories: CategoryConfig[] = [
         ],
       },
     ],
-    filters: [
-      { id: 'brand', label: 'Бренд', options: [brand('AMD'), brand('Intel')] },
-      { id: 'socket', label: 'Сокет', options: [eq('socket', 'AM4'), eq('socket', 'AM5'), eq('socket', 'LGA1700')] },
-      {
-        id: 'cores', label: 'Ядра',
-        options: [range('6', '6', 'cores', 6, 6), range('8', '8', 'cores', 8, 8), range('10', '10 и больше', 'cores', 10)],
-      },
-      {
-        id: 'tdp', label: 'TDP',
-        options: [
-          range('low', 'до 65 Вт', 'tdp', 0, 65),
-          range('mid', '66–125 Вт', 'tdp', 66, 125),
-          range('high', 'больше 125 Вт', 'tdp', 126),
-        ],
-      },
+    tableSpecs: ['socket', 'coresThreads', 'boostClock', 'l3', 'tdp'],
+    facets: [
+      brandF,
+      enumF('socket', 'Сокет'),
+      enumF('memory', 'Тип памяти'),
+      rangeF('cores', 'Ядра'),
+      rangeF('boostClock', 'Частота до', 'ГГц'),
+      rangeF('tdp', 'TDP', 'Вт'),
+      enumF('igpu', 'Встроенная графика', (p) => (p.specs.igpu ? 'Есть' : 'Нет')),
+      enumF('unlocked', 'Разгон', flag('unlocked', 'Разблокирован', 'Заблокирован')),
+      yearF,
     ],
-    quickFilters: [['brand', 'intel'], ['brand', 'amd'], ['socket', 'am4'], ['socket', 'am5'], ['socket', 'lga1700']],
+    quick: [['brand', 'AMD'], ['brand', 'Intel'], ['socket', 'AM5'], ['socket', 'AM4'], ['socket', 'LGA1700'], ['socket', 'LGA1851']],
   },
   {
     id: 'gpu',
@@ -131,18 +111,17 @@ export const categories: CategoryConfig[] = [
         ],
       },
     ],
-    filters: [
-      { id: 'brand', label: 'Бренд', options: [brand('NVIDIA'), brand('AMD'), brand('Intel')] },
-      {
-        id: 'vram', label: 'Видеопамять',
-        options: [range('8', '8 ГБ', 'vram', 8, 8), range('12', '12 ГБ', 'vram', 12, 12), range('16', '16 ГБ и больше', 'vram', 16)],
-      },
-      {
-        id: 'tdp', label: 'TDP',
-        options: [range('low', 'до 200 Вт', 'tdp', 0, 200), range('mid', '201–260 Вт', 'tdp', 201, 260), range('high', 'больше 260 Вт', 'tdp', 261)],
-      },
+    tableSpecs: ['vram', 'memType', 'bus', 'tdp', 'recPsu'],
+    facets: [
+      brandF,
+      rangeF('vram', 'Видеопамять', 'ГБ'),
+      enumF('memType', 'Тип памяти'),
+      rangeF('bus', 'Шина', 'бит'),
+      rangeF('tdp', 'TDP', 'Вт'),
+      rangeF('recPsu', 'Рекомендуемый БП', 'Вт'),
+      yearF,
     ],
-    quickFilters: [['brand', 'nvidia'], ['brand', 'amd'], ['brand', 'intel'], ['vram', '8'], ['vram', '12'], ['vram', '16']],
+    quick: [['brand', 'NVIDIA'], ['brand', 'AMD'], ['brand', 'Intel'], ['memType', 'GDDR7'], ['memType', 'GDDR6']],
   },
   {
     id: 'motherboard',
@@ -183,12 +162,17 @@ export const categories: CategoryConfig[] = [
         ],
       },
     ],
-    filters: [
-      { id: 'socket', label: 'Сокет', options: [eq('socket', 'AM4'), eq('socket', 'AM5'), eq('socket', 'LGA1700')] },
-      { id: 'form', label: 'Форм-фактор', options: [eq('formFactor', 'ATX'), eq('formFactor', 'mATX')] },
-      { id: 'mem', label: 'Память', options: [eq('memType', 'DDR4'), eq('memType', 'DDR5')] },
+    tableSpecs: ['socket', 'chipset', 'formFactor', 'memType', 'm2'],
+    facets: [
+      brandF,
+      enumF('socket', 'Сокет'),
+      enumF('chipset', 'Чипсет'),
+      enumF('formFactor', 'Форм-фактор'),
+      enumF('memType', 'Тип памяти'),
+      rangeF('m2', 'Слоты M.2'),
+      enumF('wifi', 'Wi-Fi', (p) => (p.specs.wifi === undefined || p.specs.wifi === null ? null : p.specs.wifi ? 'Есть' : 'Нет')),
     ],
-    quickFilters: [['socket', 'am4'], ['socket', 'am5'], ['socket', 'lga1700'], ['form', 'atx'], ['form', 'matx']],
+    quick: [['socket', 'AM5'], ['socket', 'AM4'], ['socket', 'LGA1700'], ['formFactor', 'ATX'], ['formFactor', 'mATX']],
   },
   {
     id: 'ram',
@@ -220,17 +204,20 @@ export const categories: CategoryConfig[] = [
           { key: 'speed', label: 'Частота', unit: 'МТ/с', mono: true, better: 'higher' },
           { key: 'cl', label: 'CAS-латентность', short: 'Тайминг', format: (v) => `CL${v}`, mono: true, better: 'lower' },
           { key: 'voltage', label: 'Напряжение', unit: 'В', decimals: 2, mono: true, better: 'lower' },
+          { key: 'height', label: 'Высота модуля', unit: 'мм', mono: true, better: 'lower' },
         ],
       },
     ],
-    filters: [
-      { id: 'type', label: 'Тип', options: [eq('memType', 'DDR4'), eq('memType', 'DDR5')] },
-      {
-        id: 'speed', label: 'Частота',
-        options: [range('low', 'до 3600 МТ/с', 'speed', 0, 3600), range('mid', '5600 МТ/с', 'speed', 5600, 5600), range('high', '6000 МТ/с и выше', 'speed', 6000)],
-      },
+    tableSpecs: ['memType', 'kit', 'speed', 'cl'],
+    facets: [
+      brandF,
+      enumF('memType', 'Тип памяти'),
+      enumF('kit', 'Комплект', (p) => `${n(p, 'modules')} × ${n(p, 'moduleSize')} ГБ`),
+      rangeF('total', 'Объём комплекта', 'ГБ', (p) => n(p, 'modules') * n(p, 'moduleSize') || null),
+      rangeF('speed', 'Частота', 'МТ/с'),
+      rangeF('cl', 'CAS-латентность'),
     ],
-    quickFilters: [['type', 'ddr4'], ['type', 'ddr5']],
+    quick: [['memType', 'DDR5'], ['memType', 'DDR4']],
   },
   {
     id: 'storage',
@@ -265,12 +252,16 @@ export const categories: CategoryConfig[] = [
         ],
       },
     ],
-    filters: [
-      { id: 'type', label: 'Тип', options: [eq('type', 'NVMe'), eq('type', 'SATA')] },
-      { id: 'iface', label: 'Интерфейс', options: [eq('iface', 'PCIe 4.0 x4', 'PCIe 4.0'), eq('iface', 'PCIe 5.0 x4', 'PCIe 5.0'), eq('iface', 'SATA III')] },
-      { id: 'capacity', label: 'Объём', options: [range('1', '1 ТБ', 'capacity', 1000, 1000), range('2', '2 ТБ', 'capacity', 2000, 2000)] },
+    tableSpecs: ['type', 'capacity', 'iface', 'read', 'write'],
+    facets: [
+      brandF,
+      enumF('type', 'Тип'),
+      enumF('formFactor', 'Форм-фактор'),
+      enumF('iface', 'Интерфейс'),
+      rangeF('capacity', 'Объём', 'ГБ'),
+      rangeF('read', 'Чтение', 'МБ/с'),
     ],
-    quickFilters: [['type', 'nvme'], ['type', 'sata'], ['iface', 'pcie-5-0-x4']],
+    quick: [['type', 'NVMe'], ['type', 'SATA'], ['iface', 'PCIe 4.0 x4'], ['iface', 'PCIe 5.0 x4']],
   },
   {
     id: 'psu',
@@ -302,14 +293,15 @@ export const categories: CategoryConfig[] = [
         ],
       },
     ],
-    filters: [
-      {
-        id: 'watt', label: 'Мощность',
-        options: [range('low', 'до 650 Вт', 'wattage', 0, 650), range('mid', '750–850 Вт', 'wattage', 750, 850), range('high', '1000 Вт и больше', 'wattage', 1000)],
-      },
-      { id: 'cert', label: 'Сертификат', options: [eq('cert', '80 PLUS Bronze', 'Bronze'), eq('cert', '80 PLUS Gold', 'Gold')] },
+    tableSpecs: ['wattage', 'cert', 'modular', 'highPower'],
+    facets: [
+      brandF,
+      rangeF('wattage', 'Мощность', 'Вт'),
+      enumF('cert', 'Сертификат'),
+      enumF('modular', 'Кабели'),
+      enumF('highPower', 'Разъём 12V-2x6', flag('highPower')),
     ],
-    quickFilters: [['watt', 'low'], ['watt', 'mid'], ['watt', 'high'], ['cert', '80-plus-gold']],
+    quick: [['cert', '80 PLUS Gold'], ['cert', '80 PLUS Bronze'], ['highPower', 'Есть']],
   },
   {
     id: 'cooling',
@@ -339,14 +331,19 @@ export const categories: CategoryConfig[] = [
             get: (p) => (p.specs.height ? `${p.specs.height} мм` : `${p.specs.radiator} мм`),
           },
           { key: 'fans', label: 'Вентиляторы' },
+          { key: 'maxTdp', label: 'Рассеивает до', unit: 'Вт', mono: true, better: 'higher' },
         ],
       },
     ],
-    filters: [
-      { id: 'type', label: 'Тип', options: [eq('type', 'Башенный', 'Башенные', 'tower'), eq('type', 'СЖО', 'СЖО', 'aio')] },
-      { id: 'height', label: 'Высота', options: [range('low', 'до 160 мм', 'height', 0, 160), range('high', 'больше 160 мм', 'height', 161)] },
+    tableSpecs: ['type', 'size', 'fans', 'sockets'],
+    facets: [
+      brandF,
+      enumF('type', 'Тип'),
+      enumF('sockets', 'Сокет'),
+      rangeF('height', 'Высота', 'мм'),
+      enumF('radiator', 'Радиатор СЖО', (p) => (p.specs.radiator ? `${p.specs.radiator} мм` : null)),
     ],
-    quickFilters: [['type', 'tower'], ['type', 'aio']],
+    quick: [['type', 'Башенный'], ['type', 'СЖО'], ['sockets', 'AM5'], ['sockets', 'LGA1700']],
   },
   {
     id: 'case',
@@ -378,11 +375,16 @@ export const categories: CategoryConfig[] = [
         ],
       },
     ],
-    filters: [
-      { id: 'board', label: 'Материнская плата', options: [eq('boards', 'ATX'), eq('boards', 'mATX')] },
-      { id: 'gpu', label: 'Длина видеокарты', options: [range('360', 'до 360 мм', 'maxGpu', 0, 360), range('361', 'больше 360 мм', 'maxGpu', 361)] },
+    tableSpecs: ['size', 'boards', 'maxGpu', 'maxCooler', 'maxRadiator'],
+    facets: [
+      brandF,
+      enumF('size', 'Типоразмер'),
+      enumF('boards', 'Материнская плата'),
+      rangeF('maxGpu', 'Видеокарта до', 'мм'),
+      rangeF('maxCooler', 'Кулер до', 'мм'),
+      rangeF('maxRadiator', 'Радиатор до', 'мм'),
     ],
-    quickFilters: [['board', 'atx'], ['board', 'matx']],
+    quick: [['boards', 'ATX'], ['boards', 'mATX'], ['boards', 'Mini-ITX']],
   },
 ];
 

@@ -1,10 +1,12 @@
 import Link from 'next/link';
 
 const links = [
-  { href: '/catalog', label: 'Категории' },
+  { href: '/build', label: 'Конструктор' },
+  { href: '/catalog', label: 'Комплектующие' },
+  { href: '/builds', label: 'Мои сборки' },
+  { href: '/guide', label: 'Инструкция' },
   { href: '/compare', label: 'Сравнение' },
   { href: '/about', label: 'О проекте' },
-  { href: '/about#contacts', label: 'Контакты' },
 ];
 
 export function Footer() {
@@ -32,7 +34,7 @@ export function Footer() {
           <a href="https://icecat.biz/" target="_blank" rel="noopener noreferrer">
             Open Icecat
           </a>
-          , и носят справочный характер.
+          , и носят справочный характер. Нашли неточность — нажмите «Сообщить об ошибке» на странице модели.
         </p>
       </div>
     </footer>

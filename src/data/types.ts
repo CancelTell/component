@@ -1,3 +1,5 @@
+import type { StoreId } from './stores';
+
 export type CategoryId =
   | 'cpu'
   | 'gpu'
@@ -23,6 +25,34 @@ export interface Product {
   specs: Specs;
   /** Barcodes and manufacturer part numbers: how store offers find this model */
   ids?: { ean?: string[]; mpn?: string[] };
+  /** Where the specs come from (set by the data robot) */
+  source?: DataSource;
+  /** ISO date when the robot last refreshed this model from its source */
+  updatedAt?: string;
+  /** Product photo URL (Icecat); the category illustration is shown when it's missing */
+  image?: string;
+}
+
+export type DataSource = 'manual' | 'wikipedia' | 'icecat' | 'store';
+
+/** Store availability of one model */
+export interface Offer {
+  /** Store name as shown to the user */
+  store: string;
+  storeId: StoreId;
+  /** Price in roubles; null when the store doesn't show it */
+  price: number | null;
+  inStock: boolean;
+  /** Link to the product in the store */
+  url: string;
+  /** ISO date of the last update */
+  updatedAt: string;
+}
+
+/** What /data/<category>.json returns: one category with its store offers */
+export interface CategoryPayload {
+  products: Product[];
+  offers: Record<string, Offer[]>;
 }
 
 export interface SpecDef {
@@ -50,16 +80,18 @@ export interface SpecGroup {
   specs: SpecDef[];
 }
 
-export interface FilterOption {
-  id: string;
+/**
+ * A filter of the category page. `enum` facets list the values found in the data
+ * (sockets, brands…); `range` facets take a from–to interval of a number.
+ */
+export interface FacetDef {
+  /** Spec key, or 'brand'; also the URL parameter */
+  key: string;
   label: string;
-  test: (product: Product) => boolean;
-}
-
-export interface FilterGroup {
-  id: string;
-  label: string;
-  options: FilterOption[];
+  type: 'enum' | 'range';
+  unit?: string;
+  /** Derived value (yes/no, kit size…); defaults to specs[key] */
+  get?: (product: Product) => SpecValue;
 }
 
 export type IconName =
@@ -91,8 +123,10 @@ export interface CategoryConfig {
   keySpecs: string[];
   /** Specs for one-line summaries (defaults to cardSpecs) */
   summarySpecs?: string[];
+  /** Columns of the catalog table (4–6 specs) */
+  tableSpecs: string[];
   groups: SpecGroup[];
-  filters: FilterGroup[];
-  /** Quick filter chips above results: [groupId, optionId] */
-  quickFilters: Array<[string, string]>;
+  facets: FacetDef[];
+  /** Quick filter chips above results and in the header menu: [facet key, value] */
+  quick: Array<[string, string]>;
 }

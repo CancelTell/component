@@ -120,9 +120,3 @@ export const cpus: Product[] = [
   },
 ];
 
-/** Chipsets of motherboards that accept a given socket */
-export const chipsetsBySocket: Record<string, string[]> = {
-  AM4: ['A520', 'B450', 'B550', 'X570'],
-  AM5: ['A620', 'B650', 'B650E', 'B850', 'X670', 'X670E', 'X870', 'X870E'],
-  LGA1700: ['H610', 'B660', 'B760', 'H770', 'Z690', 'Z790'],
-};

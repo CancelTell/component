@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { toJsonLd } from '@/lib/json-ld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { GuideView } from '@/components/guide/GuideView';
 import { guideSteps } from '@/components/guide/steps';
@@ -40,7 +41,7 @@ export default function GuidePage() {
         </ul>
       </div>
       <GuideView />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howTo) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(howTo) }} />
     </div>
   );
 }

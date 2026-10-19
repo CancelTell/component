@@ -1,8 +1,8 @@
-import { bestOffer, getOffers, type Offer } from '@/data/offers';
 import { stores, type StoreInfo } from '@/data/stores';
-import type { Product } from '@/data/types';
+import type { Offer, Product } from '@/data/types';
+import { bestOffer, getOffers } from './catalog-client';
 
-export const rub = (n: number) => `${n.toLocaleString('ru-RU')}\u00a0₽`;
+export { HAS_PRICES, rub } from './money';
 
 export interface PricedItem {
   product: Product;

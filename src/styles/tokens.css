@@ -1,136 +1,140 @@
 /*
-  Design tokens.
-  Dark theme is the default; light theme is the original Figma palette, slightly softened.
-  The theme is set on <html data-theme="dark|light"> by an inline script before first paint.
+  Design tokens. A neutral "tool" palette: graphite surfaces, one blue accent for actions and
+  selection, and status colours that mean the same everywhere (ok / warn / fail / unknown).
+  Dark theme is the default; the theme is set on <html data-theme> before first paint.
 */
 :root,
 :root[data-theme='dark'] {
   color-scheme: dark;
 
-  /* Surfaces — warm graphite instead of pure black to reduce contrast fatigue */
-  --c-bg: #131011;
-  --c-surface: #1b1718;
-  --c-surface-2: #241e1f;
-  --c-surface-3: #2a2324;
+  --c-bg: #111214;
+  --c-surface: #17181b;
+  --c-surface-2: #1d1f23;
+  --c-surface-3: #25282d;
 
-  /* Lines */
-  --c-border: #2f2829;
-  --c-border-strong: #463b3c;
+  --c-border: #2a2d33;
+  --c-border-strong: #3a3e46;
 
-  /* Text — off-white, never pure #fff on dark */
-  --c-text: #ece4e1;
-  --c-text-2: #d3c8c4;
-  --c-muted: #a2948f;
-  --c-subtle: #7a6d69;
+  --c-text: #e7e8ea;
+  --c-text-2: #c8cbd0;
+  --c-muted: #9298a2;
+  --c-subtle: #6b717b;
 
-  /* Brand */
-  --c-primary: #561c18;
-  --c-primary-hover: #67231e;
-  --c-accent: #e5574a;
-  --c-accent-hover: #f06a5d;
-  --c-accent-soft: #33201e;
-  --c-link: #f08a7e;
-  --c-on-primary: #fdf6f4;
-  --c-on-primary-muted: #e2c9c3;
-  --c-check-on-primary: #ff9b8c;
+  /* Selection (active chips, toggles) and actions */
+  --c-primary: #26344d;
+  --c-primary-hover: #2e3e5c;
+  --c-on-primary: #e6edfb;
+  --c-on-primary-muted: #b4c0d6;
+  --c-check-on-primary: #9dbbff;
+  --c-accent: #3d7bf2;
+  --c-accent-hover: #5a8ff5;
+  --c-accent-soft: #1a2333;
+  --c-on-accent-soft: #9dbbff;
+  --c-link: #8db2ff;
 
-  /* Status */
-  --c-highlight: #33291a;
-  --c-success: #5cc584;
-  --c-warning: #e3a857;
-  --c-danger: #ff7a6e;
+  /* Status: same meaning on every page */
+  --c-success: #3fb27f;
+  --c-warning: #d6a23a;
+  --c-danger: #f0605a;
+  --c-unknown: #8b919b;
+  --c-success-soft: #15261f;
+  --c-warning-soft: #2a2416;
+  --c-danger-soft: #2d1818;
+  --c-unknown-soft: #1f2125;
+  --c-highlight: #1a1f29;
 
-  /* States */
-  --c-hover-bg: #221c1d;
-  --c-hover-border: #5c4f50;
-  --c-image-icon: #3d3334;
-  --c-overlay: rgb(0 0 0 / 0.6);
-  /* Hero "Найти" button: on the dark wine hero a coral button reads better than a pale slab */
-  --c-light-btn-bg: #e5574a;
-  --c-light-btn-fg: #ffffff;
-  --c-light-btn-hover: #f06a5d;
-  --c-on-accent-soft: #f08a7e;
-  --c-knob: #fdf6f4;
+  --c-hover-bg: #1c1e22;
+  --c-hover-border: #4a4f58;
+  --c-image-icon: #3a3e46;
+  --c-overlay: rgb(0 0 0 / 0.55);
+  --c-knob: #e7e8ea;
 
-  --shadow-pop: 0 16px 40px -16px rgb(0 0 0 / 0.6);
-  --shadow-panel: 0 24px 48px -24px rgb(0 0 0 / 0.7);
-  --focus-ring: 0 0 0 3px rgb(229 87 74 / 0.35);
+  --shadow-pop: 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  --shadow-panel: 0 20px 40px -20px rgb(0 0 0 / 0.7);
+  --focus-ring: 0 0 0 3px rgb(61 123 242 / 0.4);
 }
 
 :root[data-theme='light'] {
   color-scheme: light;
 
-  --c-bg: #f8f4f1;
+  --c-bg: #f5f6f8;
   --c-surface: #ffffff;
-  --c-surface-2: #f3ebe6;
-  --c-surface-3: #efe4de;
+  --c-surface-2: #f0f2f5;
+  --c-surface-3: #e7eaee;
 
-  --c-border: #e9ddd5;
-  --c-border-strong: #d6c2b6;
+  --c-border: #e0e3e8;
+  --c-border-strong: #c9ced6;
 
-  --c-text: #1f1715;
-  --c-text-2: #4a3d39;
-  --c-muted: #6b5a53;
-  --c-subtle: #94857f;
+  --c-text: #1a1d22;
+  --c-text-2: #3b4149;
+  --c-muted: #5b636f;
+  --c-subtle: #8a919c;
 
-  --c-primary: #6e1c17;
-  --c-primary-hover: #5a1612;
-  --c-accent: #d13b2d;
-  --c-accent-hover: #b83125;
-  --c-accent-soft: #f7dcd5;
-  --c-link: #b0352a;
-  --c-on-primary: #ffffff;
-  --c-on-primary-muted: #eed9d3;
-  --c-check-on-primary: #ff9b8c;
+  --c-primary: #e3ebfc;
+  --c-primary-hover: #d5e1fa;
+  --c-on-primary: #173a87;
+  --c-on-primary-muted: #4a5a7a;
+  --c-check-on-primary: #2457c5;
+  --c-accent: #2459d6;
+  --c-accent-hover: #1c4bbb;
+  --c-accent-soft: #eaf0fd;
+  --c-on-accent-soft: #173a87;
+  --c-link: #1f50c4;
 
-  --c-highlight: #fbe9cf;
-  --c-success: #2a7a48;
-  --c-warning: #9a5b0c;
-  --c-danger: #c2362a;
+  --c-success: #1d7a4b;
+  --c-warning: #8f6200;
+  --c-danger: #c42b25;
+  --c-unknown: #687080;
+  --c-success-soft: #e6f4ec;
+  --c-warning-soft: #fbf1dc;
+  --c-danger-soft: #fbe9e8;
+  --c-unknown-soft: #eef0f3;
+  --c-highlight: #eef3fd;
 
-  --c-hover-bg: #fdf9f7;
-  --c-hover-border: #c4ab9d;
-  --c-image-icon: #e5d3c9;
-  --c-overlay: rgb(31 23 21 / 0.45);
-  --c-light-btn-bg: #ffffff;
-  --c-light-btn-fg: #6e1c17;
-  --c-light-btn-hover: #fbeee9;
-  --c-on-accent-soft: #6e1c17;
+  --c-hover-bg: #f7f8fa;
+  --c-hover-border: #b3bac4;
+  --c-image-icon: #c9ced6;
+  --c-overlay: rgb(20 24 30 / 0.4);
   --c-knob: #ffffff;
 
-  --shadow-pop: 0 12px 32px -12px rgb(110 28 23 / 0.18);
-  --shadow-panel: 0 20px 40px -20px rgb(110 28 23 / 0.22);
-  --focus-ring: 0 0 0 3px rgb(209 59 45 / 0.25);
+  --shadow-pop: 0 10px 28px -12px rgb(20 30 50 / 0.18);
+  --shadow-panel: 0 18px 36px -18px rgb(20 30 50 / 0.22);
+  --focus-ring: 0 0 0 3px rgb(36 89 214 / 0.25);
 }
 
 :root {
-  /* Radii */
-  --r-xs: 6px;
-  --r-sm: 8px;
-  --r-md: 10px;
-  --r-lg: 12px;
-  --r-xl: 16px;
-  --r-2xl: 20px;
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 10px;
+  --r-xl: 12px;
+  --r-2xl: 16px;
 
-  /* Typography */
   --font-sans: var(--font-plex-sans), 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: var(--font-plex-mono), 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
 
-  /* Layout */
-  --gutter: 16px;
-  --header-h: 72px;
-  --content-max: 1200px;
+  /* Type scale: 13 / 14 / 16 / 20 / 28 */
+  --fs-xs: 13px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
 
-  /* Motion */
+  --gutter: 16px;
+  --header-h: 60px;
+  --content-max: 1280px;
+  --wide-max: 1280px;
+
+  /* Motion: functional only, never longer than 200 ms */
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
-  --t-fast: 140ms;
-  --t-med: 240ms;
+  --t-fast: 120ms;
+  --t-med: 180ms;
 }
 
 @media (min-width: 768px) {
-  :root { --gutter: 32px; }
+  :root { --gutter: 24px; }
 }
 
 @media (min-width: 1024px) {
-  :root { --gutter: 40px; }
+  :root { --gutter: 32px; }
 }

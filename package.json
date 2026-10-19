@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "data:catalog": "tsx scripts/pipeline/catalog.ts",
     "data:prices": "tsx scripts/pipeline/prices.ts",
-    "data:test": "tsx scripts/pipeline/catalog.ts --fixtures && tsx scripts/pipeline/prices.ts --fixtures"
+    "data:test": "tsx scripts/pipeline/catalog.ts --fixtures && tsx scripts/pipeline/prices.ts --fixtures",
+    "test": "tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "lucide-react": "^0.544.0",

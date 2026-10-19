@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import type { CategoryId } from '@/data/types';
-import { COMPARE_LIMIT, useCompare } from '@/lib/compare-store';
+import { COMPARE_LIMIT, useCompareList } from '@/lib/compare-store';
 
 /** Sticky bar at the bottom of a category page while something is selected for comparison */
 export function ComparisonBar({ category }: { category: CategoryId }) {
-  const { inCategory } = useCompare();
+  const { inCategory } = useCompareList();
   const count = inCategory(category).length;
   if (count === 0) return null;
 

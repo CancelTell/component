@@ -1,0 +1,80 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "MSI",
+   "ProductName": "B760M GAMING",
+   "Title": "MSI B760M GAMING motherboard Intel B760 LGA 1700 micro ATX",
+   "BrandPartCode": "B760M GAMING",
+   "GTIN": [],
+   "Category": {
+    "Name": {
+     "Value": "Motherboards"
+    }
+   },
+   "ReleaseDate": "01-01-2025"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Processor socket"
+       }
+      },
+      "PresentationValue": "LGA 1700"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Motherboard chipset"
+       }
+      },
+      "PresentationValue": "Intel B760"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Motherboard form factor"
+       }
+      },
+      "PresentationValue": "micro ATX"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Supported memory types"
+       }
+      },
+      "PresentationValue": "DDR5-SDRAM"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Number of memory slots"
+       }
+      },
+      "PresentationValue": "2"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "1st M.2 largest key size"
+       }
+      },
+      "PresentationValue": "2280"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "2nd M.2 largest key size"
+       }
+      },
+      "PresentationValue": "2280"
+     }
+    ]
+   }
+  ]
+ }
+}

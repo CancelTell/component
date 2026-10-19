@@ -1,0 +1,48 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "MSI",
+   "ProductName": "MPG CORELIQUID P13 240",
+   "Title": "MSI MPG CORELIQUID P13 240 Processor All-in-one liquid cooler",
+   "BrandPartCode": "MPG CORELIQUID P13 240",
+   "GTIN": [],
+   "Category": {
+    "Name": {
+     "Value": "Computer cooling systems"
+    }
+   },
+   "ReleaseDate": "01-01-2025"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Suitable location"
+       }
+      },
+      "PresentationValue": "Processor"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Socket"
+       }
+      },
+      "PresentationValue": "AM4, AM5, LGA 1700, LGA 1851"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Type"
+       }
+      },
+      "PresentationValue": "All-in-one liquid cooler"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,8 +1,5 @@
 node_modules
 .next
-out
-preview/dist
-*.tsbuildinfo
-.env*.local
-.DS_Store
 .cache
+preview/dist
+.DS_Store

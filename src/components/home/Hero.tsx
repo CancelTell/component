@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { categories, popularQueries, products } from '@/data';
 import { stores } from '@/data/stores';
 import { modelsLabel } from '@/lib/format';
+import { HAS_PRICES } from '@/lib/money';
 import { SearchField } from '@/components/search/SearchField';
 
 export function Hero() {
@@ -15,7 +16,7 @@ export function Hero() {
         <ul className="hero__facts" role="list">
           <li>{modelsLabel(products.length)}</li>
           <li>{categories.length} категорий</li>
-          <li>цены в {stores.map((s) => s.name).join(', ')}</li>
+          <li>{HAS_PRICES ? `цены в ${stores.map((s) => s.name).join(', ')}` : 'проверка совместимости'}</li>
         </ul>
 
         <form className="hero-search" action="/search" role="search">
@@ -36,7 +37,6 @@ export function Hero() {
           </div>
         </form>
       </div>
-
     </section>
   );
 }

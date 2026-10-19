@@ -1,7 +1,11 @@
 path	product_id	updated	quality	supplier_id	prod_id	catid	m_prod_id	ean_upc	on_market	country_market	model_name	product_view	high_pic	high_pic_size	high_pic_width	high_pic_height	m_supplier_id	m_supplier_name	ean_upc_is_approved	Limited	Date_Added	ean_upc_format
-export/freexml.int/EN/9001.xml	9001	20261001000000	ICECAT	1	PRO B650M-A WIFI	194		4711377012345	1	RU	PRO B650M-A WIFI	100		0	0	0	1	MSI	1	0	20231001	
+export/freexml.int/EN/9001.xml	9001	20261001000000	ICECAT	1	PRO B650M-A WIFI	164		4711377012345	1	RU	PRO B650M-A WIFI	100		0	0	0	1	MSI	1	0	20231001	
 export/freexml.int/EN/9002.xml	9002	20261001000000	ICECAT	1	KVR48S40BS8-16	911			1	RU	16GB DDR5 SO-DIMM	100		0	0	0	1	Kingston Technology	1	0	20240101	
 export/freexml.int/EN/9003.xml	9003	20261001000000	ICECAT	1	KF560C30BBEK2-32	911			1	RU	FURY Beast	100		0	0	0	1	Kingston Technology	1	0	20240301	
 export/freexml.int/EN/9004.xml	9004	20261001000000	ICECAT	1	MZ-V9P1T0BW	1203		8806094215014	1	RU	990 PRO	100		0	0	0	1	Samsung	1	0	20221101	
 export/freexml.int/EN/9005.xml	9005	20261001000000	ICECAT	1	XYZ-1	1203			1	RU	Generic SSD	100		0	0	0	1	NoName Corp	1	0	20250101	
 export/freexml.int/EN/9006.xml	9006	20261001000000	ICECAT	1	AK620	1305			1	RU	AK620	100		0	0	0	1	DeepCool	1	0	20220601	
+export/freexml.int/EN/9007.xml	9007	20261001000000	ICECAT	1	MPG CORELIQUID P13 240	1305			1	RU	MPG CORELIQUID P13	100		0	0	0	1	MSI	1	0	20250101	
+export/freexml.int/EN/9008.xml	9008	20261001000000	ICECAT	1	BL110	1305			1	RU	Pure Wings 3 120mm	100		0	0	0	1	be quiet!	1	0	20250102	
+export/freexml.int/EN/9009.xml	9009	20261001000000	ICECAT	1	MZ-77E1T0B	1203			1	RU	870 EVO	100		0	0	0	1	Samsung	1	0	20210101	
+export/freexml.int/EN/9010.xml	9010	20261001000000	ICECAT	1	B760M GAMING	164			1	RU	B760M GAMING	100		0	0	0	1	MSI	1	0	20240601	

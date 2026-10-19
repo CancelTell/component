@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Search } from 'lucide-react';
-import { searchProducts } from '@/lib/search';
+import { getProduct, products } from '@/data';
+import type { Product } from '@/data/types';
+import { searchEntries, toSearchEntry } from '@/lib/search';
 import { modelsLabel } from '@/lib/format';
 import { SearchField } from '@/components/search/SearchField';
 import { SearchSuggestions } from '@/components/search/SearchSuggestions';
@@ -20,7 +22,11 @@ export async function generateMetadata({ searchParams }: { searchParams: SearchP
 
 export default async function SearchPage({ searchParams }: { searchParams: SearchParams }) {
   const q = readQuery((await searchParams).q);
-  const results = q ? searchProducts(q) : [];
+  const results = q
+    ? searchEntries(products.map(toSearchEntry), q)
+        .map((e) => getProduct(e.slug))
+        .filter((p): p is Product => !!p)
+    : [];
 
   return (
     <div className="container page">

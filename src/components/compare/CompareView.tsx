@@ -4,17 +4,18 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useState, type CSSProperties } from 'react';
 import { Crown, Plus, Scale, X } from 'lucide-react';
-import { categoryById } from '@/data';
+import { categoryById } from '@/data/categories';
 import type { CategoryId, Product, SpecDef } from '@/data/types';
 import { productHref, productMeta } from '@/lib/catalog';
 import { COMPARE_LIMIT, useCompare } from '@/lib/compare-store';
 import { formatSpec, modelsLabel, pluralize, rankSpec } from '@/lib/format';
 import { Breadcrumbs, type Crumb } from '@/components/ui/Breadcrumbs';
+import { ProductImage } from '@/components/ui/ProductImage';
 import { ComponentArt } from '@/components/ui/ComponentArt';
 import { Switch } from '@/components/ui/Switch';
 
 /** One color per comparison slot — used for dots, bars and model cards */
-const SLOT_COLORS = ['#ff8a6b', '#a78bfa', '#5fd4bf', '#f5b94e'];
+const SLOT_COLORS = ['#5b8def', '#b07cf0', '#3fb2a0', '#d6a23a'];
 
 interface Row {
   def: SpecDef;
@@ -47,7 +48,7 @@ function buildRow(models: Product[], def: SpecDef): Row {
 
 export function CompareView() {
   const searchParams = useSearchParams();
-  const { items, remove, clear } = useCompare();
+  const { items, remove, clear, ready, count } = useCompare();
   const [onlyDiff, setOnlyDiff] = useState(false);
   const [leaving, setLeaving] = useState<string | null>(null);
   const [picked, setPicked] = useState<CategoryId | undefined>(
@@ -62,6 +63,18 @@ export function CompareView() {
   const crumbs: Crumb[] = [{ label: 'Главная', href: '/' }];
   if (config) crumbs.push({ label: config.name, href: `/catalog/${config.id}` });
   crumbs.push({ label: 'Сравнение' });
+
+  if (count > 0 && !ready) {
+    return (
+      <>
+        <Breadcrumbs items={crumbs} />
+        <div className="page__head">
+          <h1 className="title-1">Сравнение</h1>
+          <p className="text-muted">Загружаем характеристики…</p>
+        </div>
+      </>
+    );
+  }
 
   if (!config || models.length === 0) {
     return (
@@ -154,7 +167,7 @@ export function CompareView() {
               style={{ ['--mc' as string]: SLOT_COLORS[i], ['--i' as string]: i } as CSSProperties}
             >
               <div className="cmp-model__art">
-                <ComponentArt name={config.icon} className="art--draw" />
+                {m.image ? <ProductImage product={m} size={72} /> : <ComponentArt name={config.icon} className="art--draw art--spin" />}
               </div>
               <button
                 type="button"

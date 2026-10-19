@@ -9,10 +9,14 @@ interface Props {
   onClose: () => void;
   children: ReactNode;
   footer?: ReactNode;
+  /** Content under the title that stays put while the body scrolls (search, filters) */
+  toolbar?: ReactNode;
+  /** 'side' — a tall panel on the right from 768px (part picker) */
+  variant?: 'dialog' | 'side';
 }
 
 /** Bottom sheet on phones, centered dialog from 768px. Closes on Esc and backdrop click. */
-export function Sheet({ open, title, onClose, children, footer }: Props) {
+export function Sheet({ open, title, onClose, children, footer, toolbar, variant = 'dialog' }: Props) {
   const titleId = useId();
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -33,8 +37,8 @@ export function Sheet({ open, title, onClose, children, footer }: Props) {
   if (!open) return null;
 
   return (
-    <div className="overlay" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div ref={panelRef} className="sheet" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1}>
+    <div className={`overlay overlay--${variant}`} onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
+      <div ref={panelRef} className={`sheet sheet--${variant}`} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1}>
         <div className="sheet__handle" aria-hidden="true" />
         <div className="sheet__head">
           <h2 id={titleId} className="sheet__title">
@@ -44,6 +48,7 @@ export function Sheet({ open, title, onClose, children, footer }: Props) {
             <X size={20} />
           </button>
         </div>
+        {toolbar && <div className="sheet__toolbar">{toolbar}</div>}
         <div className="sheet__body">{children}</div>
         {footer && <div className="sheet__foot">{footer}</div>}
       </div>

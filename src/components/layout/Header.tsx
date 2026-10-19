@@ -3,29 +3,31 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ChevronDown, ChevronRight, Cpu, Menu, Search, ShoppingCart, X } from 'lucide-react';
-import { categories } from '@/data';
-import { useCompare } from '@/lib/compare-store';
-import { useCart } from '@/lib/cart-store';
+import { ChevronDown, ChevronRight, Cpu, Menu, Scale, Search, X } from 'lucide-react';
+import { categories } from '@/data/categories';
+import type { NavCategory } from '@/data/nav';
+import { useCompareList } from '@/lib/compare-store';
+import { useSavedBuilds } from '@/lib/saved-builds';
 import { MegaMenu, type MegaMenuId } from './MegaMenu';
 import { CategoryIcon } from '@/components/ui/CategoryIcon';
 import { artStyle } from '@/components/ui/ComponentArt';
 import { ThemeToggle } from './ThemeToggle';
 
 /** `mega` — which hover panel the item opens; items without it are plain links */
-const navItems: Array<{ href: string; label: string; mega?: MegaMenuId; match: string[] }> = [
+const navItems: Array<{ href: string; label: string; mega?: MegaMenuId; match: string[]; badge?: 'builds' }> = [
+  { href: '/build', label: 'Конструктор', match: ['/build'] },
   { href: '/catalog', label: 'Комплектующие', mega: 'parts', match: ['/catalog', '/search'] },
-  { href: '/compatibility', label: 'Сборка', mega: 'build', match: ['/compatibility', '/cart'] },
-  { href: '/guide', label: 'Инструкция по сборке', match: ['/guide'] },
+  { href: '/builds', label: 'Мои сборки', match: ['/builds'], badge: 'builds' },
+  { href: '/guide', label: 'Инструкция', match: ['/guide'] },
 ];
 
 const OPEN_DELAY = 120;
 const CLOSE_DELAY = 200;
 
-export function Header() {
+export function Header({ nav }: { nav: NavCategory[] }) {
   const pathname = usePathname();
-  const { count } = useCompare();
-  const { count: cartCount } = useCart();
+  const { count } = useCompareList();
+  const { count: buildsCount } = useSavedBuilds();
   const [menuOpen, setMenuOpen] = useState(false);
   const [mega, setMega] = useState<MegaMenuId | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -74,6 +76,7 @@ export function Header() {
 
   useEffect(() => clearTimer, []);
 
+  // '/build' must not light up on '/builds'
   const isActive = (match: string[]) => match.some((m) => pathname === m || pathname.startsWith(`${m}/`));
 
   return (
@@ -106,18 +109,19 @@ export function Header() {
               aria-expanded={item.mega ? mega === item.mega : undefined}
               aria-haspopup={item.mega ? 'true' : undefined}
               data-open={(item.mega && mega === item.mega) || undefined}
-              onMouseEnter={(e) => {
+              onMouseEnter={(e: { currentTarget: HTMLElement }) => {
                 movePill(e.currentTarget);
                 if (item.mega) openMega(item.mega);
                 else scheduleClose();
               }}
-              onFocus={(e) => {
+              onFocus={(e: { currentTarget: HTMLElement }) => {
                 movePill(e.currentTarget);
                 if (item.mega) openMega(item.mega);
                 else closeMega();
               }}
             >
               {item.label}
+              {item.badge === 'builds' && buildsCount > 0 && <span className="nav__badge">{buildsCount}</span>}
               {item.mega && <ChevronDown size={14} className="nav__chevron" aria-hidden="true" />}
             </Link>
           ))}
@@ -127,21 +131,18 @@ export function Header() {
           <Link href="/search" className="btn btn--outline btn--icon header__search" aria-label="Поиск">
             <Search size={20} />
           </Link>
-          <ThemeToggle />
           <Link
-            href="/cart"
-            className="btn btn--outline btn--icon header__cart"
-            aria-label={cartCount > 0 ? `Корзина: ${cartCount}` : 'Корзина'}
-            aria-current={pathname === '/cart' ? 'page' : undefined}
-            data-cart-target
+            href="/compare"
+            className="btn btn--outline btn--icon header__compare"
+            aria-label={count > 0 ? `Сравнение: ${count}` : 'Сравнение'}
+            aria-current={pathname === '/compare' ? 'page' : undefined}
+            title="Сравнение"
+            data-compare-target
           >
-            <ShoppingCart size={20} />
-            {cartCount > 0 && <span className="btn__badge header__cart-badge">{cartCount}</span>}
+            <Scale size={20} />
+            {count > 0 && <span className="btn__badge header__badge">{count}</span>}
           </Link>
-          <Link href="/compare" className="btn btn--outline header__compare" data-compare-target>
-            Сравнение
-            {count > 0 && <span className="btn__badge">{count}</span>}
-          </Link>
+          <ThemeToggle />
           <button
             type="button"
             className="btn btn--outline btn--icon header__menu-btn"
@@ -155,12 +156,27 @@ export function Header() {
         </div>
       </div>
 
-      {mega && <MegaMenu id={mega} onMouseEnter={clearTimer} onMouseLeave={scheduleClose} />}
+      {mega && <MegaMenu id={mega} nav={nav} onMouseEnter={clearTimer} onMouseLeave={scheduleClose} />}
       {mega && <div className="mega-backdrop" aria-hidden="true" onMouseEnter={scheduleClose} />}
 
       {menuOpen && (
         <div id="mobile-menu" className="mobile-menu">
           <div className="container">
+            <ul className="mobile-menu__list" role="list">
+              {[
+                ['/build', 'Конструктор'],
+                ['/builds', `Мои сборки${buildsCount ? ` · ${buildsCount}` : ''}`],
+                ['/compare', `Сравнение${count ? ` · ${count}` : ''}`],
+                ['/guide', 'Инструкция по сборке'],
+              ].map(([href, label]) => (
+                <li key={href}>
+                  <Link href={href!} className="mobile-menu__link">
+                    {label}
+                    <ChevronRight size={18} aria-hidden="true" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
             <p className="mobile-menu__label">Комплектующие</p>
             <nav aria-label="Категории">
               <ul className="mobile-menu__grid" role="list">
@@ -176,23 +192,11 @@ export function Header() {
                 ))}
               </ul>
             </nav>
-            <p className="mobile-menu__label">Разделы</p>
-            <ul className="mobile-menu__list" role="list">
-              {[
-                ['/compatibility', 'Конструктор и подбор под бюджет'],
-                ['/cart', `Корзина сборок${cartCount ? ` · ${cartCount}` : ''}`],
-                ['/guide', 'Инструкция по сборке'],
-                ['/compare', `Сравнение${count ? ` · ${count}` : ''}`],
-                ['/about', 'О проекте'],
-              ].map(([href, label]) => (
-                <li key={href}>
-                  <Link href={href!} className="mobile-menu__link">
-                    {label}
-                    <ChevronRight size={18} aria-hidden="true" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <p className="mobile-menu__foot">
+              <Link href="/about" className="link">
+                О проекте и источниках данных
+              </Link>
+            </p>
           </div>
         </div>
       )}

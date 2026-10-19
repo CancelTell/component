@@ -144,6 +144,8 @@ export interface IcecatSheet {
   category: string;
   year: number | null;
   features: Param[];
+  /** Product photo (500×500 when Icecat has it); undefined in caches made before photos were read */
+  image?: string | null;
 }
 
 /** ICECAT_USERNAME (required for Icecat), ICECAT_API_TOKEN (optional) */
@@ -173,6 +175,7 @@ interface IcecatResponse {
       Category?: { Name?: { Value?: string } };
       ReleaseDate?: string;
     };
+    Image?: { HighPic?: string; Pic500x500?: string; LowPic?: string };
     FeaturesGroups?: Array<{ Features?: IcecatFeature[] }>;
   };
 }
@@ -198,6 +201,7 @@ export function parseIcecat(json: IcecatResponse): IcecatSheet | null {
     category: g.Category?.Name?.Value ?? '',
     year: year > 1990 ? year : null,
     features,
+    image: json.data?.Image?.Pic500x500 || json.data?.Image?.HighPic || null,
   };
 }
 
@@ -205,10 +209,16 @@ export function parseIcecat(json: IcecatResponse): IcecatSheet | null {
 export const icecatCached = (id: string) => `id:${id}` in cache;
 
 let requests = 0;
+let refetched = 0;
+/** How many old cached sheets to refresh per run (to pick up photos) */
+const REFETCH_LIMIT = 400;
 /** Looks a product up by EAN, then by brand + part number. Results (including misses) are cached. */
 export async function icecatLookup(q: { id?: string; ean?: string; brand?: string; mpn?: string }): Promise<IcecatSheet | null> {
   const key = q.id ? `id:${q.id}` : q.ean ? `ean:${q.ean}` : `mpn:${q.brand}:${q.mpn}`;
-  if (key in cache) return cache[key] ?? null;
+  // Sheets cached before photos were read have no `image` field: fetch them once more
+  const stale = !!cache[key] && cache[key]!.image === undefined && !FIXTURES && refetched < REFETCH_LIMIT;
+  if (key in cache && !stale) return cache[key] ?? null;
+  if (stale) refetched++;
   if (!icecatEnabled() || (!q.id && !q.ean && !(q.brand && q.mpn))) return null;
 
   let sheet: IcecatSheet | null = null;
@@ -233,7 +243,7 @@ export async function icecatLookup(q: { id?: string; ean?: string; brand?: strin
       sheet = res.ok ? parseIcecat(json) : null;
     } catch (e) {
       log(`Icecat: ошибка запроса (${(e as Error).message})`);
-      return null; // not cached: try again next run
+      return cache[key] ?? null; // not cached: try again next run
     }
   }
   cache[key] = sheet;

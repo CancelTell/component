@@ -1,0 +1,40 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "be quiet!",
+   "ProductName": "Pure Wings 3 120mm",
+   "Title": "be quiet! Pure Wings 3 120mm PWM Computer case Fan",
+   "BrandPartCode": "BL110",
+   "GTIN": [],
+   "Category": {
+    "Name": {
+     "Value": "Computer cooling systems"
+    }
+   },
+   "ReleaseDate": "01-01-2025"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Suitable location"
+       }
+      },
+      "PresentationValue": "Computer case"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Fan diameter"
+       }
+      },
+      "PresentationValue": "12 cm"
+     }
+    ]
+   }
+  ]
+ }
+}

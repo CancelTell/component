@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { products } from '@/data';
+import { getSimilar, products } from '@/data';
 import type { Product } from '@/data/types';
-import { getSimilar, productHref, productSummary } from '@/lib/catalog';
-import { compatSummary, isSlot } from '@/lib/compatibility';
+import { productHref, productSummary } from '@/lib/catalog';
+import { compatSummary, inBuild } from '@/lib/compatibility';
+import { HAS_PRICES } from '@/data/offers';
 import { Availability } from './Availability';
 
 export function ModelAside({ product }: { product: Product }) {
@@ -12,7 +13,7 @@ export function ModelAside({ product }: { product: Product }) {
 
   return (
     <aside className="model-aside" aria-label="Дополнительно">
-      <Availability slug={product.slug} />
+      {HAS_PRICES && <Availability slug={product.slug} />}
       <section className="card side-card" aria-labelledby="compat-title">
         <h2 id="compat-title" className="side-card__title">
           Совместимость
@@ -35,9 +36,9 @@ export function ModelAside({ product }: { product: Product }) {
             )}
           </ul>
         )}
-        {isSlot(product.category) && (
-          <Link href={`/compatibility?add=${product.slug}`} className="btn btn--ghost btn--block">
-            Проверить сочетаемость
+        {inBuild(product.category) && (
+          <Link href={`/build?add=${product.category}/${product.slug}`} className="btn btn--outline btn--block">
+            Проверить с другими деталями
           </Link>
         )}
       </section>

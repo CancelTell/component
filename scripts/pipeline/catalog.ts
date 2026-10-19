@@ -37,11 +37,26 @@ function cleanBrand(brand: string): string {
   return b.replace(/\s+(technology|technologies|components|inc\.?|corporation|corp\.?|co\.?,? ?ltd\.?|gmbh|international|computer)$/i, '').trim();
 }
 
-/** Product from an Icecat data sheet; the name falls back to the title when ProductName is just a series */
-function fromSheet(sheet: IcecatSheet, category: CategoryId, unknown: Map<string, number>): Product {
+/** Product from an Icecat data sheet; null for things that only share the category (case fans, etc.) */
+function fromSheet(sheet: IcecatSheet, category: CategoryId, unknown: Map<string, number>): Product | null {
+  const feature = (re: RegExp) => sheet.features.find((f) => re.test(f.name))?.value ?? '';
+  if (category === 'cooling') {
+    const where = feature(/suitable location/i);
+    if (where && !/processor|cpu/i.test(where)) return null; // case fans
+  }
+  if (category === 'ram' && sheet.features.some((f) => /so-?dimm/i.test(f.value))) return null; // laptop memory
   const brand = cleanBrand(sheet.brand);
   const strip = (t: string) => cleanName(t.replace(sheet.brand, ' '), brand);
   const specs = extractSpecs(category, sheet.features, unknown);
+  // Liquid coolers: the radiator size is in the name ("… LC 360 ARGB") when the sheet lacks it
+  const label = `${sheet.name} ${sheet.title}`;
+  if (category === 'cooling' && !specs.height && !specs.radiator && /liquid|water|aio|coreliquid|\bLC\b|ryuo|poseidon|kraken|galahad|freezer|\bSLC\b/i.test(label)) {
+    const size = label.match(/\b(120|140|240|280|360|420)\b/);
+    if (size) {
+      specs.radiator = Number(size[1]);
+      specs.type = 'СЖО';
+    }
+  }
   let name = strip(sheet.name);
   // ProductName is sometimes just a series ("FURY Beast"); memory and SSD names get their size anyway
   if (!/\d/.test(name) && sheet.title && category !== 'ram' && category !== 'storage') name = strip(sheet.title);
@@ -55,6 +70,9 @@ function fromSheet(sheet: IcecatSheet, category: CategoryId, unknown: Map<string
     popularity: 1000,
     specs,
     ids: { ...(sheet.eans.length ? { ean: sheet.eans } : {}), ...(sheet.mpn ? { mpn: [sheet.mpn] } : {}) },
+    source: 'icecat',
+    updatedAt: today(),
+    ...(sheet.image ? { image: sheet.image } : {}),
   };
 }
 
@@ -69,6 +87,7 @@ export interface Overrides {
 }
 
 const seeds: Product[] = [...cpus, ...gpus, ...motherboards, ...rams, ...storages, ...psus, ...coolers, ...cases];
+const seedSlugs = new Set(seeds.map((s) => s.slug));
 
 function addIds(p: Product, offers: FeedOffer[]) {
   const ean = new Set(p.ids?.ean ?? []);
@@ -89,7 +108,10 @@ async function main() {
   // Base: hand-made seed models + everything imported earlier
   const bySlug = new Map<string, Product>();
   for (const p of previous.products) bySlug.set(p.slug, structuredClone(p));
-  for (const p of seeds) bySlug.set(p.slug, { ...structuredClone(p), ids: bySlug.get(p.slug)?.ids ?? p.ids });
+  for (const p of seeds) {
+    const prev = bySlug.get(p.slug);
+    bySlug.set(p.slug, { ...structuredClone(p), ids: prev?.ids ?? p.ids, source: 'manual', updatedAt: prev?.updatedAt ?? today(), ...(prev?.image ? { image: prev.image } : {}) });
+  }
   for (const [slug, o] of Object.entries(overrides.products ?? {})) {
     const p = bySlug.get(slug);
     if (p && o.ids) p.ids = { ean: [...new Set([...(p.ids?.ean ?? []), ...(o.ids.ean ?? [])])], mpn: [...new Set([...(p.ids?.mpn ?? []), ...(o.ids.mpn ?? [])])] };
@@ -107,16 +129,24 @@ async function main() {
   let fromWiki = 0;
   for (const p of wiki.products) {
     const cur = bySlug.get(p.slug);
-    if (cur) {
-      // Known model: only fill fields it doesn't have yet
+    if (cur && seedSlugs.has(p.slug)) {
+      // Hand-made model: only fill fields it doesn't have yet
       for (const [k, v] of Object.entries(p.specs)) if (cur.specs[k] === undefined || cur.specs[k] === null) cur.specs[k] = v;
       if (!cur.year && p.year) cur.year = p.year;
+      continue;
+    }
+    if (cur) {
+      // Imported earlier: refresh from the source (fixes in the parser reach old models too)
+      cur.specs = { ...cur.specs, ...p.specs };
+      cur.year = p.year || cur.year;
+      cur.source = 'wikipedia';
+      cur.updatedAt = today();
       continue;
     }
     const missing = missingFields(p.category, p.specs);
     if (missing.length) quarantine.push({ title: `${p.brand} ${p.name}`, category: p.category, missing, stores: ['Википедия'] });
     else {
-      bySlug.set(p.slug, p);
+      bySlug.set(p.slug, { ...p, source: 'wikipedia', updatedAt: today() });
       fromWiki++;
     }
   }
@@ -128,20 +158,41 @@ async function main() {
   const fetched: Partial<Record<CategoryId, number>> = {};
   const limit = config.icecat.perCategory ?? 40;
   let fromIcecat = 0;
+  const seedMpn = new Set(seeds.flatMap((p) => p.ids?.mpn ?? []));
   for (const item of indexItems) {
-    if (knownMpn.has(normMpn(item.mpn))) continue;
+    if (seedMpn.has(normMpn(item.mpn))) {
+      // Hand-made model: keep its specs, take only the photo
+      const seed = [...bySlug.values()].find((p) => seedSlugs.has(p.slug) && p.ids?.mpn?.includes(normMpn(item.mpn)));
+      if (!seed || seed.image) continue;
+      if (!icecatCached(item.id)) {
+        if ((fetched[item.category] ?? 0) >= limit) continue;
+        fetched[item.category] = (fetched[item.category] ?? 0) + 1;
+      }
+      const sheet = await icecatLookup({ id: item.id });
+      if (sheet?.image) seed.image = sheet.image;
+      continue;
+    }
     const cached = icecatCached(item.id);
-    if (!cached && (fetched[item.category] ?? 0) >= limit) continue;
-    if (!cached) fetched[item.category] = (fetched[item.category] ?? 0) + 1;
+    // Not seen yet: fetch, within the per-run budget. Seen: rebuild from the cache (no request)
+    if (!cached) {
+      if (knownMpn.has(normMpn(item.mpn)) || (fetched[item.category] ?? 0) >= limit) continue;
+      fetched[item.category] = (fetched[item.category] ?? 0) + 1;
+    }
     const sheet = await icecatLookup({ id: item.id });
     if (!sheet) continue;
-    // Laptop memory is not for desktop builds
-    if (item.category === 'ram' && sheet.features.some((f) => /so-?dimm/i.test(f.value))) continue;
     const p = fromSheet(sheet, item.category, unknown);
-    if (bySlug.has(p.slug)) continue;
+    if (!p || seedSlugs.has(p.slug)) continue;
     const missing = missingFields(p.category, p.specs);
+    const cur = bySlug.get(p.slug);
     if (missing.length || !p.name) {
-      quarantine.push({ title: `${p.brand} ${p.name}`, category: p.category, missing, stores: ['Icecat'] });
+      if (!cur) quarantine.push({ title: `${p.brand} ${p.name}`, category: p.category, missing, stores: ['Icecat'] });
+      continue;
+    }
+    if (cur) {
+      cur.specs = { ...cur.specs, ...p.specs };
+      cur.source = 'icecat';
+      cur.updatedAt = today();
+      if (p.image) cur.image = p.image;
       continue;
     }
     bySlug.set(p.slug, p);
@@ -177,6 +228,7 @@ async function main() {
     if (existing) {
       matched++;
       addIds(existing, offers);
+      existing.source ??= 'store';
       storesPerSlug.set(existing.slug, stores.length);
       continue;
     }
@@ -206,6 +258,9 @@ async function main() {
       year: sheet?.year ?? 0,
       popularity: 1000,
       specs,
+      source: sheet ? 'icecat' : 'store',
+      updatedAt: today(),
+      ...(sheet?.image ? { image: sheet.image } : {}),
     };
     addIds(product, offers);
     bySlug.set(slug, product);
@@ -215,7 +270,6 @@ async function main() {
   }
 
   // Popularity of imported models: offered by more stores → higher; seeds keep their order
-  const seedSlugs = new Set(seeds.map((s) => s.slug));
   const imported = [...bySlug.values()].filter((p) => !seedSlugs.has(p.slug));
   imported
     .sort((a, b) => (storesPerSlug.get(b.slug) ?? 0) - (storesPerSlug.get(a.slug) ?? 0) || a.name.localeCompare(b.name))
@@ -238,9 +292,21 @@ async function main() {
   const products = [...bySlug.values()].sort(
     (a, b) => order.indexOf(a.category) - order.indexOf(b.category) || a.popularity - b.popularity || a.slug.localeCompare(b.slug),
   );
+  // «Обновлено» on the site = when the model's data last changed, not when the robot last looked
+  const before = new Map(previous.products.map((p) => [p.slug, p]));
+  const signature = (p: Product) => JSON.stringify([p.brand, p.name, p.year, p.specs, p.image ?? null, p.source ?? null]);
+  for (const p of products) {
+    const old = before.get(p.slug);
+    p.updatedAt = old?.updatedAt && signature(old) === signature(p) ? old.updatedAt : today();
+  }
   writeJson(`${OUT}/catalog.json`, { generatedAt: today(), products } satisfies CatalogFile);
   saveIcecatCache();
 
+  // The same model often comes with several regional codes: one line per model in the report
+  const seenQ = new Set<string>();
+  const uniqueQ = quarantine.filter((q) => (seenQ.has(q.title) ? false : (seenQ.add(q.title), true)));
+  quarantine.length = 0;
+  quarantine.push(...uniqueQ);
   const top = [...unknown.entries()].sort((a, b) => b[1] - a[1]).slice(0, 40);
   writeText(
     `${OUT}/report.md`,

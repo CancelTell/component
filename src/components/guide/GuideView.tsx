@@ -284,7 +284,7 @@ export function GuideView() {
                 <ArrowRight size={18} aria-hidden="true" />
               </button>
             ) : (
-              <Link href="/compatibility" className="btn btn--accent guide-player__next" onClick={() => toggleDone(step.id, true)}>
+              <Link href="/build" className="btn btn--accent guide-player__next" onClick={() => toggleDone(step.id, true)}>
                 Готово. Собрать комплект в конструкторе
                 <ArrowRight size={18} aria-hidden="true" />
               </Link>

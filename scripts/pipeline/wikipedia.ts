@@ -50,6 +50,9 @@ const yearOf = (s: string | undefined) => {
 };
 const isMobileContext = (t: Table) => /mobile|laptop|notebook|embedded|server|workstation|max-q|handheld/i.test(`${t.context.join(' ')} ${t.caption}`);
 
+/** "Ryzen 9 7950X: cores 16, threads 32, …" — to check in the report that every field was found */
+const sample = (p: Product) => `${p.name}: ${Object.entries(p.specs).filter(([k]) => !['socket', 'memory', 'channels', 'unlocked'].includes(k)).map(([k, v]) => `${k} ${v}`).join(', ') || 'нет характеристик'}`;
+
 /* ---------- CPU ---------- */
 
 interface CpuId {
@@ -86,35 +89,71 @@ function cpusFrom(table: Table, notes: Map<string, number>): Product[] {
   const pick = (want: RegExp, not?: RegExp) => h.findIndex((x) => want.test(x) && !(not && not.test(x)));
   const col = {
     model: Math.max(0, pick(/model|branding|processor|name/i)),
-    cores: pick(/cores?/i),
     threads: pick(/threads/i, /cores?/i),
-    base: pick(/base|clock|frequency|ghz/i, /power|tdp|graphics|gpu|memory|bus/i),
-    boost: pick(/boost|turbo|max/i, /power|tdp|graphics|gpu|memory|temp/i),
+    base: pick(/base|clock|frequency|ghz/i, /power|tdp|graphics|gpu|memory|bus|\bE$/i),
     l3: pick(/l3/i) >= 0 ? pick(/l3/i) : pick(/cache/i, /l2|l1/i),
     tdp: pick(/tdp|base power|pbp|default power/i) >= 0 ? pick(/tdp|base power|pbp|default power/i) : pick(/power/i, /graphics|gpu|max|turbo|processing/i),
     release: pick(/release|launch|date/i),
+  };
+  const isEcol = (x: string) => /\bE$|e-?core/i.test(x.trim());
+  const boostCols = h.flatMap((x, i) => (/boost|turbo|max/i.test(x) && !/power|tdp|graphics|gpu|memory|temp|arc/i.test(x) && !isEcol(x) ? [i] : []));
+  // Core columns: one "Cores (threads)", or Total, or separate P / E (Intel hybrid, AMD Zen 4 + Zen 4c)
+  const coreCols = h.flatMap((x, i) => (/cores?/i.test(x) && !/config|gpu|graphics|xe|npu|arc/i.test(x) ? [i] : []));
+  const totalCol = coreCols.find((i) => /total/i.test(h[i]!));
+  const ct = (cell: string): [number | null, number | null] => {
+    const pe = cell.match(/(\d+)\s*P\s*\+\s*(\d+)\s*E/i);
+    const t = cell.match(/\((\d+)\)|\/\s*(\d+)/);
+    return [pe ? Number(pe[1]) + Number(pe[2]) : n(cell), t ? Number(t[1] ?? t[2]) : null];
+  };
+  const coresOf = (row: string[]) => {
+    let cores: number | null = null;
+    let threads: number | null = col.threads >= 0 ? n(row[col.threads]) : null;
+    if (totalCol !== undefined) {
+      const [c, t] = ct(row[totalCol] ?? '');
+      cores = c;
+      threads ??= t;
+    } else if (coreCols.length > 1) {
+      // Sum P + E columns; a cell like "8 (16)" adds its threads
+      let c = 0;
+      let t = 0;
+      let any = false;
+      for (const i of coreCols) {
+        const [ci, ti] = ct(row[i] ?? '');
+        if (ci !== null) {
+          any = true;
+          c += ci;
+          t += ti ?? ci;
+        }
+      }
+      if (any) {
+        cores = c;
+        threads ??= t;
+      }
+    } else if (coreCols.length === 1) {
+      const [c, t] = ct(row[coreCols[0]!] ?? '');
+      cores = c;
+      threads ??= t;
+    }
+    return { cores, threads };
   };
   const out: Product[] = [];
   for (const row of table.rows) {
     const id = cpuIdentity(row[col.model] ?? '') ?? cpuIdentity(row.join(' '));
     if (!id) continue;
-    const coresCell = row[col.cores] ?? '';
-    // "8 (16)" or "8 / 16" or "6P + 8E (20)"
-    const pe = coresCell.match(/(\d+)\s*P\s*\+\s*(\d+)\s*E/i);
-    const cores = pe ? Number(pe[1]) + Number(pe[2]) : n(coresCell);
-    const threadsInCell = coresCell.match(/\((\d+)\)|\/\s*(\d+)/);
-    const threads = col.threads >= 0 ? n(row[col.threads]) : threadsInCell ? Number(threadsInCell[1] ?? threadsInCell[2]) : null;
-    const ghz = (s: string | undefined) => {
-      const v = n(s);
+    const { cores, threads } = coresOf(row);
+    const ghz = (x: string | undefined) => {
+      const v = n(x);
       return v === null ? null : v > 100 ? Math.round(v / 10) / 100 : v;
     };
-    // Base/boost are sometimes one cell "4.2 / 5.0"
     let base = ghz(row[col.base]);
-    let boost = col.boost >= 0 && col.boost !== col.base ? ghz(row[col.boost]) : null;
+    // Highest of all turbo/boost columns (Turbo 2.0, Turbo 3.0, TVB…) for P-cores
+    const boosts = boostCols.filter((i) => i !== col.base).map((i) => ghz(row[i])).filter((v): v is number => v !== null && v < 10);
+    let boost = boosts.length ? Math.max(...boosts) : null;
+    // Base and boost in one cell: "3.4 / 4.5"
     const pair = (row[col.base] ?? '').match(/(\d+(?:\.\d+)?)\s*[/–-]\s*(\d+(?:\.\d+)?)/);
-    if (pair && boost === null) {
+    if (pair) {
       base = Number(pair[1]);
-      boost = Number(pair[2]);
+      boost = Math.max(boost ?? 0, Number(pair[2]));
     }
     const specs: Specs = {
       socket: id.socket,
@@ -133,7 +172,7 @@ function cpusFrom(table: Table, notes: Map<string, number>): Product[] {
     if (tdp) specs.tdp = tdp;
     out.push({ slug: slugify(`${id.brand} ${id.name}`), category: 'cpu', brand: id.brand, name: id.name, year: yearOf(row[col.release]), popularity: 1000, specs });
   }
-  if (out.length) notes.set(`CPU: ${table.context.slice(-2).join(' › ')} — колонки: ${h.filter(Boolean).slice(0, 10).join(' | ')}`, out.length);
+  if (out.length) notes.set(`CPU: ${table.context.slice(-2).join(' › ')} — пример: ${sample(out[0]!)}`, out.length);
   return out;
 }
 
@@ -165,8 +204,14 @@ function gpusFrom(table: Table, notes: Map<string, number>): Product[] {
     release: findCol(h, /release|launch/i),
   };
   const out: Product[] = [];
+  // Intel tables often list just "A770" under an "Arc" heading
+  const arcContext = /\barc\b/i.test(`${table.context.join(' ')} ${table.caption} ${h.join(' ')}`);
   for (const row of table.rows) {
-    const id = gpuIdentity(row[col.model] ?? '');
+    let id = gpuIdentity(row[col.model] ?? '');
+    if (!id && arcContext) {
+      const m = (row[col.model] ?? '').match(/\b([AB][3-9]\d0)\b(?!\s*M\b)/i);
+      if (m) id = { brand: 'Intel', name: `Arc ${m[1]!.toUpperCase()}` };
+    }
     if (!id) continue;
     const specs: Specs = {};
     const size = n(row[col.size]);
@@ -183,7 +228,7 @@ function gpusFrom(table: Table, notes: Map<string, number>): Product[] {
     // Card length depends on the partner version: unknown here, the checks say so
     out.push({ slug: slugify(`${id.brand} ${id.name}`), category: 'gpu', brand: id.brand, name: id.name, year: yearOf(row[col.release]), popularity: 1000, specs });
   }
-  if (out.length) notes.set(`GPU: ${table.context.slice(-2).join(' › ')} — колонки: ${h.filter(Boolean).slice(0, 10).join(' | ')}`, out.length);
+  if (out.length) notes.set(`GPU: ${table.context.slice(-2).join(' › ')} — пример: ${sample(out[0]!)}`, out.length);
   return out;
 }
 

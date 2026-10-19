@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import { toJsonLd } from '@/lib/json-ld';
 import { notFound } from 'next/navigation';
 import { categoryById, getProduct, products } from '@/data';
+import { siteConfig } from '@/lib/site';
 import { productHref, productMeta, productSummary } from '@/lib/catalog';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ModelHero } from '@/components/product/ModelHero';
@@ -25,7 +27,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const product = await load(params);
   if (!product) return {};
   const title = `${product.brand} ${product.name}`;
-  const description = `${categoryById[product.category].singular} ${title}: ${productMeta(product)}, ${productSummary(product)}. Характеристики, совместимость и похожие модели.`;
+  const description = `${categoryById[product.category].singular} ${title}: ${productMeta(product)}, ${productSummary(product)}. Характеристики, совместимость с другими деталями и похожие модели.`;
   return {
     title,
     description,
@@ -45,14 +47,18 @@ export default async function ModelPage({ params }: { params: Params }) {
     name: `${product.brand} ${product.name}`,
     brand: { '@type': 'Brand', name: product.brand },
     category: config.singular,
+    url: new URL(productHref(product), siteConfig.url).toString(),
+    ...(product.image ? { image: product.image } : {}),
+    ...(product.ids?.mpn?.[0] ? { mpn: product.ids.mpn[0] } : {}),
+    ...(product.ids?.ean?.[0] ? { gtin13: product.ids.ean[0] } : {}),
   };
 
   return (
     <div className="container page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(jsonLd) }} />
       <Breadcrumbs
         items={[
-          { label: 'Главная', href: '/' },
+          { label: 'Комплектующие', href: '/catalog' },
           { label: config.name, href: `/catalog/${config.id}` },
           { label: product.name },
         ]}

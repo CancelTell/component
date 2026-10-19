@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { IBM_Plex_Mono, IBM_Plex_Sans } from 'next/font/google';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { AmbientBackground } from '@/components/layout/AmbientBackground';
+import { navCategories } from '@/data';
 import { siteConfig } from '@/lib/site';
 import { themeInitScript } from '@/lib/theme-script';
 import './globals.css';
@@ -25,7 +25,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — справочник комплектующих для ПК`,
+    default: `${siteConfig.name} — конструктор ПК с проверкой совместимости`,
     template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ru_RU',
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — справочник комплектующих для ПК`,
+    title: `${siteConfig.name} — конструктор ПК с проверкой совместимости`,
     description: siteConfig.description,
   },
   formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#131011',
+  themeColor: '#111214',
   width: 'device-width',
   initialScale: 1,
 };
@@ -54,11 +54,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
-        <AmbientBackground />
         <a href="#main" className="skip-link">
           Перейти к содержимому
         </a>
-        <Header />
+        <Header nav={navCategories()} />
         <main id="main" className="main">
           {children}
         </main>

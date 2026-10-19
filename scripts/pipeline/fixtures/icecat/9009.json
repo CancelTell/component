@@ -1,0 +1,64 @@
+{
+ "msg": "OK",
+ "data": {
+  "GeneralInfo": {
+   "Brand": "Samsung",
+   "ProductName": "870 EVO",
+   "Title": "Samsung 870 EVO 2.5\" 1 TB Serial ATA III V-NAND MLC",
+   "BrandPartCode": "MZ-77E1T0B",
+   "GTIN": [],
+   "Category": {
+    "Name": {
+     "Value": "Solid state drives"
+    }
+   },
+   "ReleaseDate": "01-01-2025"
+  },
+  "FeaturesGroups": [
+   {
+    "Features": [
+     {
+      "Feature": {
+       "Name": {
+        "Value": "SSD capacity"
+       }
+      },
+      "PresentationValue": "1 TB"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "SSD form factor"
+       }
+      },
+      "PresentationValue": "2.5\""
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Interface"
+       }
+      },
+      "PresentationValue": "Serial ATA III"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Read speed"
+       }
+      },
+      "PresentationValue": "560 MB/s"
+     },
+     {
+      "Feature": {
+       "Name": {
+        "Value": "Write speed"
+       }
+      },
+      "PresentationValue": "530 MB/s"
+     }
+    ]
+   }
+  ]
+ }
+}

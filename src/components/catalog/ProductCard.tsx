@@ -1,63 +1,56 @@
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
-import { ArrowUpRight } from 'lucide-react';
-import { categoryById } from '@/data';
+import { Wrench } from 'lucide-react';
+import { categoryById } from '@/data/categories';
 import type { Product } from '@/data/types';
-import { getStats, productHref, productMeta } from '@/lib/catalog';
-import { bestOffer } from '@/data/offers';
-import { rub } from '@/lib/pricing';
+import { getStats, productHref } from '@/lib/catalog';
+import { inBuild } from '@/lib/compatibility';
 import { ComponentArt, artStyle } from '@/components/ui/ComponentArt';
 import { Stat } from '@/components/ui/Stat';
 import { CompareButton } from './CompareButton';
+import { PriceLine } from './PriceLine';
 
 interface Props {
   product: Product;
   index?: number;
-  selected?: boolean;
-  /** When set, clicking the card opens the detail panel instead of the model page */
-  onOpen?: (product: Product) => void;
 }
 
-export function ProductCard({ product, index = 0, selected = false, onOpen }: Props) {
+/** Catalog card: picture that draws itself on hover, platform badges, three key numbers, actions */
+export function ProductCard({ product, index = 0 }: Props) {
   const config = categoryById[product.category];
   const href = productHref(product);
-  const offer = bestOffer(product.slug);
   const style = { ...artStyle(config.icon), ['--i' as string]: Math.min(index, 8) } as CSSProperties;
+  const badges = config.meta(product).slice(1).filter(Boolean).slice(0, 2);
 
   return (
-    <article className="pcard" style={style} data-selected={selected || undefined} data-slug={product.slug}>
-      {onOpen ? (
-        <button
-          type="button"
-          className="pcard__open"
-          aria-label={`Подробнее: ${product.brand} ${product.name}`}
-          aria-expanded={selected}
-          onClick={() => onOpen(product)}
-        />
-      ) : (
-        <Link href={href} className="pcard__open" aria-label={`${product.brand} ${product.name}`} />
-      )}
+    <article className="pcard" style={style} data-slug={product.slug}>
+      <Link href={href} className="pcard__open" aria-label={`${product.brand} ${product.name}`} />
 
-      <div className="pcard__media">
-        <ComponentArt name={config.icon} />
-        <Link href={href} className="pcard__go" aria-label={`Страница модели ${product.name}`}>
-          <ArrowUpRight size={16} />
-        </Link>
+      <div className={`pcard__media${product.image ? ' pcard__media--photo' : ''}`}>
+        {product.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="pimg" src={product.image} alt="" width={112} height={112} loading="lazy" decoding="async" />
+        ) : (
+          <ComponentArt name={config.icon} />
+        )}
+        {badges.length > 0 && (
+          <span className="pcard__badges">
+            {badges.map((b) => (
+              <span key={b} className="pcard__badge">
+                {b}
+              </span>
+            ))}
+          </span>
+        )}
       </div>
 
       <div className="pcard__body">
         <div>
-          <p className="pcard__meta">{productMeta(product)}</p>
-          <h2 className="pcard__name">{product.name}</h2>
-          <p className={`pcard__price${offer ? '' : ' is-out'}`}>
-            {offer ? (
-              <>
-                от <b>{rub(offer.price!)}</b> <span>· {offer.store}</span>
-              </>
-            ) : (
-              'нет в наличии'
-            )}
-          </p>
+          <p className="pcard__meta">{product.brand}</p>
+          <h2 className="pcard__name">
+            <Link href={href}>{product.name}</Link>
+          </h2>
+          <PriceLine slug={product.slug} className="pcard__price" />
         </div>
         <div className="pcard__stats">
           {getStats(product, config.cardSpecs).map((s) => (
@@ -67,7 +60,12 @@ export function ProductCard({ product, index = 0, selected = false, onOpen }: Pr
       </div>
 
       <div className="pcard__action">
-        <CompareButton product={product} block />
+        <CompareButton product={product} />
+        {inBuild(product.category) && (
+          <Link href={`/build?add=${product.category}/${product.slug}`} className="btn btn--outline btn--icon" aria-label="Добавить в конструктор" title="В конструктор">
+            <Wrench size={16} />
+          </Link>
+        )}
       </div>
     </article>
   );
